@@ -14,12 +14,14 @@
 
 ### Clone a local repository using Git on PC
 - cd to directory above where repository will be
-- git clone https://github.com/peterpih/<repository name>
+```{R}
+$ git clone https://github.com/peterpih/<repository name>
+```
 
-## push files back to repository
+### Push files back to repository
 > git status
 > git add <file name>
-> git commit -m <messgae for commiting>
+> git commit -m <message for commiting>
 > git push
 
 If there is a conflict with other changes on GitHub first "pull" changes, then "push"
