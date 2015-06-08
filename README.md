@@ -24,7 +24,8 @@ Some README.md for doing things
 - git push
 
 If there is a conflict with other changes on GitHub first pull, then push
-```{R} git pull
+```{R}
+git pull
 git staus
 git push
 ``` 
