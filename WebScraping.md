@@ -1,14 +1,16 @@
-# Swirl Commands
+# Web Scraping (under construction)
 
-### Loading Swirl package
+This example is from http://giventhedata.blogspot.co.uk/2012/08/r-and-web-for-beginners-part-iii.html
 
 from inside RStudio:
 ```{R}
-> install.packages("Swirl")
+> library(XML)
 > library(swirl)
 ```
 
-### To load some other packages
+### I've tried to use on Dax real time prices
 ```{R}
-> install_from_swirl(...)
+> url <- "http://www.boerse-frankfurt.de/en/equities/realtime+quotes#tab_id=dax&reiter=dax"
+> dax.doc <- htmlParse(url)
+> dax.tabs <- readHTMLTable(dax.doc)
 ```
