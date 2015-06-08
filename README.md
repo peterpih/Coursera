@@ -18,14 +18,14 @@ Some README.md for doing things
 - git clone https://github.com/peterpih/<repository name>
 
 ## push files back to repository
-- git status
-- git add <file name>
-- git commit -m <messgae for commiting>
-- git push
+> git status
+> git add <file name>
+> git commit -m <messgae for commiting>
+> git push
 
 If there is a conflict with other changes on GitHub first pull, then push
 ```{R}
-git pull
-git staus
-git push
+$ git pull
+$ git staus
+$ git push
 ``` 
