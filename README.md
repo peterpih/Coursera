@@ -6,6 +6,6 @@ Some README.md for doing things
 
 
 > ### To delete a repository
--1) Click on repository
--2) Click on Settings icon (right hand column)
--3) Click on Delete Repository, at bottom of page
+- Click on repository
+- Click on Settings icon (right hand column)
+- Click on Delete Repository, at bottom of page
