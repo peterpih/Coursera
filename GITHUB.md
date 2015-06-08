@@ -19,10 +19,12 @@ $ git clone https://github.com/peterpih/<repository name>
 ```
 
 ### Push files back to repository
-> git status
-> git add <file name>
-> git commit -m <message for commiting>
-> git push
+```{R}
+$ git status
+$ git add <file name>
+$ git commit -m <message for commiting>
+$ git push
+```
 
 If there is a conflict with other changes on GitHub first "pull" changes, then "push"
 ```{R}
