@@ -23,7 +23,7 @@ Some README.md for doing things
 > git commit -m <messgae for commiting>
 > git push
 
-If there is a conflict with other changes on GitHub first pull, then push
+If there is a conflict with other changes on GitHub first "pull" changes, then "push"
 ```{R}
 $ git pull
 $ git staus
