@@ -1,5 +1,4 @@
-# Miscellaneous
-Some README.md for doing things
+## Github Commands
 
 ### Create a repository on GitHub
 - Click New (upper right hand corner)
