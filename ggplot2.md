@@ -1,15 +1,17 @@
-# Swirl Commands
+# ggplot2 Commands
 
-### Loading Swirl package
-
-from inside RStudio:
+Assign the plot to a variable
 ```{R}
-> install.packages("swirl")
-> library(swirl)
+> g <- ggplot(data, aes(x-variable, y-variable)
 ```
 
-### To load some other packages
+Now add layers
 ```{R}
-> install_from_swirl(...)
-> install_from_swirl("Statistical Inference")
-```
+> g + geom_point()  # or geom_line()
+    + facet_wrap( . ~ type)           # facets for multipanelling
+    + labs(x = "x axis label")
+    + labs(y = "y axis label")
+    + labs(title = "overall title")
+    + geom_smooth(method = "lm" )     # smoothing
+```{R}
+
