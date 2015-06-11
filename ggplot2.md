@@ -17,7 +17,7 @@ Now add layers
     
 > print(g)      # to display the graph
 
-    dev.copy(png, file="file name")
-    dev.off()
+> dev.copy(png, file="file name")
+> dev.off()
 ```
 
