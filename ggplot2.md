@@ -13,5 +13,11 @@ Now add layers
     + labs(y = "y axis label")
     + labs(title = "overall title")
     + geom_smooth(method = "lm" )     # smoothing
-```{R}
+    + theme_bw(base_family = "...")   # change theme
+    
+> print(g)      # to display the graph
+
+    dev.copy(png, file="file name")
+    dev.off()
+```
 
