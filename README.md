@@ -4,6 +4,7 @@ Github    https://github.com/peterpih/Miscellaneous/blob/master/GITHUB.md
 
 Swirl     https://github.com/peterpih/Miscellaneous/blob/master/SWIRL.md
 
+Data Analysis and Visualization     http://training.bioinformatics.ucdavis.edu/docs/2012/05/DAV/
 
 ### Bayes Theorem
 
