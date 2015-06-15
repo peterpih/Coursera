@@ -4,7 +4,7 @@
 - Click New (upper right hand corner)
 - Choose "Repository"
 - Enter Name of new repository
-- Click "Add README.md"
+- Select "Add README.md"
 - Click "Submit"
 
 ### Delete a repository on Github
