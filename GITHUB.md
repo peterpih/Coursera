@@ -20,8 +20,8 @@ $ git clone https://github.com/peterpih/<repository name>
 
 ### Push files back to repository
 ```{R}
-$ git status
-$ git add <file name>
+$ git status  (will tell you the status of the commits)
+$ git add <file name>  or git add . (for everything)
 $ git commit -m <message for commiting>
 $ git push
 ```
@@ -29,6 +29,6 @@ $ git push
 If there is a conflict with other changes on GitHub first "pull" changes, then "push"
 ```{R}
 $ git pull
-$ git staus
+$ git status
 $ git push
 ``` 
