@@ -1,0 +1,72 @@
+
+This example is from: http://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right
+
+It shows different ways to merge different dataframes
+
+- Inner join - merge(df1, df2, by = "CustomerId"")
+- Outer join - merge(x = df1, y = df2, by = "CustomerId", all = TRUE)
+- Left outer - merge(x = df1, y = df2, by = "CustomerId", all.x = TRUE)
+- Right outer - merge(x = df1, y = df2, by = "CustomerId", all.y = TRUE)
+- Cross join - merge(x = df1, y = df2, by = NULL)
+
+Here is the sample data:
+
+```{R}
+df1 = data.frame(CustomerId = c(1:6), Product = c(rep("Toaster", 3), rep("Radio", 3)))
+df2 = data.frame(CustomerId = c(2, 4, 6), State = c(rep("Alabama", 2), rep("Ohio", 1)))
+```
+
+```{R}
+df1
+df2
+```
+
+### Inner join - intersection of both data frames
+
+```{R}
+merge(df1, df2, by = "CustomerId")
+```
+
+### Outer join - everything together
+
+```{R}
+merge(x = df1, y = df2, by = "CustomerId", all = TRUE)
+```
+
+### Left outer - only members on the left hand side (x)
+```{R}
+merge(x = df1, y = df2, by = "CustomerId", all.x = TRUE)
+```
+
+### Right outer - only members on the right hand side (y)
+```{R}
+merge(x = df1, y = df2, by = "CustomerId", all.y = TRUE)
+```
+### Cross join - all permutations
+```{R}
+merge(x = df1, y = df2, by = NULL)
+```
+
+### dplyr
+
+http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
+
+```{R}
+library(dyplr)
+```
+
+- filter(dataSet) (and slice())
+
+- arrange(dataSet, <column1>, <column2>) - sort by columns
+
+- select(dataset, <oldName> = <newName> ) (and rename())
+  - starts_with()
+  - ends_with()
+  - matches()
+  - contains()
+
+- distinct()
+- mutate() (and transmute())
+- summarise()
+- sample_n() and sample_frac()
+
