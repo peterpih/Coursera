@@ -27,5 +27,5 @@ std_a <- 30
 n_a <- 9
 percentile = 0.95
 
-mean_a + c(-1, 1) * qt(0.95, (n_a - 1), lower.tail=FALSE) * (1 / n_a)^ 0.5
+mean_a + c(-1, 1) * qt(0.95, (n_a - 1)) * std_a * (1 / n_a)^ 0.5
 ```
