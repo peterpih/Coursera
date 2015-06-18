@@ -1,15 +1,8 @@
-# Swirl Commands
+#Machine Learning
 
-### Loading Swirl package
+##Tour of Machine Learning Algorithms  
+http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/?__s=39qwimyqas1dxyxzhr6w
 
-from inside RStudio:
-```{R}
-> install.packages("swirl")
-> library(swirl)
+Machine Learning Approaches
+http://scikit-learn.org/stable/_static/ml_map.png
 
-> install_from_swirl(...)
-> install_from_swirl("Exploratory Data Analysis")
-> install_from_swirl("Statistical Inference")
-
-> swirl
-```
