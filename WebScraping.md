@@ -1,6 +1,11 @@
 # Web Scraping (under construction)
 
-This example is from http://giventhedata.blogspot.co.uk/2012/08/r-and-web-for-beginners-part-iii.html
+This example is from http:  
+//giventhedata.blogspot.co.uk/2012/08/r-and-web-for-beginners-part-iii.html
+
+German Portfolio:  
+http://www.boerse-frankfurt.de/en/portfolio/view?depot_id=1665120
+
 
 from inside RStudio:
 ```{R}
