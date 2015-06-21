@@ -6,6 +6,8 @@ This example is from http:
 German Portfolio:  
 http://www.boerse-frankfurt.de/en/portfolio/view?depot_id=1665120
 
+Get prices From Yahoo:  
+http://stackoverflow.com/questions/6299220/access-a-url-and-read-data-with-r
 
 from inside RStudio:
 ```{R}
