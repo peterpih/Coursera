@@ -1,23 +1,44 @@
+**CODE BLOCKS**
+```
+do ... end
 
+-or-
+
+{ ...}
+```
 ```
 <variable>.each do |x|
+        ...
 end
 ```
 
 **HASH TABLES AND SYMBOLS**
 ```
 <variable>.to_s - convert to string
-<string>.to_sym - convert to symbol
-<string>.intern - convert to symbol
-<hash_table>.each_key - each key in a hash table
-<hash_table>.each_value - each value in a hash table
+<variable>.respond_to (:<symbol>) - can <symbol> be performed on <variable>
 <variable>.nil - check nil value
 
+<string>.to_sym - convert to symbol
+<string>.intern - convert to symbol
+
+<hash_table>.each_key - each key in a hash table
+<hash_table>.each_value - each value in a hash table
+
+<number>.times { ... }  - repeat <number> times
+<number>.upto(<maximum>) { ... }
+<number>.downto(<minimum>) { ... }
+
+<array>.collect { ... }
+<array>.map(&<proc>)
+
+<proc>.call
+ 
 .select - from a list
 
 :<symbol>
 :<symbol>.to_s      converts to a string
 "<string>".to_sym   converts to a symbol
+
 ```
 ```
 strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
@@ -141,8 +162,7 @@ end
 **CASE WHEN STATEMENT**
 ```
 case <variable>
-    when <condition>
-        ...
+    when <condition> then ...
     when <condition>
         ...
     else
@@ -166,4 +186,26 @@ end
 
 ... unless <condition>
 ```
+
+** ternary expression**
+<boolean> ? <if true> : <if false>
+
+**conditional assignment** only if not already assigned
+<variable> ||= <value>
+
+**concatenate operator**
+[1,2,3,4] << 5
+
+**string interpolation**
+#{<variable>}
+
+**DEFINE METHOD**
+```
+def <method_name> (arg,...)
+        ...
+end
+```
+**LAMBDAS**
+lambda { |<param>| ... }
+
 
