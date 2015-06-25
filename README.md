@@ -1,8 +1,16 @@
 # Table Of Contents
 
-Github    https://github.com/peterpih/Miscellaneous/blob/master/GITHUB.md
+**R for Beginners**  http://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf
 
-Swirl     https://github.com/peterpih/Miscellaneous/blob/master/SWIRL.md
+**R in Econometrics** http://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf
+
+###R Tutorials
+**QuickR** http://www.statmethods.net/
+
+###Course Utilities
+**Github**    https://github.com/peterpih/Miscellaneous/blob/master/GITHUB.md
+
+**Swirl**     https://github.com/peterpih/Miscellaneous/blob/master/SWIRL.md
 
 Data Analysis and Visualization     http://training.bioinformatics.ucdavis.edu/docs/2012/05/DAV/
 
