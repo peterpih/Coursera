@@ -338,5 +338,192 @@ jiminy.jump
 
 
 # Ruby On Rails
+```
+rails generate controller Pages
+
+**app/controllers/Pagecontrollers.rb**
+
+**config/routes.rb**
+Rails.application.routes.draw do
+	get '/tags' => 'tags#index'
+end
+
+**apps/view/pages/home.html.erb**
+div class="main">
+  <div class="container">
+    <h1>Hello my name is Peter</h1>
+    <p>I make Rails apps.</p>
+  </div>
+</div>
+[ css in file: app/assets/stylesheets/pages.css.scss]
+```
+
+```
+class MessagesController < ApplicationController
+	def index
+		@messages = Message.all
+	end
+	
+	def new
+		@message = Message.new
+	end
+	
+	def create 
+  	@message = Message.new(message_params) 
+  	if @message.save 
+    	redirect_to '/messages' 
+  	else 
+    	render 'new' 
+  	end 
+	end
+	
+	private 
+  	def message_params 
+    	params.require(:message).permit(:content) 
+  	end
+end
+```
+
+```
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1m.svg">
+    <h1>Messenger</h1>
+  </div>
+</div>
+
+<div class="messages">
+  <div class="container">
+  	<% @messages.each do |message| %> 
+			<div class="message"> 
+  			<p class="content"><%= message.content %></p> 
+  			<p class="time"><%= message.created_at %></p> 
+			</div> 
+		<% end %>
+		<%= link_to 'New Message', "messages/new" %>
+  </div>
+</div>
+```
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="tag">
+  <div class="container">
+    <h2><%= @tag.title %></h2>  # tag's title
+
+    <div class="cards row">
+      <% @destinations.each do |d| %>
+      <div class="card col-xs-4">
+        <%= image_tag d.image %>
+        <h2><%= d.name %></h2>
+        <p><%= d.description %></p>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+```
 
 
+**Generate Model**
+```
+rails new <name of app>
+bundle install
+
+rails generate model <model name>
+(creates a file apps/model/<model name>.rb
+
+**rake db:migrate**
+```
+
+**Generate Controller**
+```
+rails generate controller <name of controller>
+
+**has_many**
+**belongs_to**
+
+
+**EXAMPLE IF INDEXED DESTINATION**
+
+**Routes File**
+```
+Rails.application.routes.draw do
+  get '/destinations/:id' => 'destinations#show', as: :destination
+```
+
+**Controller File**
+```
+class DestinationsController < ApplicationController
+  def show
+    @destination = Destination.find(params[:id])
+  end
+end
+```
+
+```
+http		path			controller#action	used for
+GET		/messages		messages#index		display an index of all messages
+GET		/messages/new		messages#new		returns an html form for creating a new message
+POST		/messages		messages#create		create a new message
+GET		/messages/:id		messages#show		display a specific message
+GET		/messages/:id/edit	messages#edit		return an html form for editting a message
+PATCH/PUT	/messages/:id		messages#update		update a specific message
+DELETE		/messages/:id		messages#destroy	delete a message
+```
+
+**FORM FOR**
+```
+<%= form_for(@message) do |f| %>  
+  <div class="field"> 
+    <%= f.label :message %><br> 
+    <%= f.text_area :content %> 
+  </div> 
+  <div class="actions"> 
+    <%= f.submit "Create" %> 
+  </div> 
+<% end %>
+```
+
+**MOVIES EXAMPLE**
+
+**Generate a controller for Movies**
+Now that the models are set up, let's move on to the rest of the request/response cycle and create the routes, controllers, and views.
+```
+rails generate controller Movies
+```
+**config/routes.rb
+In the routes file, create a new route that maps the URL /movies to the Movies controller's index action
+```
+get '/movies' => 'movies#index'
+```
+**app/controllers/Movies
+Then in the Movies controller, add the index action to display a list of all movies. To do this, fetch all movies from the database and store them in variable '@movies'.
+```
+class MoviesController < ApplicationController
+	def index
+		@movies = Movie.all
+	end
+end
+```
+**db/views/movies/index.html.erb**
+```
+# loop through each movie and display information
+<div class="main">
+  <div class="container">
+  <h2>Popular Films</h2>
+    <% @movies.each do |movie| %>
+    <div class="movie">
+      <%= image_tag movie.image %>
+      <h3><%= movie.title %></h3>
+      <p><%= movie.release_year %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
+```
