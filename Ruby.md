@@ -188,16 +188,23 @@ end
 ```
 
 ** ternary expression**
+```
 <boolean> ? <if true> : <if false>
-
+```
 **conditional assignment** only if not already assigned
+```
 <variable> ||= <value>
+```
 
 **concatenate operator**
+```
 [1,2,3,4] << 5
+```
 
 **string interpolation**
+```
 #{<variable>}
+```
 
 **DEFINE METHOD**
 ```
@@ -262,10 +269,11 @@ puts "Manufacturer: #{$manufacturer}"
 puts "Files: #{Computer.display_files}"
 # @@files belongs to the Computer class.
 ```
-
+```
 @<instance variable>
 @@<class variable>
 $<global variable>
+```
 
 **CLASS**
 ```
@@ -404,6 +412,7 @@ end
   </div>
 </div>
 ```
+```
 <div class="header">
   <div class="container">
     <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
@@ -428,7 +437,6 @@ end
   </div>
 </div>
 ```
-
 
 **Generate Model**
 ```
