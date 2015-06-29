@@ -48,3 +48,10 @@ cd blog
 ```
 rails server
 ```
+
+Create controller
+Create route
+
+rails generate model <model name>  creates:
+- db/migrate/
+- app/views/<model name>
