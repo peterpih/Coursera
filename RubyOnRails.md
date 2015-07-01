@@ -55,3 +55,21 @@ Create route
 rails generate model <model name>  creates:
 - db/migrate/
 - app/views/<model name>
+
+
+**Rail Types**
+Here's a good set of definitions (from http://stackoverflow.com/a/15316528/2128691)
+
+- binary - is for storing data such as images, audio, or movies.
+- boolean - is for storing true or false values.
+- date - store only the date
+- datetime - store the date and time into a column.
+- decimal - is for decimals.
+- float - is for decimals. (What's the difference between decimal and float?)
+- integer - is for whole numbers.
+- primary_key - unique key that can uniquely identify each row in a table
+- string - is for small data types such as a title. (Should you choose string or text?)
+- text - is for longer pieces of textual data, such as a paragraph of information.
+- time - is for time only
+- timestamp - for storing date and time into a column.
+- 
