@@ -1,4 +1,11 @@
 ###Sqlite3 installed in C:/Windows
+To get the version:
+```
+$ sqlite3 -version
+```
+
+- history file: **.sql_history**
+- resource file: **.sqliterc**
 
 ###Sqlite3 command summary below
 useful link: http://zetcode.com/db/sqlite/tool/
@@ -17,11 +24,17 @@ SELECT * from <table>
 ###Sqlite3 commands
 **All command lines end in ";"**
 ```
-SELECT <*|field,field> from <table>
+SELECT <*|field,field> from <table>;
 ```
-**Settings begin with "."**
+**Meta Commands *(settings)* begin with "."**
 - .show *(shows settings)*
 - .mode column
 - .headers \<on|off\>
 - .separator \<delimiter\>
+
+###From the command line
+```
+
+$ sqlite3 -html test.db
+```
 
