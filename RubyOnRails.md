@@ -73,3 +73,14 @@ Here's a good set of definitions (from http://stackoverflow.com/a/15316528/21286
 - time - is for time only
 - timestamp - for storing date and time into a column.
 - 
+
+#Rails Commands
+
+Generate Model vs Scaffolding
+http://stackoverflow.com/questions/17734378/difference-between-scaffold-and-model-in-rails
+```
+rails generate model <modelname>
+rails generate scaffold <name> <field:prop> <field:prop>
+```
+
+
