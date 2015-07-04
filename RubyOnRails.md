@@ -26,11 +26,11 @@ mkdir C:\RubyDevKit   # install to a permanent directory
 cd C:\RubyDevKit
 ruby dk.rb install
 ```
-**Install JSON***
+**Install JSON**
 ```
 gem install json --platform=ruby
 ```
-**Check JSON installed correctly
+**Check JSON installed correctly**
 ```
 ruby -rubygems -e "require 'json';puts JSON.load('[42]').inspect"
 ```
@@ -38,7 +38,12 @@ ruby -rubygems -e "require 'json';puts JSON.load('[42]').inspect"
 ```
 bundle install
 ```
-**Create New Application**
+**Migrate Database**
+```
+rake db:migrate
+```
+
+###Create New Application
 ```
 cd C:\rails
 rails new blog
