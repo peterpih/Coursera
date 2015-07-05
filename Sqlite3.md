@@ -1,4 +1,8 @@
 ###Sqlite3 installed in C:/Windows
+**Useful likns:**
+
+http://zetcode.com/db/sqlite/datamanipulation/
+
 To get the version:
 ```
 $ sqlite3 -version
@@ -13,6 +17,9 @@ useful link: http://zetcode.com/db/sqlite/tool/
 ```
 # show tables
 .tables
+
+# delete table
+drop table <tablename>
 
 # show schema for a table
 .schema <table>
