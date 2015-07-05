@@ -87,5 +87,4 @@ http://stackoverflow.com/questions/17734378/difference-between-scaffold-and-mode
 rails generate model <modelname>
 rails generate scaffold <name> <field:prop> <field:prop>
 ```
-
-
+###Model names are singular, controller names are plural
