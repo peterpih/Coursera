@@ -32,6 +32,7 @@ SELECT * from <table>
 **All command lines end in ";"**
 ```
 SELECT <*|field,field> from <table>;
+DROP TABLE <table>
 ```
 **Meta Commands *(settings)* begin with "."**
 - .show *(shows settings)*
