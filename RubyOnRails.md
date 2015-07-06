@@ -88,3 +88,16 @@ rails generate model <modelname>
 rails generate scaffold <name> <field:prop> <field:prop>
 ```
 ###Model names are singular, controller names are plural
+
+Controller and Class naming
+
+Controller name file and class name:  
+```
+controller/my_controller_name.rb  -\> class MyControllerName
+```
+In router.rb:  
+```
+'home#new'
+```
+- home is the controller
+- new is the view.html.erb
