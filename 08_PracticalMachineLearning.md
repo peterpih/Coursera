@@ -4,6 +4,7 @@
 1. [Useful Links](#useful-links)
 1. [Caret Functionality](#caret-functionality)
 2. [Data Splitting](#data-splitting)
+  a [K-Fold Splitting](#k--fold-splitting)
 3. [Plotting](#plotting)
 4. [Tables](#tables)
 5. [Preprocessing](#preprocessing)
