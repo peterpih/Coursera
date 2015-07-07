@@ -69,7 +69,7 @@ folds <- createTimeSlices(y=tme, initialWindow=20, horizon=10)
 names(folds)
 ```
 
-###PLotting
+###PLOTTING
 ```{R}
 install.packages("ISLR")
 install.packages("caret")
@@ -106,7 +106,7 @@ qq +  geom_smooth(method='lm',formula=y~x)
 qplot(wage,colour=education,data=training,geom="density")
 ```
 
-###cut2 - Making Factors
+###cut2 - MAKING FACTORS
 ```{R}
 install.packages("Hmsic")
 library(Hmisc)
@@ -124,7 +124,7 @@ p2 <- qplot(cutWage,age, data=training, fill=cutWage, geom=c("boxplot","jitter")
 # grid.arrange(p1,p2,ncol=2)
 ```
 
-###Tables
+###TABLES
 ```{R}
 t1 <- table(cutWage,training$jobclass)
 t1
@@ -141,3 +141,106 @@ t1
 
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
+
+###PREPROCESSIONG
+Graph distribution of SPAM data set  
+Capital rng length, high skewed distribution
+```{R}
+install.packages("kernlab")
+library(caret); library(kernlab); data(spam)
+inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]
+testing <- spam[-inTrain,]
+hist(training$capitalAve,main="",xlab="ave. capital run length")
+```
+```{R}
+mean(training$capitalAve)
+sd(training$capitalAve)
+```
+**Standardizing training set**
+Subtract mean and divide by standard deviation
+```{R}
+trainCapAve <- training$capitalAve
+trainCapAveS <- (trainCapAve  - mean(trainCapAve))/sd(trainCapAve) 
+mean(trainCapAveS)
+sd(trainCapAveS)
+```
+**Standardizing training set - preProcess function**
+Use all of the training set data except for data point 58  
+"center","scale" for normalizing
+```{R}
+preObj <- preProcess(training[,-58],method=c("center","scale"))
+trainCapAveS <- predict(preObj,training[,-58])$capitalAve
+mean(trainCapAveS)
+sd(trainCapAveS)
+```
+**Standardizing - test set**
+need to use the **mean(trainCapAve)** and **sd(trainCapAve)** from the training set
+```{R}
+testCapAve <- testing$capitalAve
+testCapAveS <- (testCapAve  - mean(trainCapAve))/sd(trainCapAve) 
+mean(testCapAveS)
+sd(testCapAveS)
+```
+**Standardizing test set - preProcess function**
+Use preObj from preProcess of training set to standardize test set  
+Mean and std will be different  than "usual way" die to different meadn and std
+```{R}
+testCapAveS <- predict(preObj,testing[,-58])$capitalAve
+mean(testCapAveS)
+sd(testCapAveS)
+```
+
+**Standardizing - preProcess argument**
+```{R}
+install.packages("e1071")
+set.seed(32343)
+modelFit <- train(type ~., data=training, preProcess=c("center","scale"),method="glm")
+modelFit
+```
+
+**Standardizing - Box-Cox transforms**
+Box-Cox tranform takes continuous data and makes looks like normal data
+Esitmates parameters usnig Maximum Likelihood
+Good for highly skewed variables
+```{R}
+preObj <- preProcess(training[,-58],method=c("BoxCox"))
+trainCapAveS <- predict(preObj,training[,-58])$capitalAve
+par(mfrow=c(1,2)); hist(trainCapAveS); qqnorm(trainCapAveS)
+```
+
+**Standardizing - Imputing data**
+K-Nearest Neighbor Imputation
+```{R}
+install.packages("RANN")
+set.seed(13343)
+
+# Make some values NA
+training$capAve <- training$capitalAve
+selectNA <- rbinom(dim(training)[1],size=1,prob=0.05)==1
+training$capAve[selectNA] <- NA
+
+# Impute and standardize
+preObj <- preProcess(training[,-58],method="knnImpute")
+capAve <- predict(preObj,training[,-58])$capAve
+
+# Standardize true values
+capAveTruth <- training$capitalAve
+capAveTruth <- (capAveTruth-mean(capAveTruth))/sd(capAveTruth)
+```
+Check the imputation
+```{R}
+quantile(capAve - capAveTruth)              # entire population
+quantile((capAve - capAveTruth)[selectNA])  # the replaced NAs
+quantile((capAve - capAveTruth)[!selectNA]) # the non NAs
+```
+###Notes and further reading
+- Training and test must be processed in the same way
+  + only use any transformations on 
+- Test transformations will likely be imperfect
+  + Since transformations are based on the training data set
+  + Especially if the test/training sets collected at different times
+- Careful when transforming factor variables!
+  + These are based on continuous variables
+
+**preprocessing with caret:** http://caret.r-forge.r-project.org/preprocess.html  
