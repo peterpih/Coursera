@@ -15,9 +15,12 @@ caret visualization: http://caret.r-forge.r-project.org/visualizations.html
 ###Table of Contents
 1. [Caret Functionality](#caret-functionality)
 2. [Data Splitting](#data-splitting)
-3. [Example 1](#Example1)
+3. [Plotting](#plotting)
+4. [Tables](#tables)
+5. [Preprocessing](#preprocessing)
 
-###Caret functionality
+
+###Caret Functionality
 - Some preprocessing (cleaning)
   + preProcess
 - Data splitting
