@@ -377,3 +377,21 @@ confusionMatrix(testing$type,predict(modelFit,testing))
 For more info see:
 Exploratory Data Analysis Class  
 Elements of Statistical Learning: http://statweb.stanford.edu/~tibs/ElemStatLearn/  
+
+###Regression Modelling
+Key ideas  
+- Fit a simple regression model
+- Plug in new covariates and multiply by the coefficients
+- Useful when the linear model is (nearly) correct
+  
+Pros:  
+- Easy to implement
+- Easy to interpret  
+Cons:  
+- Often poor performance in nonlinear settings  
+
+**Example: Old faithful eruptions**
+library(caret);data(faithful); set.seed(333)
+inTrain <- createDataPartition(y=faithful$waiting, p=0.5, list=FALSE)
+trainFaith <- faithful[inTrain,]; testFaith <- faithful[-inTrain,]
+head(trainFaith)
