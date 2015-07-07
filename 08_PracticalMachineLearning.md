@@ -268,6 +268,7 @@ quantile((capAve - capAveTruth)[!selectNA]) # the non NAs
 
 [[Top]](#caret-package)  
 
+<div id="principle-component-analysis"/>
 ###PRINCIPLE COMPONENT ANALYSIS
 Using SPAM dataset  
 
