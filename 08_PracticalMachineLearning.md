@@ -13,7 +13,9 @@ ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
 
 ###Table of Contents
-1. [Example1](#example1)
+1. [Caret Functionality](#caretfunctionality)
+2. [Data Splitting](#datasplitting)
+3. [Example 1](#Example1)
 
 ###Caret functionality
 - Some preprocessing (cleaning)
