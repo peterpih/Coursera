@@ -267,3 +267,72 @@ quantile((capAve - capAveTruth)[!selectNA]) # the non NAs
 
 [[Top]](#caret-package)  
 
+###PRINCIPLE COMPUNENT ANALYSIS
+Using SPAM dataset  
+
+**Correlated predictors**
+```{R}
+library(caret); library(kernlab); data(spam)
+inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]      # get training subset
+testing <- spam[-inTrain,]      # get training subset
+
+M <- abs(cor(training[,-58]))   # correlation of all variables except for 58 (solution column)
+diag(M) <- 0                    # remove correlation with itself
+which(M > 0.8,arr.ind=T)        # which have high correlation
+```
+which columns are they?
+```{R}
+names(spam)[c(34,32)]
+```
+plot against each other to see correlation
+```{R}
+plot(spam[,34],spam[,32])
+```
+**Basic PCA idea**
+- We might not need every predictor, maybe combine some variables
+- A weighted combination of predictors might be better
+- We should pick this combination to capture the "most information" possible
+- Benefits
+  + Reduced number of predictors
+  + Reduced noise (due to averaging)
+
+**We could rotate the plot**
+We can tranform the X and Y variables, when plotted will show most of variability happens in the X axis
+```{R}
+X <- 0.71*training$num415 + 0.71*training$num857
+Y <- 0.71*training$num415 - 0.71*training$num857
+plot(X,Y)
+```
+Most if the values along the X axis, and clusterd around Y=0  
+So the sum is more useful  
+
+**Related problems**
+You have multivariate variables X1,…,Xn so X1=(X11,…,X1m)  
+Find a new set of multivariate variables that are uncorrelated and explain as much variance as possible.  
+If you put all the variables together in one matrix, find the best matrix created with fewer variables (**lower rank**) that explains the original data.  
+The first goal is statistical and the second goal is data compression.  
+
+
+**Related solutions - PCA/SVD**
+SVD (Singular Value Decomposition)  
+
+If X is a matrix with each variable in a column and each observation in a row then the SVD is a "matrix decomposition"  
+```
+X = U D V^T  
+```
+where the columns of U are orthogonal (left singular vectors), the columns of V are orthogonal (right singluar vectors) and D is a diagonal matrix (singular values).  V explains most of the variance 
+
+PCA
+
+The principal components are equal to the right singular values if you first scale (subtract the mean, divide by the standard deviation) the variables.
+
+**Principal components in R - prcomp**
+```{R}
+smallSpam <- spam[,c(34,32)]
+prComp <- prcomp(smallSpam)
+plot(prComp$x[,1],prComp$x[,2])
+```
+```{R}
+prComp$rotation
+```
