@@ -4,7 +4,7 @@
 1. [Useful Links](#useful-links)
 1. [Caret Functionality](#caret-functionality)
 2. [Data Splitting](#data-splitting)
-  a [K-Fold Splitting](#k--fold-splitting)
+  + [K-Fold Splitting](#k-fold-splitting)
 3. [Plotting](#plotting)
 4. [Tables](#tables)
 5. [Preprocessing](#preprocessing)
@@ -53,7 +53,7 @@ testing <- spam[-inTrain,]
 dim(training)
 ```
 
-**K-Fold Splitting** return train data (returnTrain=TRUE)
+**K-Fold Splitting** return train data (returnTrain=TRUE)<div id='k-fold-splitting'/>
 ```{R}
 set.seed(32323)
 folds <- createFolds(y=spam$type, k=10, list=TRUE, returnTrain=TRUE)
