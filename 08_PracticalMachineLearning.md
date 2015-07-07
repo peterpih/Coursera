@@ -151,8 +151,9 @@ t1
 
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
+[Table of Contents](#table-of-contents)
 
-###PREPROCESSIONG
+###PREPROCESSING
 Graph distribution of SPAM data set  
 Capital rng length, high skewed distribution
 ```{R}
