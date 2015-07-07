@@ -1,4 +1,14 @@
 #Caret Package  
+
+###Table of Contents
+1. [Useful Links](#useful-links)
+1. [Caret Functionality](#caret-functionality)
+2. [Data Splitting](#data-splitting)
+3. [Plotting](#plotting)
+4. [Tables](#tables)
+5. [Preprocessing](#preprocessing)
+
+###Useful Links
 http://caret.r-forge.r-project.org/
 
 **Caret tutorials:**  
@@ -12,12 +22,6 @@ http://www.jstatsoft.org/v28/i05/paper
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
 
-###Table of Contents
-1. [Caret Functionality](#caret-functionality)
-2. [Data Splitting](#data-splitting)
-3. [Plotting](#plotting)
-4. [Tables](#tables)
-5. [Preprocessing](#preprocessing)
 
 
 ###Caret Functionality
