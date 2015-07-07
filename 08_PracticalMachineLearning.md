@@ -10,7 +10,7 @@
 3. [Plotting](#plotting)
 4. [Tables](#tables)
 5. [Preprocessing](#preprocessing)
-6. [Principle Component Analysis](*principle-component-analysis)
+6. [Principle Component Analysis](#principle-component-analysis)
 
 ###Useful Links
 http://caret.r-forge.r-project.org/
