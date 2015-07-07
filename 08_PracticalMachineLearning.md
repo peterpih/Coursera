@@ -15,6 +15,8 @@ http://caret.r-forge.r-project.org/
 http://www.edii.uclm.es/~useR-2013/Tutorials/kuhn/user_caret_2up.pdf  
 http://cran.r-project.org/web/packages/caret/vignettes/caret.pdf  
 
+[Top](#caret-package)  
+
 **A paper introducing the caret package**  
 http://www.jstatsoft.org/v28/i05/paper  
 
