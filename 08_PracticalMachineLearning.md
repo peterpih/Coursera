@@ -15,8 +15,6 @@ http://caret.r-forge.r-project.org/
 http://www.edii.uclm.es/~useR-2013/Tutorials/kuhn/user_caret_2up.pdf  
 http://cran.r-project.org/web/packages/caret/vignettes/caret.pdf  
 
-[[Top]](#caret-package)  
-
 **A paper introducing the caret package**  
 http://www.jstatsoft.org/v28/i05/paper  
 
@@ -24,9 +22,9 @@ http://www.jstatsoft.org/v28/i05/paper
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
 
+[[Top]](#caret-package)  
 
-
-###Caret Functionality
+###CARET FUNCTIONALITY
 - Some preprocessing (cleaning)
   + preProcess
 - Data splitting
@@ -44,7 +42,6 @@ These examples use the SPAM data set
 ```{R}
 library(caret); library(kernlab); data(spam)
 ```
-#Example1  
 
 ###DATA SPLITTING
 ```{R}
@@ -84,6 +81,8 @@ tme <- 1:1000
 folds <- createTimeSlices(y=tme, initialWindow=20, horizon=10)
 names(folds)
 ```
+
+[[Top]](#caret-package)  
 
 ###PLOTTING
 ```{R}
