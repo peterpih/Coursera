@@ -12,6 +12,9 @@ http://www.jstatsoft.org/v28/i05/paper
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
 
+###Table of Contents
+1. [Example1](#example1)
+
 ###Caret functionality
 - Some preprocessing (cleaning)
   + preProcess
@@ -30,6 +33,8 @@ These examples use the SPAM data set
 ```{R}
 library(caret); library(kernlab); data(spam)
 ```
+#Example1  
+
 ###DATA SPLITTING
 ```{R}
 library(caret); library(kernlab); data(spam)
