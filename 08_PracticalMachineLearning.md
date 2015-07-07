@@ -52,8 +52,8 @@ training <- spam[inTrain,]
 testing <- spam[-inTrain,]
 dim(training)
 ```
-
-**K-Fold Splitting** return train data (returnTrain=TRUE)<div id='k-fold-splitting'/>
+<div id='k-fold-splitting'/>
+**K-Fold Splitting** return train data (returnTrain=TRUE)
 ```{R}
 set.seed(32323)
 folds <- createFolds(y=spam$type, k=10, list=TRUE, returnTrain=TRUE)
