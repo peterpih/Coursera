@@ -99,7 +99,7 @@ training <- Wage[inTrain,]
 testing <- Wage[-inTrain,]
 dim(training); dim(testing)
 ```
-**Feature Plot (craret)**
+**Feature Plot (caret)**
 ```{R}
 featurePlot(x=training[,c("age",  "education", "jobclass")], y = training$wage, plot="pairs")
 ```
@@ -145,7 +145,7 @@ t1 <- table(cutWage,training$jobclass)
 t1
 ```
 
-###Notes and further reading
+**Notes and further reading**
 - Make your plots only in the **training set  **
   + **Don't use the test set for exploration!**  
 - Things you should be looking for  
@@ -156,7 +156,8 @@ t1
 
 ggplot2 tutorial: http://rstudio-pubs-static.s3.amazonaws.com/2176_75884214fc524dc0bc2a140573da38bb.html  
 caret visualization: http://caret.r-forge.r-project.org/visualizations.html  
-[Table of Contents](#table-of-contents)
+
+[[Top]](#caret-package)  
 
 ###PREPROCESSING
 Graph distribution of SPAM data set  
@@ -260,3 +261,6 @@ quantile((capAve - capAveTruth)[!selectNA]) # the non NAs
   + These are based on continuous variables
 
 **preprocessing with caret:** http://caret.r-forge.r-project.org/preprocess.html  
+
+[[Top]](#caret-package)  
+
