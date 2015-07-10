@@ -19,6 +19,7 @@ Dlink IP address is at:
   + Gateway: 192.168.1.254
 - WAN Port
   + Tick Assign WAN To Port Switch
+
 ###Wireless
 - Basic Setup
   + Wireless Mode: Client Bridge (routed)
