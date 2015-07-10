@@ -1,13 +1,15 @@
-###Steps tp make **DLink DIR615** router to a repeater
+###Steps to make **DLink DIR615** router to a repeater
 
-IP address is at:
+Gateway O2 router IP address:
 ```
-192.168.1.1
-``
-O2 router IP address:
-``
 192.168.1.254
 ```
+Dlink IP address is at:
+```
+192.168.1.1
+```
+###Dlink GUI Menus
+
 ###Setup | Basic Setup
 - Wireless Setup
   + Connection Type: Disabled
@@ -17,8 +19,18 @@ O2 router IP address:
   + Gateway: 192.168.1.254
 - WAN Port
   + Tick Assign WAN To Port Switch
-  
-###Wireless | Wireless Security
+###Wireless
+- Basic Setup
+  + Wireless Mode: Client Bridge (routed)
+  + Default GW Mode: Mixed
+  + Channel Width: Full(20Mhz)
+  + Wireless Neotwork Name (SSID): \<same as gateway\>
+- Virtual Interfaces
+  + Wireless Mode: WDS AP
+  + Wireless Network Name (SSID): \<name to use this router, not gateway\>
+  + Wireless SSID Broadcast: Enabled
+
+###Wireless Security
 - Physical Address
   + Security Mode: WPA2 Personal Mixed
   + WPA Algorithms: TKIP+AES
