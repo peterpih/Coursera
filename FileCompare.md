@@ -34,7 +34,7 @@ matchedNames <- list1[matched]
 ```
 create subdirectory in path1 andmove matched files there
 ```
-pathMatched <- paste0(path1, "matched/")
+pathMatched <- paste0(path1, "/matched/")
 dir.create(paste0(path1,pathMatched))
 
 n = length(matchedNames)
