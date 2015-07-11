@@ -26,6 +26,9 @@ path1 <- a[90]
 path2 <- a[120]
 ```
 ```
+path1 <- paste0(path1, "/")
+path2 <- paste0(path2, "/")
+
 list1 <- list.files(path=path1)
 list2 <- list.files(path=path2)
 matched <- list1 %in% list2
