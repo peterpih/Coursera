@@ -37,9 +37,10 @@ create subdirectory in path1 andmove matched files there
 pathMatched <- paste0(path1, "/matched/")
 dir.create(paste0(path1,pathMatched))
 
+fromPath = paste0(path1, "/")
 n = length(matchedNames)
 for (i in 1:n){
-  file.rename(from=paste0(path1, matchedNames[i]), to=paste0(pathMatched, matchedNames[i]))
+  file.rename(from=paste0(fromPath, matchedNames[i]), to=paste0(pathMatched, matchedNames[i]))
 }
 ```
 
