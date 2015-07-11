@@ -15,14 +15,34 @@ list.files(\<path=\>, \<pattern=\>,\<all.files=\>, no)
   + **include.dirs=** (FALSE) should subdirs be included in recursive listing
   + **no..=** (FALSE) should "." and ".." be excluded from non-recursive listing
   
-  ### Get two directorirs and compare the names
-  ```
-  path1 <- "C:/Pics iPhone 20150212"
-  path2 <- "C:/Pics iPhone 20150501"
-  list1 <- list.files(path=path1)
-  list2 <- list.files(path=path2)
-  found <- list1 %in% list2
-  ```
+  ### Get two directories and compare the names
+```
+a <- c(dir(), "/")
+a <- a[file.info(a)$isdir == TRUE]
+a
+```
+```
+path1 <- a[90]
+path2 <- a[120]
+```
+```
+list1 <- list.files(path=path1)
+list2 <- list.files(path=path2)
+matched <- list1 %in% list2
+sum(matched)
+matchedNames <- list1[matched]
+```
+create subdirectory in path1 andmove matched files there
+```
+pathMatched <- paste0(path1, "matched/")
+dir.create(paste0(path1,pathMatched))
+
+n = length(matchedNames)
+for (i in 1:n){
+  file.rename(from=paste0(path1, matchedNames[i]), to=paste0(pathMatched, matchedNames[i]))
+}
+```
+
   
   
   
