@@ -11,6 +11,7 @@
 4. [Tables](#tables)
 5. [Preprocessing](#preprocessing)
 6. [Principle Component Analysis](#principle-component-analysis)
+7. [Major Steps for Analysis](#major-steps)
 
 ###Useful Links
 http://caret.r-forge.r-project.org/
@@ -395,3 +396,26 @@ library(caret);data(faithful); set.seed(333)
 inTrain <- createDataPartition(y=faithful$waiting, p=0.5, list=FALSE)
 trainFaith <- faithful[inTrain,]; testFaith <- faithful[-inTrain,]
 head(trainFaith)
+
+<div id="major-steps"/div>
+###Steps for Running a Test
+1. Preprocess (if necessary)
+  + train_obj <- preProcess(train[, -1], method=c('center', 'scale', 'pca'), thresh=0.8)
+2. train_obj <- train(\<dependent\> ~ **\.** ,data=\<data name>, method=\"glm\")
+3. confusionMatrix()
+
+
+
+
+pca_train_pred <- predict(pca_train_obj, a_train[, -1])
+
+pca_test_pred <- predict(pca_train_obj, a_test[, -1])
+
+# compute the model with pca predictors
+
+pca_model <- train(a_train$diagnosis ~ ., data=pca_train_pred, method="glm")
+
+# apply the PCA model on the testing set
+
+pca_result <- confusionMatrix(a_test[, 1], predict(pca_model, pca_test_pred))
+pca_result
