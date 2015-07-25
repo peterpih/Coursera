@@ -18,6 +18,9 @@ fit <-lm(y~x)
 y_hat <- predict(fit, method="lm")
 lines(x, y_hat, col=1, lty=1)
 ```
+```
+boxplot(<data>, main="main title", xlab="x label", ylab="y label")
+```
 
 ### DO NOT FORGET dev.off() to reset the Base Plot device
 
