@@ -20,4 +20,25 @@ Now add layers
 > dev.copy(png, file="file name")
 > dev.off()
 ```
-
+###Scatterplot with line and errors
+```{R}
+g <- ggplot(mtcars, aes(y=y, x=x))
+g = g + ggeom_point(size=4)
+g = g + geom_smooth(method=lm)
+g
+```
+###Plotting Swiss Data
+```{R}
+install.packages("GGally")
+library(GGally)
+library(ggplot2)
+ggpairs(swiss, lower=list(continuous="smooth"), params=c(method="loess"))
+```
+###Plotting Residuals
+```{R}
+fit <- lm(x,y)
+resid(fit)                  # the residuals
+plot(density(resid(fit)))   # is it bell shaped?
+qqplot(resid(fit))          # histogram of residuals
+qqline(resid(fit))          # line through residuals
+```
