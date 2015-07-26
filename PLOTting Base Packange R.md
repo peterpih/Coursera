@@ -86,7 +86,7 @@ g
 ```
 
 <div id='qqplot-residuals'>
-###QQ Plot** of regression residuals
+###QQ Plot of regression residuals
 ```
 qqnorm(resid(fit))    # scatterplot of normal distribution
 qqline(resid(fit))    # 45 degree regression line (normality line)
