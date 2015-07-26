@@ -5,6 +5,7 @@
   - [Box Plots](#base-box-plots)
 - [ggplot2](#ggplot2-plotting-package)
 - [Lattice](#lattice-plotting-package)
+- [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
 
 <div id='base-plotting-package'/>
@@ -14,7 +15,7 @@
   - plot(x, y, xlab="xlabel", ylab="ylabel", main="title")
   - plot(fit) - will show 4 graph residual plot
     - plot(resid(fit), ...)
-  - plot(dataset) - wil plot an n x n graph of all veriables against each other
+  - plot(dataset) - wil plot an n x n graph of all variables against each other
   - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")  
 *(this will give the density graph of the residuals)*
 - **lines**
@@ -82,6 +83,13 @@ g <- g + facet_grid(.~variable)
 
 # then show the graph
 g
+```
+
+<div id='qqplot-residuals'>
+**QQ Plot** of regression residuals
+```
+qqnorm(resid(fit))    # scatterplot of normal distribution
+qqline(resid(fit))    # 45 degree regression line (normality line)
 ```
 [TOP](#table-of-contents)
 
