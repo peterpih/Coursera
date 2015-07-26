@@ -7,13 +7,15 @@
 
 <div id='base-plotting-package'/>
 ###Base Plotting 
-```
-**plot**(x,y)
-**lines**(x, y)
-**xlab**()
-**ylab**()
-**abline**(h=, col=, lty=)
-**abline**(v=,col=,lty=)
+
+- **plot**(x,y)
+- **lines**(x, y)
+- **xlab**()
+- **ylab**()
+- **abline**
+  - abline(h=, col=, lty=) - horizontal line
+  - abline(v=,col=,lty=) - vertical line
+  - abline(fit) - vfitted line line
 ```
 ```
 set.seed(123)
