@@ -3,7 +3,7 @@
 
 - [Base Package](#base-plotting-package)
   - [Box Plots](#base-box-plots)
-- [ggplot2](#ggplot2-plotting-package) useful link: http://docs.ggplot2.org/0.9.3.1/index.html
+- [ggplot2](#ggplot2-plotting-package) useful link: <a href="http://docs.ggplot2.org/0.9.3.1/index.html" target=_blank>useful link \a>
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
