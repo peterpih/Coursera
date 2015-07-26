@@ -3,7 +3,9 @@
 
 - [Base Package](#base-plotting-package)
   - [Box Plots](#base-box-plots)
-- [ggplot2](#ggplot2-plotting-package) <a href="http://docs.ggplot2.org/0.9.3.1/index.html" target=_blank>useful link
+- [ggplot2](#ggplot2-plotting-package) ---\> <a href="http://docs.ggplot2.org/0.9.3.1/index.html" target=_blank>online reference
+  + ggplot2 scatterplot example(#ggplot2-scatterplot-example)
+  + ggplot2 histogram example(#ggplot2-histogram-example)
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
@@ -75,7 +77,8 @@ Usually of the form:
   + **geom_line**(aes(linetype=\<grouping\>, size=))
 - Other
   + **geom_smooth**()
--   
+
+<div id='ggplot2-scatterplot-example'>
 ```
 # Example of scatterplot with regression line
 
@@ -90,6 +93,7 @@ g <- ggplot(mtcars, aes(x=hp, y=mpg))   # specify the variables
 g <- g + geom_line()                    # connect dots with line
 g                                       # show the scatterplot with connecting line but no points
 ```
+<div id='ggplot2-histogram-example'>
 ```
 # Example of a histogram
 
