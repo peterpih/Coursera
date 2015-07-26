@@ -4,6 +4,7 @@
 - [Base Package](#base-plotting-package)
 - [ggplot2](#ggplot2-plotting-package)
 - [Lattice](#lattice-plotting-package)
+- [Grouping Graphs](#grouping-graphs)
 
 <div id='base-plotting-package'/>
 ###Base Plotting 
@@ -12,6 +13,8 @@
   - plot(x,y)
   - plot(fit) - will show 4 graph residual plot
     - plot(resid(fit))
+  - plot(dataset) - wil plot an n x n graph of all veriables against each other
+  - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")
 - **lines**
   - lines(x, y)
   - lines(fit)
@@ -22,6 +25,9 @@
   - abline(v=,col=,lty=) - vertical line
   - abline(fit) - fitted line
 
+<div id='grouping-graphs'>
+###Grouping graphs
+- par(mfrow=c(nrows,ncols)) - group graphs together
 Example of a scatterplot and regression line:
 ```{R}
 set.seed(123)                         # for reproducibility
