@@ -11,17 +11,15 @@
 ###Base Plotting 
 
 - **plot**
-  - plot(x,y)
+  - plot(x, y, xlab="xlabel", ylab="ylabel", main="title")
   - plot(fit) - will show 4 graph residual plot
-    - plot(resid(fit))
+    - plot(resid(fit), ...)
   - plot(dataset) - wil plot an n x n graph of all veriables against each other
   - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")  
 *(this will give the density graph of the residuals)*
 - **lines**
   - lines(x, y)
   - lines(fit)
-- **xlab**("label text")
-- **ylab**("label text")
 - **abline**
   - abline(h=, col=, lty=) - horizontal line
   - abline(v=,col=,lty=) - vertical line
