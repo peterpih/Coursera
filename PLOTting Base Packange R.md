@@ -1,7 +1,8 @@
 ###Notes on plotting in R
-Base Package
-ggplot2
-Lattice
+
+- Base Package
+- ggplot2
+- Lattice
 
 ###Base Plotting
 ```
