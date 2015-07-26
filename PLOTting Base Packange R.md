@@ -4,8 +4,8 @@
 - [Base Package](#base-plotting-package)
   - [Box Plots](#base-box-plots)
 - [ggplot2](#ggplot2-plotting-package) ---\> <a href="http://docs.ggplot2.org/0.9.3.1/index.html" target=_blank>online reference
-  + ggplot2 scatterplot example(#ggplot2-scatterplot-example)
-  + ggplot2 histogram example(#ggplot2-histogram-example)
+  + [ggplot2 scatterplot example](#ggplot2-scatterplot-example)
+  + [ggplot2 histogram example](#ggplot2-histogram-example)
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
