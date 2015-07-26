@@ -4,8 +4,8 @@
 - [ggplot2](#ggplot2-plotting-package)
 - [Lattice](#lattice-plotting-package)
 
-<div id='base-plotting-package'/>
-###Base Plotting
+
+###Base Plotting <div id='base-plotting-package'/>
 ```
 **plot**(x,y)
 **lines**(x, y)
