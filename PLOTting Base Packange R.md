@@ -1,9 +1,10 @@
 ###Notes on plotting in R
 
-- Base Package
-- ggplot2
-- Lattice
+- [Base Package](#base-plotting-package)
+- [ggplot2](#ggplot2-plotting-package)
+- [Lattice](#lattice-plotting-package)
 
+<div id='base-plotting-package'/>
 ###Base Plotting
 ```
 **plot**(x,y)
@@ -25,6 +26,7 @@ lines(x, y_hat, col=1, lty=1)
 ```
 boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 ```
+<div id='ggplot2-plotting-package'/>
 ### ggplot2
 
 ### DO NOT FORGET dev.off() to reset the Base Plot device
@@ -55,3 +57,4 @@ g <- g + facet_grid(.~variable)
 # then show the graph
 g
 ```
+###Lattice <div id='lattice-plotting-package'>
