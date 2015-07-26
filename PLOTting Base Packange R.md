@@ -15,7 +15,7 @@
     - plot(resid(fit))
   - plot(dataset) - wil plot an n x n graph of all veriables against each other
   - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")  
-***(this will give the density graph of the residuals)***
+*(this will give the density graph of the residuals)*
 - **lines**
   - lines(x, y)
   - lines(fit)
