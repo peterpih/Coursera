@@ -49,7 +49,7 @@ lines(x, y_hat, col=1, lty=1)         # plot rergession line
 <div id='grouping-graphs'>
 ###Grouping graphs
 - par(mfrow=c(nrows,ncols)) - group graphs together  
-For example, par(nfrom=c(1,2)) gives 1 row of 2 graphs
+*For example, par(nfrom=c(1,2)) gives 1 row of 2 graphs*
 
 [TOP](#table-of-contents)
 
