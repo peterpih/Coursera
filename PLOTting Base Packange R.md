@@ -77,7 +77,7 @@ Usually of the form:
   + **geom_smooth**()
 -   
 ```
-g <- ggplot(\<data\>, aes(x=\<x var\>, y=\<y var\>), fill=variable)
+g <- ggplot(dataset, aes(x=, y=), fill=colour)
 g <- g + geom.histogram(colour="black", bin=20)
 g <- g + facet_grid(.~variable)
 
@@ -89,7 +89,7 @@ g
 ###QQ Plot of regression residuals
 ```
 qqnorm(resid(fit))    # scatterplot of normal distribution
-qqline(resid(fit))    # 45 degree regression line (normality line)
+qqline(resid(fit))    # normality regression line
 ```
 [TOP](#table-of-contents)
 
