@@ -39,8 +39,8 @@ lines(x, y_hat, col=1, lty=1)         # plot rergession line
 ```
 <div id='base-box-plots'>
 **Examples of Box Plots
-- boxplot(<data>, main="main title", xlab="x label", ylab="y label")
-- boxplot(<dataset>) ie boxplot(mtcars)
+- boxplot(data, main="main title", xlab="x label", ylab="y label")
+- boxplot(dataset) ie boxplot(mtcars)
 - boxplot(y~x, data=dataset) ie boxplot(mpg~wt,data=mtcars)
 - boxplot(mtcars$am, mtcars$mpg) *does not seem to work, different than* boxplot(mpg~am,data=mtcars)
 
