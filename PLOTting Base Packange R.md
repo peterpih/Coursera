@@ -1,11 +1,11 @@
 ###Notes on plotting in R
-
+<div id='table-of-contents'>
 - [Base Package](#base-plotting-package)
 - [ggplot2](#ggplot2-plotting-package)
 - [Lattice](#lattice-plotting-package)
 
-
-###Base Plotting <div id='base-plotting-package'/>
+<div id='base-plotting-package'/>
+###Base Plotting 
 ```
 **plot**(x,y)
 **lines**(x, y)
@@ -26,12 +26,13 @@ lines(x, y_hat, col=1, lty=1)
 ```
 boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 ```
+[TOP](#table-of-contents)
+
 <div id='ggplot2-plotting-package'/>
 ### ggplot2
 
-### DO NOT FORGET dev.off() to reset the Base Plot device
+**DO NOT FORGET dev.off() to reset the Base Plot device for ggplot2**
 
-###ggplot
 Usually of the form:
 - ggplot(data, aes())
   + data
@@ -57,4 +58,8 @@ g <- g + facet_grid(.~variable)
 # then show the graph
 g
 ```
+[TOP](#table-of-contents)
+
 ###Lattice <div id='lattice-plotting-package'>
+
+[TOP](#table-of-contents)
