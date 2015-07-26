@@ -24,8 +24,8 @@
   - **plot(dataset)** - wil plot an n x n graph of all variables against each other
   - **plot(density(resid(fit))**, main="Residual Density Graph", xlab="Normally Distributed")  
 *(this will give the density graph of the residuals)*
-  - **plot(predict$FinalModel)** - will give a dendrogram of the decision tree  
-used with **text(predict$FinalModel)** to add text to the dendogram
+  - **plot(predict$finalModel)** - will give a dendrogram of the decision tree  
+used with **text(predict$finalModel)** to add text to the dendogram
 - **lines**
   - lines(x, y)
   - lines(fit)
