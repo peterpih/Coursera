@@ -80,7 +80,7 @@ Usually of the form:
 
 <div id='ggplot2-scatterplot-example'>
 ```
-# Example of scatterplot with regression line
+# Example of a ggplot2 scatterplot with regression line
 
 g <- ggplot(mtcars, aes(x=hp, y=mpg))   # specify the variables
 g <- g + geom_point()                   # graph points
@@ -95,7 +95,7 @@ g                                       # show the scatterplot with connecting l
 ```
 <div id='ggplot2-histogram-example'>
 ```
-# Example of a histogram
+# Example of a ggplot2 histogram
 
 g <- ggplot(mtcars, aes(x=hp))          # specify the variables, no y in this case
 g <- g + geom_histogram()               # graph histogram
