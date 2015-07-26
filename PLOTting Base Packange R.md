@@ -42,7 +42,8 @@ boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 
 <div id='grouping-graphs'>
 ###Grouping graphs
-- par(mfrow=c(nrows,ncols)) - group graphs together
+- par(mfrow=c(nrows,ncols)) - group graphs together  
+For example, 
 
 [TOP](#table-of-contents)
 
