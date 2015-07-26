@@ -8,14 +8,18 @@
 <div id='base-plotting-package'/>
 ###Base Plotting 
 
-- **plot**(x,y)
-- **lines**(x, y)
-- **xlab**()
-- **ylab**()
+- **plot**
+  - plot(x,y)
+  - plot(fit)
+- **lines**
+  - lines(x, y)
+  - lines(fit)
+- **xlab**("label text")
+- **ylab**("label text")
 - **abline**
   - abline(h=, col=, lty=) - horizontal line
   - abline(v=,col=,lty=) - vertical line
-  - abline(fit) - vfitted line line
+  - abline(fit) - fitted line
 ```
 ```
 set.seed(123)
