@@ -69,21 +69,21 @@ Usually of the form:
 - ggplot(data, aes())
   + data
   + aes(x= , y=)
-- Type of graph
+- Types of graphs
   + **geom_line**()
+  + **geom_line**(aes(linetype=grouping, size=))
   + **geom_histogram**()
 - Labels
-  + **geom_title**("\<text\>")
-  + **xlab**("\<text\>")
-  + **ylab**("\<text\>")
+  + **geom_title**("text")
+  + **xlab**("text")
+  + **ylab**("text")
 - Graphic types
   + **geom_point**(size=, colour=)
-  + **geom_line**(aes(linetype=\<grouping\>, size=))
 - Other
   + **geom_smooth**()
 
 <div id='ggplot2-scatterplot-example'>
-```
+```{R}
 # Example of a ggplot2 scatterplot with regression line
 
 g <- ggplot(mtcars, aes(x=hp, y=mpg))   # specify the variables
@@ -98,7 +98,7 @@ g <- g + geom_line()                    # connect dots with line
 g                                       # show the scatterplot with connecting line but no points
 ```
 <div id='ggplot2-histogram-example'>
-```
+```{R}
 # Example of a ggplot2 histogram
 
 g <- ggplot(mtcars, aes(x=hp))          # specify the variables, no y in this case
