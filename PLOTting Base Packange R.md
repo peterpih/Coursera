@@ -6,6 +6,9 @@
 - [ggplot2](#ggplot2-plotting-package) ---\> <a href="http://docs.ggplot2.org/0.9.3.1/index.html" target=_blank>online reference
   + [ggplot2 scatterplot example](#ggplot2-scatterplot-example)
   + [ggplot2 histogram example](#ggplot2-histogram-example)
+  + [layering example](#ggplot2-layering-example)
+  + [histogram example](#ggplot2-histogram-example)
+  + [scatterplot with error lines](#ggplot2-scatterplot-with-error-lines-example)
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
@@ -102,7 +105,53 @@ g <- g + geom_histogram()               # graph histogram
 g                                       # show the histogram
 ```
 
-g <- g + geom_histogram(colour="black", bin=20)
+<div id='ggplot2-layering-example'>
+```{R}
+# Example of ggplot2 layering
+
+g <- ggplot(data, aes(x-variable, y-variable)
+g <- g + geom_point()  # or geom_line()
+    + facet_wrap( . ~ type)           # facets for multipanelling
+    + labs(x = "x axis label")
+    + labs(y = "y axis label")
+    + labs(title = "overall title")
+    + geom_smooth(method = "lm" )     # smoothing
+    + theme_bw(base_family = "...")   # change theme
+    
+print(g)      # to display the graph
+
+dev.copy(png, file="file name")
+dev.off()
+```
+<div id='ggplot2-scatterplot-with-error-lines-example'>
+```{R}
+# Example of scatterplot with error lines in ggplot2
+
+g <- ggplot(mtcars, aes(x=hp, y=mpg))
+g = g + geom_point(size=4)
+g = g + geom_smooth(method=lm)
+g
+```
+
+<div id='ggplot2-pairs-example'>
+```{R}
+# Example of plotting pairs in ggplot2
+
+install.packages("GGally")                      # supplementary functions for ggplot2
+library(GGally)
+ggpairs(swiss, lower=list(continuous="smooth"), params=c(method="loess"))  # nxn plots with regression lines
+```
+<div id='ggplot2-residuals-example'>
+```{R}
+# Example of plotting residuals in ggplot2
+
+fit <- lm(x,y)
+resid(fit)                  # the residuals
+plot(density(resid(fit)))   # is it bell shaped?
+qqplot(resid(fit))          # histogram of residuals
+qqline(resid(fit))          # line through residuals
+```
+
 g <- g + facet_grid(.~variable)
 
 <div id='qqplot-residuals'>
