@@ -10,7 +10,8 @@
 
 - **plot**
   - plot(x,y)
-  - plot(fit)
+  - plot(fit) - will show 4 graph residual plot
+    - plot(resid(fit))
 - **lines**
   - lines(x, y)
   - lines(fit)
