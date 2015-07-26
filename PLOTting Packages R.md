@@ -12,7 +12,7 @@
   + [pairs example](#ggplot2-pairs-example)
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
-- [Grouping Graphs](#grouping-graphs)
+- [Grouping Graphs](#grouping-graphs) ---\> <a href="http://www.statmethods.net/advgraphs/layout.html" target=_blank>online reference
 
 <div id='base-plotting-package'/>
 ###Base Plotting 
