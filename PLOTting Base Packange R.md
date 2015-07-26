@@ -25,9 +25,6 @@
   - abline(v=,col=,lty=) - vertical line
   - abline(fit) - fitted line
 
-<div id='grouping-graphs'>
-###Grouping graphs
-- par(mfrow=c(nrows,ncols)) - group graphs together
 Example of a scatterplot and regression line:
 ```{R}
 set.seed(123)                         # for reproducibility
@@ -41,6 +38,12 @@ lines(x, y_hat, col=1, lty=1)         # plot rergession line
 ```
 boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 ```
+[TOP](#table-of-contents)
+
+<div id='grouping-graphs'>
+###Grouping graphs
+- par(mfrow=c(nrows,ncols)) - group graphs together
+
 [TOP](#table-of-contents)
 
 <div id='ggplot2-plotting-package'/>
