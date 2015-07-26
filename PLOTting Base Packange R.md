@@ -21,15 +21,16 @@
   - abline(h=, col=, lty=) - horizontal line
   - abline(v=,col=,lty=) - vertical line
   - abline(fit) - fitted line
-```
-```
-set.seed(123)
-x <- rnorm(20)
-y <- rnorm(20)
-plot(x,y)   # shows the points
-fit <-lm(y~x)
-y_hat <- predict(fit, method="lm")
-lines(x, y_hat, col=1, lty=1)
+
+Example of a scatterplot and regression line:
+```{R}
+set.seed(123)                         # for reproducibility
+x <- rnorm(20)                        # x variable
+y <- rnorm(20)                        # y variable
+plot(x,y)                             # shows the points scatter plot
+fit <-lm(y~x)                         # fit the points
+y_hat <- predict(fit, method="lm")    # predicted y's
+lines(x, y_hat, col=1, lty=1)         # plot rergession line
 ```
 ```
 boxplot(<data>, main="main title", xlab="x label", ylab="y label")
