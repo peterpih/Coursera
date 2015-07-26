@@ -73,7 +73,7 @@ Usually of the form:
   + **geom_point**(size=, colour=)
   + **geom_line**(aes(linetype=\<grouping\>, size=))
 - Other
--   + **geom_smooth**()
+  + **geom_smooth**()
 -   
 ```
 g <- ggplot(\<data\>, aes(x=\<x var\>, y=\<y var\>), fill=variable)
