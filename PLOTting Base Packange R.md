@@ -129,8 +129,8 @@ dev.off()
 # Example of scatterplot with error lines in ggplot2
 
 g <- ggplot(mtcars, aes(x=hp, y=mpg))
-g = g + geom_point(size=4)
-g = g + geom_smooth(method=lm)
+g <- g + geom_point(size=4)
+g <- g + geom_smooth(method=lm)
 g
 ```
 
