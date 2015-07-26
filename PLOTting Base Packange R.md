@@ -27,8 +27,10 @@
   - abline(v=,col=,lty=) - vertical line
   - abline(fit) - fitted line
 
-Example of a scatterplot and regression line:
+
 ```{R}
+# Example of a scatterplot and regression line:
+
 set.seed(123)                         # for reproducibility
 x <- rnorm(20)                        # x variable
 y <- rnorm(20)                        # y variable
