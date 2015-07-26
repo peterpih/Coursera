@@ -1,4 +1,7 @@
 ###Notes on plotting in R
+Base Package
+ggplot2
+Lattice
 
 ###Base Plotting
 ```
@@ -21,6 +24,7 @@ lines(x, y_hat, col=1, lty=1)
 ```
 boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 ```
+### ggplot2
 
 ### DO NOT FORGET dev.off() to reset the Base Plot device
 
