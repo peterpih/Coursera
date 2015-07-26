@@ -3,7 +3,8 @@
 
 - [Base Package](#base-plotting-package)
   - [Box Plots](#base-box-plots)
-- [ggplot2](#ggplot2-plotting-package)
+- [ggplot2](#ggplot2-plotting-package)  
+useful link: http://docs.ggplot2.org/0.9.3.1/index.html
 - [Lattice](#lattice-plotting-package)
 - [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs)
@@ -70,20 +71,36 @@ Usually of the form:
   + **geom_title**("\<text\>")
   + **xlab**("\<text\>")
   + **ylab**("\<text\>")
-- Indicator
+- Graphic types
   + **geom_point**(size=, colour=)
   + **geom_line**(aes(linetype=\<grouping\>, size=))
 - Other
   + **geom_smooth**()
 -   
 ```
-g <- ggplot(dataset, aes(x=, y=), fill=colour)
-g <- g + geom.histogram(colour="black", bin=20)
-g <- g + facet_grid(.~variable)
+# Example of scatterplot with regression line
 
-# then show the graph
-g
+g <- ggplot(mtcars, aes(x=hp, y=mpg))   # specify the variables
+g <- g + geom_point()                   # graph points
+g                                       # show the scatterplot
+
+g <- g + geom_line()                    # connect dots with line
+g                                       # show the scatterplot with connecting line
+
+g <- ggplot(mtcars, aes(x=hp, y=mpg))   # specify the variables
+g <- g + geom_line()                    # connect dots with line
+g                                       # show the scatterplot with connecting line but no points
 ```
+```
+# Example of a histogram
+
+g <- ggplot(mtcars, aes(x=hp))          # specify the variables, no y in this case
+g <- g + geom_histogram()               # graph histogram
+g                                       # show the histogram
+```
+
+g <- g + geom_histogram(colour="black", bin=20)
+g <- g + facet_grid(.~variable)
 
 <div id='qqplot-residuals'>
 ###QQ Plot of regression residuals
