@@ -18,12 +18,14 @@
 ###Base Plotting 
 
 - **plot**
-  - plot(x, y, xlab="xlabel", ylab="ylabel", main="title")
-  - plot(fit) - will show 4 graph residual plot
-    - plot(resid(fit), ...)
-  - plot(dataset) - wil plot an n x n graph of all variables against each other
-  - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")  
+  - **plot**(x, y, xlab="xlabel", ylab="ylabel", main="title")
+  - **plot(fit)** - will show 4 graph residual plot
+  - **plot(resid(fit), ...)**
+  - **plot(dataset)** - wil plot an n x n graph of all variables against each other
+  - **plot(density(resid(fit))**, main="Residual Density Graph", xlab="Normally Distributed")  
 *(this will give the density graph of the residuals)*
+  - **plot(predict$FinalModel)** - will give a dendrogram of the decision tree  
+used with **text(predict$FinalModel)** to add text to the dendogram
 - **lines**
   - lines(x, y)
   - lines(fit)
