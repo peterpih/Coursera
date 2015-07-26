@@ -14,7 +14,8 @@
   - plot(fit) - will show 4 graph residual plot
     - plot(resid(fit))
   - plot(dataset) - wil plot an n x n graph of all veriables against each other
-  - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")
+  - plot(density(resid(fit)), main="Residual Density Graph", xlab="Normally Distributed")  
+***(this will give the density graph of the residuals)***
 - **lines**
   - lines(x, y)
   - lines(fit)
@@ -43,7 +44,7 @@ boxplot(<data>, main="main title", xlab="x label", ylab="y label")
 <div id='grouping-graphs'>
 ###Grouping graphs
 - par(mfrow=c(nrows,ncols)) - group graphs together  
-For example, 
+For example, par(nfrom=c(1,2)) gives 1 row of 2 graphs
 
 [TOP](#table-of-contents)
 
