@@ -1,5 +1,6 @@
-###Notes on plotting in R
 <div id='table-of-contents'>
+###Notes on plotting in R
+
 - [Base Package](#base-plotting-package)
 - [ggplot2](#ggplot2-plotting-package)
 - [Lattice](#lattice-plotting-package)
