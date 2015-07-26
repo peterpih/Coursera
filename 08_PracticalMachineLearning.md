@@ -14,7 +14,8 @@
 7. [Major Steps for Analysis](#major-steps)
 
 ###Useful Links
-http://caret.r-forge.r-project.org/
+http://caret.r-forge.r-project.org/  
+Offical Caret website: http://topepo.github.io/caret/  
 
 **Caret tutorials:**  
 http://www.edii.uclm.es/~useR-2013/Tutorials/kuhn/user_caret_2up.pdf  
