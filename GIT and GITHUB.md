@@ -18,19 +18,13 @@ $ git commit -m <message for commiting>
 $ git status (message will say "use git push to commit your changes")
 $ git push
 ```
-If the **push is rejected**, it is because there have been other updates to the branch
-You will need to **git pull** first so changes are merged, and the **git push**
-```{R}
-$ git pull
-$ git push
-```
-
-If there is a conflict with other changes on GitHub first "pull" changes, then "push"
+If the **push is rejected**, it is because there have been other updates to the branch on GitHub  
+You will need to **git pull** first so changes are merged, and the **git push**  
 ```{R}
 $ git pull
 $ git status
 $ git push
-``` 
+```
 <div id='github-section'>
 #Github Commands
 
