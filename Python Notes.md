@@ -1,5 +1,6 @@
 #Python Notes
 [Online Python Tutor](http://pythontutor.com/)
+[Pyhton Style](https://docs.python.org/2/tutorial/controlflow.html#intermezzo-coding-style)
 
 ***Define a function
 ```{P}
