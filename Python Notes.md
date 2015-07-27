@@ -13,7 +13,7 @@ the **:** defines that a **code block will** follow, adn the code block is defin
 ###Event Driven Programming
 http://www.codeskulptor.org/#examples-events.py
 
-###Program Structure
+###Program Structure ( 7-steps )
 - Globals
 - Helpers
 - Classes
