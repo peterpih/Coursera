@@ -4,7 +4,7 @@ http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-
   
 
 ##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github commands are here](#github-section)
-**Clone a local repository using Git on PC**
+###Clone a local repository using Git on PC**
 ```{R}
 $ cd <directory you want the repository to be in>
 $ git clone https://github.com/peterpih/<repository name>
