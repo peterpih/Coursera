@@ -14,7 +14,7 @@ $ git clone https://github.com/peterpih/<repository name>
 - **git add**
   + **git reset** will reset any **add**ed files before **commit**
 - **git commit**
-  + **git pull**
+  + **git pull** for updates if necessary first
 - **git push**
 ```{R}
 $ git status (will tell you the status of the files: new, modified, deleted hilited in red
