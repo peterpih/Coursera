@@ -1,2 +1,2 @@
 #Python Notes
-[Online Python Tutotr](http://pythontutor.com/)
+[Online Python Tutor](http://pythontutor.com/)
