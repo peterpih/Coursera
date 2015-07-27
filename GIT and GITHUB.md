@@ -36,6 +36,7 @@ $ git push
 #Github Commands
 
 ### Create a repository on GitHub
+
 - Select **Repositories** tab
 - Click **New** (upper right hand corner)
 - Enter **Repository name**
@@ -48,7 +49,6 @@ After the repository is created, click the **+** after the repository name to cr
 
 - Enter **.gitignore**
 - Click **Commit**
-- 
 
 ### Delete a repository on Github
 - Click on **repository name**
