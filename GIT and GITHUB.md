@@ -10,6 +10,11 @@ $ cd <directory you want the repository to be in>
 $ git clone https://github.com/peterpih/<repository name>
 ```
 ### Push files back to repository
+- **git status**
+- **git add**
+  + **git reset** will reset any **add**ed files before **commit**
+- **git commit**
+- **git push**
 ```{R}
 $ git status (will tell you the status of the files: new, modified, deleted hilited in red
 $ git add <file name>  or git add -A (for everything)
