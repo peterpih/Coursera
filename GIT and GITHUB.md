@@ -36,11 +36,17 @@ $ git push
 #Github Commands
 
 ### Create a repository on GitHub
+- Select **Repositories** tab
 - Click **New** (upper right hand corner)
-- Choose **Repository**
-- Enter Name of new repository
-- Select **Add README.md**
-- Click **Submit**
+- Enter **Repository name**
+- Enter **Description** of repository
+- Select **Public**
+- Select **initialize repository with a README**
+- Click **Create repository**
+After the repository is created, click the **+** after the repository name to create a file
+- Enter **.gitignore**
+- Click **Commit**
+- 
 
 ### Delete a repository on Github
 - Click on **repository name**
