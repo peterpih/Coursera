@@ -43,7 +43,9 @@ $ git push
 - Select **Public**
 - Select **initialize repository with a README**
 - Click **Create repository**
+
 After the repository is created, click the **+** after the repository name to create a file
+
 - Enter **.gitignore**
 - Click **Commit**
 - 
