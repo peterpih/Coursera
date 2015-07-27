@@ -1,3 +1,4 @@
+###Data Frame Joins and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Dyplyr](#dplyr-section)
 
 This example is from: http://stackoverflow.com/questions/1299871/how-to-join-merge-data-frames-inner-outer-left-right
 
@@ -129,6 +130,30 @@ merge(x = df1, y = df2, by = NULL)
 ## 17            5   Radio            6    Ohio
 ## 18            6   Radio            6    Ohio
 ```
+
+<div id='dplyr-section'>
+### dplyr
+
+http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
+
+```{R}
+library(dplyr)
+```
+
+- filter(dataSet) (and slice())
+
+- arrange(dataSet, <column1>, <column2>) - sort by columns
+
+- select(dataset, <oldName> = <newName> ) (and rename())
+  - starts_with()
+  - ends_with()
+  - matches()
+  - contains()
+
+- distinct()
+- mutate() (and transmute())
+- summarise()
+- sample_n() and sample_frac()
 
 
 
