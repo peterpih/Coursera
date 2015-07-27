@@ -1,5 +1,9 @@
-##Git Bash Commands
-[Github commands are here](#github-section)
+useful link: 
+http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users
+  
+  
+
+##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github commands are here](#github-section)
 
 ### Push files back to repository
 ```{R}
