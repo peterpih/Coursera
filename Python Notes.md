@@ -7,5 +7,5 @@ def myFunction(){
 }
 ```
 
-###Events
+###Event Driven Programming
 http://www.codeskulptor.org/#examples-events.py
