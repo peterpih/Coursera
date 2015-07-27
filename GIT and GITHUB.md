@@ -11,9 +11,17 @@ $ git clone https://github.com/peterpih/<repository name>
 ```
 ### Push files back to repository
 ```{R}
-$ git status  (will tell you the status of the commits)
-$ git add <file name>  or git add . (for everything)
+$ git status (will tell you the status of the files: new, modified, deleted hilited in red
+$ git add <file name>  or git add -A (for everything)
+$ git status (will  hilite the added files in green which need to be committed)
 $ git commit -m <message for commiting>
+$ git status (message will say "use git push to commit your changes")
+$ git push
+```
+If the **push is rejected**, it is because there have been other updates to the branch
+You will need to **git pull** first so changes are merged, and the **git push**
+```{R}
+$ git pull
 $ git push
 ```
 
