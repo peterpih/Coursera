@@ -46,27 +46,3 @@ merge(x = df1, y = df2, by = "CustomerId", all.y = TRUE)
 ```{R}
 merge(x = df1, y = df2, by = NULL)
 ```
-
-### dplyr
-
-http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
-
-```{R}
-library(dyplr)
-```
-
-- filter(dataSet) (and slice())
-
-- arrange(dataSet, <column1>, <column2>) - sort by columns
-
-- select(dataset, <oldName> = <newName> ) (and rename())
-  - starts_with()
-  - ends_with()
-  - matches()
-  - contains()
-
-- distinct()
-- mutate() (and transmute())
-- summarise()
-- sample_n() and sample_frac()
-
