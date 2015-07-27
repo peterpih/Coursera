@@ -25,6 +25,7 @@ $ git pull
 $ git status
 $ git push
 ```
+
 <div id='github-section'>
 #Github Commands
 
