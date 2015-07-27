@@ -1,5 +1,5 @@
 ##Git Bash Commands
-[Github coomands are here](*github-section)
+[Github commands are here](*github-section)
 
 ### Push files back to repository
 ```{R}
