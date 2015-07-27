@@ -1,2 +1,2 @@
 #Python Notes
-[Online Python Tutotr](<a http://pythontutor.com/ target=_blank\a>)
+[Online Python Tutotr](http://pythontutor.com/ target=_blank)
