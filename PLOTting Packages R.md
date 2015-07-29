@@ -11,7 +11,8 @@
   + [histogram example](#ggplot2-histogram-example)
   + [pairs example](#ggplot2-pairs-example)
 - [Lattice](#lattice-plotting-package)
-- [QQ Plot Residuals](#qqplot-residuals)
+- [Residuals](#residual-plot-section)
+  + [QQ Plot Residuals](#qqplot-residuals)
 - [Grouping Graphs](#grouping-graphs) ---\> <a href="http://www.statmethods.net/advgraphs/layout.html" target=_blank>online reference
 
 <div id='base-plotting-package'>
@@ -156,6 +157,27 @@ qqline(resid(fit))          # line through residuals
 ```
 
 g <- g + facet_grid(.~variable)
+
+<div id='residual-plot-section'>
+###Residual Plots
+```{R}
+fit <- lm(y~x, data)
+
+plot(fit, which=1)      # which chooses 1 of 4 plots
+    which=1             # residuals vs fitted
+    which=2             # Normal QQ
+    which=3             # Scale-Location
+    which=4             # Residuals vs Leverage
+```
+
+***Influence of data point***
+```{R}
+dfbeta(fit)
+```
+The distance from the regression line with a point and the regression line without it is used to calcualte influence  
+The ratio of these two numbers is close to 1 for points which do not move the regression line
+Influence = 1 - ratio_number
+Very **influential** points are 1 and those with no influece are 0
 
 <div id='qqplot-residuals'>
 ###QQ Plot of regression residuals
