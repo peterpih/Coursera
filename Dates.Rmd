@@ -1,6 +1,10 @@
 #Dates
 
 ```{R}
-i <- 1
-1
+library(lubridate)
 ```
+**To get the year**
+```{R}
+year(df$date)
+```
+
