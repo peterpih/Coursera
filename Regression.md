@@ -3,6 +3,9 @@
 fit <- glm(y~., data=dataset, family="binomial")
 
 ###Calculating Odds
+
+Odds Ratio: https://en.wikipedia.org/wiki/Odds_ratio
+
 Using shuttle data in MASS data set, use = noauto,auto; wind=headwind,tailwind
 ```{R}
 library(MASS)
