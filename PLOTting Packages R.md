@@ -179,6 +179,12 @@ The ratio of these two numbers is close to 1 for points which do not move the re
 Influence = 1 - ratio_number
 Very **influential** points are 1 and those with no influece are 0
 
+**Hat Values**
+
+```{R}
+hatvalues(fit)
+```
+
 <div id='qqplot-residuals'>
 ###QQ Plot of regression residuals
 ```
