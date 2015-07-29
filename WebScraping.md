@@ -25,8 +25,8 @@ from inside RStudio:
 ```{R}
 require("quantmod")
 library(quantmod)
-from.dat <- as.Date("01/01/08", format="%m/%d/%y")
-to.dat <- as.Date("12/31/13", format="%m/%d/%y")
+from.dat <- as.Date("01/01/12", format="%m/%d/%y")
+to.dat <- as.Date("12/31/14", format="%m/%d/%y")
 getSymbols("GOOG", src="google", from = from.dat, to = to.dat)
 ```
 ```{R}
