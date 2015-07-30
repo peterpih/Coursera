@@ -29,6 +29,17 @@ from.dat <- as.Date("01/01/12", format="%m/%d/%y")
 to.dat <- as.Date("12/31/14", format="%m/%d/%y")
 getSymbols("GOOG", src="google", from = from.dat, to = to.dat)
 ```
+
+**For getting last 10 days of data**
+```{R}
+require(lubridate)
+from.dat <- as.Date(today()-10, format="%m/%d/%y")
+to.dat <- as.Date(today(), format="%m/%d/%y")
+quoteList <- c("GOOG", "GS", "AAPL")
+getSymbols("GOOG", src="yahoo", from = from.dat, to = to.dat)
+getQuote(quoteList)
+```
+
 ```{R}
 mGoog <- to.monthly(GOOG)
 googOpen <- Op(mGoog)
