@@ -47,3 +47,8 @@ Null Deviance:	    354.9
 Residual Deviance: 350.3 	AIC: 354.3
 ```
 Odds ( = -0.2513 / -2831
+
+<div id='variance-inflation-section'>
+###Variance Inflation
+
+As predictors are added to a multi-linear regression, if they are correlated the variance of the coefficients increases
