@@ -43,3 +43,8 @@ Dlink IP address is at:
   
 ###Security | VPN Passthrough
 - Disable everything since the Gateway will take care of it
+- 
+###Other links:
+
+https://tolgaizgi.wordpress.com/2011/07/31/dd-wrt-how-to-build-a-wireless-bridge-between-two-routersap/
+
