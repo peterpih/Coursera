@@ -1,7 +1,14 @@
+
+[Logistic Regression](*logistic-regression-section)
+[Calculating Odds Section](*calculating-odds-section)
+[Variance Inflation Factor](*variance-inflation-factor)
+
+<div id='logistic-regression-section'>
 ###Logistic Regression
 
 fit <- glm(y~., data=dataset, family="binomial")
 
+<div id='calculating-odds-section'>
 ###Calculating Odds
 
 Odds Ratio: https://en.wikipedia.org/wiki/Odds_ratio
@@ -52,3 +59,12 @@ Odds ( = -0.2513 / -2831
 ###Variance Inflation
 
 As predictors are added to a multi-linear regression, if they are correlated the variance of the coefficients increases
+
+<div id='variance-inflation-factor>
+###Variance Inflation Factor (VIF)
+
+The amount of variance due to including a regressor that is correlatied with another regressor
+```{R}
+fit <- lm(y~x,data)
+VIF(fit)
+```
