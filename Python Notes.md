@@ -1,6 +1,7 @@
 ###Submitted assignments
 Rock, Paper, Scissors, Lizard, Spock: http://www.codeskulptor.org/#user40_wquzHYmc6Gs0JyC.py  
-Guess The Number: http://www.codeskulptor.org/#user40_daA43fE8fqUyOt5.py
+Guess The Number: http://www.codeskulptor.org/#user40_daA43fE8fqUyOt5.py  
+Guess The NUmber (30 lines): http://www.codeskulptor.org/#user40_poCgDTNZxUwEV1y.py  
 
 - [Python Coding Style[(*python-style-section)
 
