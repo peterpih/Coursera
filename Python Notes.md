@@ -24,10 +24,12 @@ the **:** defines that a **code block will** follow, adn the code block is defin
 http://www.codeskulptor.org/#examples-events.py
 
 ###Program Structure ( 7-steps )
-- Globals
-- Helpers
-- Classes
-- Define Event Handlers
-- Create Frame
-- Register Event Handlers
-- Start Frame and Timers
+```{R}
+#---------- GLOBAL VARIABLES ----------
+#---------- HELPER FUNCTIONS ----------
+#---------- CLASSES ----------
+#---------- EVENT HANDLERS ----------
+#---------- CREATE FRAME ----------
+#---------- REGISTER EVENT HANDLERS ----------
+#---------- START FRAME AND TIMERS ----------
+```
