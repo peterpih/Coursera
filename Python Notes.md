@@ -3,6 +3,7 @@ Rock, Paper, Scissors, Lizard, Spock: http://www.codeskulptor.org/#user40_wquzHY
 Guess The Number: http://www.codeskulptor.org/#user40_daA43fE8fqUyOt5.py  
 Guess The NUmber (30 lines): http://www.codeskulptor.org/#user40_poCgDTNZxUwEV1y.py  
 Guess The Number (25 lines): http://www.codeskulptor.org/#user40_bjdmdLngPpN8muq.py
+Guess The Number (23 lines): http://www.codeskulptor.org/#user40_TI7qzn7n1hTJCKt.py
 
 - [Python Coding Style[(*python-style-section)
 
