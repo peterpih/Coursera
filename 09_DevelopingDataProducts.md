@@ -6,12 +6,12 @@
 <div id="shiny-section">
 ###Shiny  
 **tutorial:** http://rstudio.github.io/shiny/tutorial  
+**tutorial:** http://http://shiny.rstudio.com/tutorial/  
 A **shiny** project is a directory that contains at least two files:
 - **server.R**
 - **ui.R**
 
 **Installation of shiny**  
-http://http://shiny.rstudio.com/tutorial/  
 ```{R}
 require(RTools)
 install.packages("shiny")
