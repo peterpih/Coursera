@@ -6,10 +6,38 @@
 <div id="shiny-section">
 ###Shiny  
 **tutorial:** http://rstudio.github.io/shiny/tutorial  
+A **shiny** project is a directory that contains at least two files:
+- **server.R**
+- **ui.R**
+
+**Installation of shiny**  
+http://http://shiny.rstudio.com/tutorial/  
 ```{R}
 require(RTools)
 install.packages("shiny")
 library(shiny)
+```
+Example 1:  
+```{R}
+library(shiny)
+runExample("01_hello")  #changes number of bins in a histogram
+```
+
+```{R}
+library(shiny)
+shinyUI(
+    pageWithSidebar(
+        headerPanel("Data science FTW!"),
+        sidebarPanel(
+            h3('Sidebar text')
+        ),
+        mainPanel(
+            h3('Main Panel text')
+        )
+    ) 
+)
+```
+```
 
 <div id="manipulate-section">
 ###Manipulate  
