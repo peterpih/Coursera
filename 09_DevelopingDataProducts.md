@@ -8,8 +8,8 @@
 **tutorial:** http://rstudio.github.io/shiny/tutorial  
 ```{R}
 require(RTools)
-install.packages("Shiny")
-library(Shiny)
+install.packages("shiny")
+library(shiny)
 
 <div id="manipulate-section">
 ###Manipulate  
