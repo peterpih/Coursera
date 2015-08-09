@@ -7,8 +7,8 @@
 http://www.rstudio.com/ide/docs/advanced/manipulate  
 
 ```{R}
-install.packages("Manipulate")
-library(Manipulate)
+install.packages("manipulate")
+library(manipulate)
 ```
 ```{R}
 library(manipulate)
