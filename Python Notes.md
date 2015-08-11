@@ -7,6 +7,10 @@ Guess The Number (23 lines): http://www.codeskulptor.org/#user40_TI7qzn7n1hTJCKt
 
 - [Python Coding Style[(*python-style-section)
 
+**Week 4**
+- [Lists](*list-section)
+
+
 #Python Notes
 [Online Python Tutor](http://pythontutor.com/)
 [Pyhton Style](https://docs.python.org/2/tutorial/controlflow.html#intermezzo-coding-style)
@@ -35,3 +39,8 @@ http://www.codeskulptor.org/#examples-events.py
 #---------- REGISTER EVENT HANDLERS ----------
 #---------- START FRAME AND TIMERS ----------
 ```
+
+<div id="list-section">
+###Week 4 - Lists
+A **list** is a **sequence**
+**[**... , ... , ... **]**
