@@ -21,6 +21,16 @@ git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
 git push -u origin master
 ```
 
+**Change the name of a directory(branch)
+```{R}
+rm --ignore-fail-on-non-empty .git
+git init
+git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
+git push -u origin master
+```
+
+- delete the **.git** file in the PC directory
+- 
 ### Push files back to repository
 - **git status**
 - **git add**
