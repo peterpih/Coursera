@@ -3,12 +3,24 @@ http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-
   
   
 
-##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github commands are here](#github-section)
-###Clone a local repository using Git on PC**
+##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[link to Git commands](#github-section)
+**Clone a local repository using Git on PC**
 ```{R}
+# First create the repository in GitHub
 $ cd <directory you want the repository to be in>
 $ git clone https://github.com/peterpih/<repository name>
 ```
+alternatively you can do this on PC (these steps will aso create a README.md file):
+```{R}
+# cd <directory>
+echo "# 09_DevelopingDataProducts >> README.md"
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
+git push -u origin master
+```
+
 ### Push files back to repository
 - **git status**
 - **git add**
