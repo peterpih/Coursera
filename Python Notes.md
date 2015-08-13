@@ -33,13 +33,13 @@ http://www.codeskulptor.org/#examples-events.py
 
 ###Program Structure ( 7-steps )
 ```{R}
-#---------- GLOBAL VARIABLES ----------
-#---------- HELPER FUNCTIONS ----------
-#---------- CLASSES ----------
-#---------- EVENT HANDLERS ----------
-#---------- CREATE FRAME ----------
-#---------- REGISTER EVENT HANDLERS ----------
-#---------- START FRAME AND TIMERS ----------
+#---------- 1) GLOBAL VARIABLES ----------
+#---------- 2) HELPER FUNCTIONS ----------
+#---------- 3) CLASSES ----------
+#---------- 4) EVENT HANDLERS ----------
+#---------- 5) CREATE FRAME ----------
+#---------- 6) REGISTER EVENT HANDLERS ----------
+#---------- 7) START FRAME AND TIMERS ----------
 ```
 
 <div id="list-section">
