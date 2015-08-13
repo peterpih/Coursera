@@ -1,3 +1,8 @@
+###Class examples:  
+Motion: http://www.codeskulptor.org/#examples-more-4a-motion-drawing_vectors.py  
+Collisions and Reflections: http://www.codeskulptor.org/#examples-collisions_and_reflections.py  
+
+
 ###Submitted assignments
 Rock, Paper, Scissors, Lizard, Spock: http://www.codeskulptor.org/#user40_wquzHYmc6Gs0JyC.py  
 Guess The Number: http://www.codeskulptor.org/#user40_daA43fE8fqUyOt5.py  
