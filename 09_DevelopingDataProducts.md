@@ -1,7 +1,7 @@
 
-[Shiny](*shiny-section)
-[rCharts](*rcharts-section)
-[Manipulate](*manipulate-section)
+[Shiny](*shiny-section)  
+[rCharts](*rcharts-section)  
+[Manipulate](*manipulate-section)  
 
 <div id="shiny-section">
 ###Shiny  
