@@ -422,3 +422,16 @@ pca_model <- train(a_train$diagnosis ~ ., data=pca_train_pred, method="glm")
 
 pca_result <- confusionMatrix(a_test[, 1], predict(pca_model, pca_test_pred))
 pca_result
+
+<div id='combining-predictors-section'>
+###Combining Predictors
+
+In the video on Combining Predictors the formula:  
+10 * (0.7)^3(0.3)^2 + 5 * (0.7)^4(0.3)^2 + (0.7)^5  
+Where does this come from?  
+
+From the binomial distribution. First term 10 * (0.7)^3(0.3)^2  is the probability of getting 3 positives and 2 negatives (choose(5,3) in R), which is the number of ways to choose 3 from 5, times the probability of positive cubed, times probability of negative squared.   
+
+Continue in that fashion for probability of 4 positives and 1 negative, then 5 positives and 0 negatives, summing them all together for the total probability of a majority vote.  
+
+Note that the second term has an error in it. It should be 5 * (0.7)^4(0.3)^1  
