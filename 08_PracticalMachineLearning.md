@@ -1,5 +1,8 @@
 Gradient Boosting GBM: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/  
 Visual Introduction: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/  
+ http://www.drivendata.org/competitions/  
+ UC Irvine maintains a collection of datasets: https://archive.ics.uci.edu/ml/datasets.html  
+ 
 
 #Caret Package  
 
@@ -19,6 +22,8 @@ Visual Introduction: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
 ###Useful Links
 http://caret.r-forge.r-project.org/  
 Offical Caret website: http://topepo.github.io/caret/  
+http://topepo.github.io/caret/  
+https://github.com/topepo/caret/  
 
 **Caret tutorials:**  
 http://www.edii.uclm.es/~useR-2013/Tutorials/kuhn/user_caret_2up.pdf  
