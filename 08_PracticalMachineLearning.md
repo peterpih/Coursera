@@ -1,4 +1,5 @@
-Gradient Boosting GBM: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/
+Gradient Boosting GBM: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/  
+Visual Introduction: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/  
 
 #Caret Package  
 
