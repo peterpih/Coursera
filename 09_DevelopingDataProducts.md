@@ -1,3 +1,13 @@
+There are many, many graphics packages to explore, so budget time to download and install. Not all of them install quickly and easily.  
+
+I also strongly recommend you learn how to create GH-pages on github and your-logon.github.io project web site. When I took the class you could prepare and post one of the project deliverables to gh-pages or rpubs.   
+
+Regarding the shiny app, please allocate time during week one to create a shinyio user account and site, create a sample app, post the app, then update the app and post the update. Getting the plumbing to work in this class is critical to success.  
+
+The shinyapp has a timeout provision and a monthly time limit for free use. I found that setting the automatic timeout to five minutes after no activity gave me ample time to test my application and still leave time for the student evaluators to use my application. Some students did not set this limit, and student evaluators could not evaluate the application.   
+
+All in all, this was a fun class and allowed for a lot of creativity to explore a data issue or data set that is personally special to you. If you're a software developer, technical writer, graphics artist or in marketing, I think you'll find the class entertaining and familiar.  
+
 
 USing html directly: http://shiny.rstudio.com/articles/html-ui.html  
 Debugging: http://shiny.rstudio.com/articlas/debugging.html  
