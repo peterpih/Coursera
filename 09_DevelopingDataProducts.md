@@ -1,7 +1,13 @@
 
+USing html directly: http://shiny.rstudio.com/articles/html-ui.html  
+Debugging: http://shiny.rstudio.com/articlas/debugging.html  
+
+
+
 [Shiny](*shiny-section)  
 [rCharts](*rcharts-section)  
 [Manipulate](*manipulate-section)  
+[rCharts](*rcharts-section)
 
 <div id="shiny-section">
 ###Shiny  
@@ -37,11 +43,10 @@ shinyUI(
     ) 
 )
 ```
-```
 
 <div id="manipulate-section">
 ###Manipulate  
-http://www.rstudio.com/ide/docs/advanced/manipulate  
+Documenatation: http://www.rstudio.com/ide/docs/advanced/manipulate  
 
 ```{R}
 install.packages("manipulate")
@@ -64,3 +69,24 @@ myHist <- function(mu){
 }
 manipulate(myHist(mu), mu = slider(62, 74, step = 0.5))
 ```
+
+**Render** vs **Reactive** statements (More Shiny video)
+
+
+```
+$ runApp(display='showcase')
+```
+
+<div id='rcharts-section'>
+###rCharts
+Documentation: http://ramnathv.gothub.io/rCharts/  
+Install rCharts from github  
+'''{R}
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPLot(Freq ~ Hair, group='Eye', type='MultiBarChart', data=subset(haireye, sex=='Male'))
+n1$save('fig/n1.html', cdn=TRUE)                                    # save as a plot to disk
+cat('<iframe src='fig/n1.html', width=100%, height=600></iframe>)   # best way to embed a graph in shiny
+```
+
+
