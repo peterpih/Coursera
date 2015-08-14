@@ -1,3 +1,5 @@
+#Boo!
+
 ###Steps to make **DLink DIR615** router to a repeater
 
 Gateway O2 router IP address:
