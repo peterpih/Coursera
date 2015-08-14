@@ -1,4 +1,3 @@
-#Boo!
 
 ###Steps to make **DLink DIR615** router to a repeater
 
