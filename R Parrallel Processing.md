@@ -1,5 +1,6 @@
-[R Parallel](*r-parallel-section)
-[Amazon EC2](*amazon-ec2-section)
+[R Parallel](*r-parallel-section)  
+[Parallel Benchmarking](*parallel-benchmarking-section)  
+[Amazon EC2](*amazon-ec2-section)  
 
 <div id='r-parallel-section'>
 ###R Parallel Package
