@@ -10,7 +10,7 @@ Guess The NUmber (30 lines): http://www.codeskulptor.org/#user40_poCgDTNZxUwEV1y
 Guess The Number (25 lines): http://www.codeskulptor.org/#user40_bjdmdLngPpN8muq.py  
 Guess The Number (23 lines): http://www.codeskulptor.org/#user40_TI7qzn7n1hTJCKt.py  
 Pong: http://www.codeskulptor.org/#user40_trq834tkmS_0.py  
-http://www.codeskulptor.org/#user40_trq834tkmS_1.py  
+http://www.codeskulptor.org/#user40_trq834tkmS_2.py  
 
 
 
