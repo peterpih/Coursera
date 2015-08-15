@@ -1,4 +1,4 @@
-[gh-pages How To](*gh-pages-how-to)
+[gh-pages How To](#gh-pages-how-to)
 
 useful link: 
 http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users
