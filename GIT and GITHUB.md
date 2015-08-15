@@ -105,3 +105,26 @@ Plus some "extras":
 
 3) A few other files you can provide to help people find things in your repo and github.io site.  
 4) Some notes on git, Github, and revision control.  
+
+***Another way using git**  
+Push html pages to master branch  
+```
+git push origin master
+```
+Now create a gh-pages branch (GitHub-pages)
+```
+git branch gh-pages
+git checkout gh-pages
+git puch origin gh-pages
+```
+This will create a gh-pages branch on github  
+Also, create a push a .nojekyll file which avoids some of the fancy html in github
+```
+touch .nojekyll
+git add .nojekyll
+git commit -m "adding .nojekyll"
+git push origin gh-pages
+```
+To view the webpage, the url is:  
+http://<guthub username>.github.io/<repo name>/<presentation name>.html  
+
