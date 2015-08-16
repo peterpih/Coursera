@@ -5,13 +5,13 @@ Collisions and Reflections: http://www.codeskulptor.org/#examples-collisions_and
 
 ###Submitted assignments
 Rock, Paper, Scissors, Lizard, Spock: http://www.codeskulptor.org/#user40_wquzHYmc6Gs0JyC.py  
-Stopwatch: http://www.codeskulptor.org/#user40_toxSMVZEyWnwpD2.py  
 Guess The Number: http://www.codeskulptor.org/#user40_daA43fE8fqUyOt5.py  
 Guess The NUmber (30 lines): http://www.codeskulptor.org/#user40_poCgDTNZxUwEV1y.py  
 Guess The Number (25 lines): http://www.codeskulptor.org/#user40_bjdmdLngPpN8muq.py  
 Guess The Number (23 lines): http://www.codeskulptor.org/#user40_TI7qzn7n1hTJCKt.py  
-Pong: http://www.codeskulptor.org/#user40_trq834tkmS_0.py  
-http://www.codeskulptor.org/#user40_trq834tkmS_2.py  
+Stopwatch: http://www.codeskulptor.org/#user40_toxSMVZEyWnwpD2.py  
+Pong: http://www.codeskulptor.org/#user40_jue22Yhsvbajyt2.py
+
 
 
 
