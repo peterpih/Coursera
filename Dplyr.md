@@ -14,20 +14,24 @@ cran                            # better table printing
 | functions that each do one thing well." Specifically, dplyr supplies five 'verbs' that cover most fundamental data  
 | manipulation tasks: **select**(), **filter**(), **arrange**(), **mutate**(), and **summarize**().  
 
-**Select** columns (in the order specified)  
+###Select
+Select columns (in the order specified)  
 - **select**(dataset, column, column, column, ...)
 - **select**(dataset, startColumn : endColumn)
 - **select**(dataset, -removeColumn)
 
-###Filter - select rows  
+###Filter
+Select rows by conditional
 - **filter**(dataset, cond 1, cond 2, ...)
 - **filter**(dataset, cond1 | cond 2)
 
-###Arrange - sort rows
-- **arrange**(dataset, column)
-- **arrange**(dataset, desc(column))
+###Arrange
+Sort rows ascending or descending or mix
+- **arrange**(dataset, column, ...)
+- **arrange**(dataset, desc(column), ...)
 
-###Mutate - create a new variable
+###Mutate
+Create a new variable
 - **mutate**(dataset, newVar = calculation)
 - mutate(dataset, newVar = col1 / 20)
 
