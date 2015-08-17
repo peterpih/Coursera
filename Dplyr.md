@@ -31,11 +31,11 @@ Sort rows ascending or descending or mix
 - **arrange**(dataset, desc(column), ...)
 
 ###Mutate
-Create a new variable
+Create a new variable by row
 - **mutate**(dataset, newVar = calculation)
 - mutate(dataset, newVar = col1 / 20)
 
 ###Summarize
-- **summarize**(dataset, varName = mean(col1))
+- summarize(dataset, varName = mean(col1))
 - 
 
