@@ -36,7 +36,6 @@ Create a new variable
 - mutate(dataset, newVar = col1 / 20)
 
 ###Summarize
-
 - **summarize**(dataset, varName = mean(col1))
 - 
 
