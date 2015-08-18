@@ -99,4 +99,7 @@ n1$save('fig/n1.html', cdn=TRUE)                                    # save as a 
 cat('<iframe src='fig/n1.html', width=100%, height=600></iframe>)   # best way to embed a graph in shiny
 ```
 
+###Google Vis
+
+http://cran.r-project.org/web/packages/googleVis/googleVis.pdf
 
