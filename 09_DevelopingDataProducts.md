@@ -91,7 +91,8 @@ $ runApp(display='showcase')
 ###rCharts
 Documentation: http://ramnathv.gothub.io/rCharts/  
 Install rCharts from github  
-'''{R}
+
+```{R}
 require(rCharts)
 haireye = as.data.frame(HairEyeColor)
 n1 <- nPLot(Freq ~ Hair, group='Eye', type='MultiBarChart', data=subset(haireye, sex=='Male'))
