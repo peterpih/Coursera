@@ -1,3 +1,7 @@
+
+Hans Rosling Ted Talk: http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen?language=en  
+
+
 # Table Of Contents
 
 **R for Beginners**  http://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf
