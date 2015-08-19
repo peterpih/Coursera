@@ -128,3 +128,19 @@ git push origin gh-pages
 To view the webpage, the url is:  
 http://<guthub username>.github.io/<repo name>/<presentation name>.html  
 
+###Authorization to see repo characterisitics (from quiz excercise)  
+```
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github", "448a5d91fcf0aa2e656a")
+
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", config(token = github_token))
+stop_for_status(req)
+json1 = content(req)
+json1[[5]]$created_at
+
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv", "ss06hid.csv")
+data <- read.csv("ss06hid.csv")
+```
