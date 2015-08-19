@@ -104,10 +104,8 @@ cat('<iframe src='fig/n1.html', width=100%, height=600></iframe>)   # best way t
 
 http://cran.r-project.org/web/packages/googleVis/googleVis.pdf
 
-Useful links:
+Useful links:  
 http://cran.r-project.org/web/[ackages/googleVis/vignettes/googleVis.pdf  
-
 https://developers.google.com/chart/interactive/docs/gallery  
-
 https://developers.google.com/chart/interactive/faq  
 
