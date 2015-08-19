@@ -106,6 +106,8 @@ http://cran.r-project.org/web/packages/googleVis/googleVis.pdf
 
 Useful links:
 http://cran.r-project.org/web/[ackages/googleVis/vignettes/googleVis.pdf  
-https://developers/google.com/chart/interactive/docs/gallery  
-https://developers/google.com/chart/interactive/faq  
+
+https://developers.google.com/chart/interactive/docs/gallery  
+
+https://developers.google.com/chart/interactive/faq  
 
