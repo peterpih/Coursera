@@ -26,6 +26,15 @@ Gather and Spread are compliments
 
 **separate**(dataset, key, newCol)
 
-
+###Chaining
+```
+cran %>%
+  select(ip_id, country, package, size) %>%
+  mutate(size_mb = size / 2^20) %>%
+  filter(size_mb <= 0.5) %>%
+  # Your call to arrange() goes here
+    arrange(desc(size_mb))
+    ```
+    
 
 
