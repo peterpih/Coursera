@@ -1,5 +1,6 @@
 
-**R Studio Cheatsheets**: https://www.rstudio.com/resources/cheatsheets/  
+###R Studio Cheatsheets  
+https://www.rstudio.com/resources/cheatsheets/  
 
 Hans Rosling Ted Talk: http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen?language=en  
 
