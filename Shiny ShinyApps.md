@@ -1,5 +1,6 @@
-Goto: www.shinyapps.io/coursera  
-Create account using GitHub account  
+Login at: **www.shinyapps.io/coursera**  
+(Create account using GitHub account)  
+
 
 useful link:  http://cran.r-project.org/bin/windows/Rtools/  
 
