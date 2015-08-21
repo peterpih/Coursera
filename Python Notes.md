@@ -1,3 +1,6 @@
+**Part 1**: https://class.coursera.org/interactivepython1-007  
+
+
 ###Class examples:  
 Motion: http://www.codeskulptor.org/#examples-more-4a-motion-drawing_vectors.py  
 Collisions and Reflections: http://www.codeskulptor.org/#examples-collisions_and_reflections.py  
