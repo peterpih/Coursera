@@ -10,7 +10,9 @@ install.packages('RCurl')
 devtools::install_github('rstudio/shinyapps')     # install shinyapps
 
                                                   # authorize computer (not shown here)
-
-library(shinyapps)                                # deploy
-shinyapps::deployApp('path/to/your/app')
+```
+###Deploy to shinyio
+```{R}
+library(shinyapps)                                # load deployApp()
+shinyapps::deployApp('path/to/your/app')          # deployApp() deploys the current app in current directory
 ```
