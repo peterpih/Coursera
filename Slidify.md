@@ -6,8 +6,8 @@ install.packages("devtools")
 library(devtools)
 
 # 2) Install slidify
-install_github("slidify", "ramnathv")
-install_github("slidifyLibraries", "ramnathv")
+install_github("ramnathv/slidify")
+install_github("ramnathv/slidifyLibraries")
 
 # 3) load slidify
 library(slidify)
