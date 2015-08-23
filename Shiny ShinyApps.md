@@ -10,7 +10,8 @@ install.packages('devtools')                      # install devtools
 install.packages('RCurl')
 devtools::install_github('rstudio/shinyapps')     # install shinyapps
 
-library(shiny)                                    # runApp() is in here
+library(shiny)
+library(shinyapps)                                # runApp() is in here
 
                                                   # authorize computer (not shown here)
 ```
