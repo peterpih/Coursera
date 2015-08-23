@@ -1,5 +1,6 @@
 http://slidify.github.io/dcmeetup/demos/interactive/  
 
+###Installing
 ```{R}
 # 1) Install devtools
 install.packages("devtools")
