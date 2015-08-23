@@ -31,8 +31,8 @@ git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
 git push -u origin master
 ```
 
-- delete the **.git** file in the PC directory
-- 
+**delete the **.git** file in the PC directory**
+
 ### Push files back to repository
 - **git status**
 - **git add**
