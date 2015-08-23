@@ -80,7 +80,9 @@ After the repository is created, click the **+** after the repository name to cr
 - Click on **Delete Repository** at bottom of page
 
 <div id='gh-pages-how-to'>
-###gh-pages in GitHub
+###gh-pages in GitHub  
+
+**github.io url generator**: http://drastudio.github.io/url-generator/  
 
 The project submission instructions suggest that you can make it easier for reviewers to see your finished html output by setting up a "gh-pages" branch in your Github repository.  That will automatically create a web site for the repo on github.io, with your html page properly displayed.  
 
