@@ -13,6 +13,7 @@
 - [Lattice](#lattice-plotting-package)
 - [Residuals](#residual-plot-section)
   + [QQ Plot Residuals](#qqplot-residuals)
+- [Multiple Plots](#multiple-plots-section)
 - [Grouping Graphs](#grouping-graphs) ---\> <a href="http://www.statmethods.net/advgraphs/layout.html" target=_blank>online reference
 
 <div id='base-plotting-package'>
@@ -192,6 +193,14 @@ qqnorm(resid(fit))    # scatterplot of normal distribution
 qqline(resid(fit))    # normality regression line
 ```
 [TOP](#table-of-contents)
+
+<div id='multiple-plots-section'>
+###Multiple Plots On A Page
+```{R}
+par(mfrow = c(3, 2))  # 3 rows and 2 columns
+boxplot(len~dose, data=ToothGrowth, ylab="Tooth Length", xlab="Dosage")
+boxplot(len~supp, data=ToothGrowth, ylab="Tooth Length", xlab="Supplement")
+```
 
 ###Lattice <div id='lattice-plotting-package'>
 
