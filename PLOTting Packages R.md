@@ -201,6 +201,7 @@ par(mfrow = c(3, 2))  # 3 rows and 2 columns
 boxplot(len~dose, data=ToothGrowth, ylab="Tooth Length", xlab="Dosage")
 boxplot(len~supp, data=ToothGrowth, ylab="Tooth Length", xlab="Supplement")
 ```
+[TOP](#table-of-contents)
 
 ###Lattice <div id='lattice-plotting-package'>
 
