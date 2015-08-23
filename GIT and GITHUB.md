@@ -125,10 +125,10 @@ git add .nojekyll
 git commit -m "adding .nojekyll"
 git push origin gh-pages
 ```
-To view the webpage, the url is:  
-http://<github username>.github.io/<repo name>/<presentation name>.html  
+**To view the webpage, the url is**:  
+http://\<github username\>.github.io/\<repo name\>/\<presentation name\>.html  
 
-To keep the master and gh-pages branches in sync:  
+**To keep the master and gh-pages branches in sync**:  
 http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html  
 
 
