@@ -82,3 +82,21 @@ Why isn't it doing what we want?
 **Answer 5**  
 `The server.R output name isn't the same as the plotOutput command used in ui.R.`  
 
+###Quiz 2  
+**Question 2.1**  
+In the slidify YAML text. Changing the framework from io2012 to shower does what?  
+**Answer 2.1**  
+It changes the html5 framework thus changing the style of the slides.  
+
+**Question 2.2**  
+You wrote R code in a slidify document as follows  
+```
+```{r}
+fit <- lm(y ~ x1 + x2 + x3)
+summary(fit)
+```
+```
+If you want to hide the results of the summary statement (yet still have it run) what should you do?  
+**Answer 2.2**
+Add a results = 'hide' option in the {r} call of the code chunk  
+
