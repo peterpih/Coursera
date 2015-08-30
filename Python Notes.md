@@ -1,4 +1,4 @@
-**Part 1**: https://class.coursera.org/interactivepython1-007  
+**August 2015, Part 1**: https://class.coursera.org/interactivepython1-007  
 
 
 ###Class examples:  
