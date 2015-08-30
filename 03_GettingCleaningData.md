@@ -1,3 +1,9 @@
+**May 2015**: https://class.coursera.org/getdata-014
+**August 2015**: https://class.coursera.org/getdata-031
+
+
+###For Authentication details
+
 To Get My_ID and My_Secret_Key:  
 Click profile dropdown (upper right hand corner)  
 Click **Application** on left side bar  
