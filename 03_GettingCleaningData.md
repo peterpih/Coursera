@@ -1,5 +1,5 @@
-**May 2015**: https://class.coursera.org/getdata-014
-**August 2015**: https://class.coursera.org/getdata-031
+**May 2015**: https://class.coursera.org/getdata-014  
+**August 2015**: https://class.coursera.org/getdata-031  
 
 
 ###For Authentication details
