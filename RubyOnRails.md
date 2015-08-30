@@ -24,7 +24,7 @@ Ruby -v
 ###Install DevKit
 for downloads: http://rubyinstaller.org/downloads/
 
-**read instructions thuroughly**
+**read instructions thoroughly**
 instructions: https://github.com/oneclick/rubyinstaller/wiki/Development-Kit
 ```
 mkdir C:\RubyDevKit   # install to a permanent directory
