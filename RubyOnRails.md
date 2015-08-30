@@ -4,6 +4,11 @@
 ```
 http://rubyinstaller.org/downloads/
 ```
+or
+```
+http://rubyonrails.org/download/
+```
+
 Be sure to check the comments and install the most recent **stable** version
 **NB: currently not using 64-bit**
 This video was also generally helpful: https://www.youtube.com/watch?v=j8UsSmSgVt8
