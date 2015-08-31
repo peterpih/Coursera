@@ -17,6 +17,8 @@ http://eee.pragprog.com/wikis.RailsPlayTime
 
 ###Installing Rails
 
+Youtube video: https://search.yahoo.com/search?fr=mcafee&type=C211US0D19700101&p=install+json+rails  
+
 downloads: http://rubyinstaller.org/downloads  
 
 - Download Ruby2.2.exe  
@@ -26,11 +28,12 @@ To test Ruby installation:
 ```
 ruby -e puts 1+1  # command line run as ruby
 ```
+
 Ruby also deploys with **IRB**, interactive Ruby
 
 ```
 irb
-
+```
 
 **ERROR MSG: Could not find railties**  
 Means the installation is faulty: http://stackoverflow.com/questions/9212116/rails-could-not-find-railties  
@@ -41,7 +44,15 @@ gem install rails     # will install other gems
 
 ###Install DevKit  
 
-https://github.com/oneclick/rubyinstaller/wiki/development-kit
+GitHub info: https://github.com/oneclick/rubyinstaller/wiki/development-kit  
+Install into C:/DevKit  
+```
+cd C:\DevKit
+ruby dk.rb install
+gem install json --platform=ruby
+```
+Test installation from GitHub documentation  
+
 
 cd C:\RubyDevKit
 ```
