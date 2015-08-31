@@ -17,7 +17,7 @@ http://eee.pragprog.com/wikis.RailsPlayTime
 
 ###Install Ruby
 
-Youtube video: https://search.yahoo.com/search?fr=mcafee&type=C211US0D19700101&p=install+json+rails  
+YouTube video: https://www.youtube.com/watch?v=sWP3Nit8kEg
 
 downloads: http://rubyinstaller.org/downloads  
 
