@@ -17,6 +17,12 @@ http://eee.pragprog.com/wikis.RailsPlayTime
 
 ###Installing Rails
 
+downloads: http://rubyinstaller.org/downloads  
+
+- Download Ruby2.2.exe  
+- Run as Administrator to install  
+
+
 ```
 cd C:\RubyDevKit
 ```
