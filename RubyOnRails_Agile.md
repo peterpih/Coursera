@@ -9,6 +9,7 @@ Rails is **Agile**:
 - Respnding to change over following  plan
 http://agilemanifesto.org  
 
+Useful links:  
 http://formus.pragprog.com/forums/148  
 http://www.praprog.com/titles/rails4/errata  
 http://eee.pragprog.com/wikis.RailsPlayTime  
