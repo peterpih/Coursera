@@ -160,4 +160,10 @@ Please download the R package DDPQuiz3 from the course web site. Examine the cre
 #' createmean(x)
 ```
 
+###Final
 
+link to shiny application: https://peterpih.shinyapps.io/09_DevelopingDataProductsFinal  
+link to github: https://github.com/peterpih/09_DevelopingDataProductsFinal  
+
+link to Slidify pitch deck webpages: http://peterpih.github.io/09_DevelopingDataProductsFinal/My_Slidify/index.html#1  
+link to github Slidify pitch deck: https://github.com/peterpih/09_DevelopingDataProductsFinal/tree/master/My_Slidify   
