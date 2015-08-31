@@ -60,10 +60,6 @@ cd C:\RubyDevKit
 downloads: http://rubyinstaller.org/downloads  
 instructions: http://github.com/oneclick/rubyinstaller/wiki/Development-Kit  
 
-###Instant Gratification
-Create a new directory **demo**
-
-
 ###Install RubyGems
 
 Main website: www.rubygems.org  
@@ -117,6 +113,9 @@ After installation, you can find the MySQL command line under Programs|MySQL
 - Code completion
 - Customize document and code coloring (themes)
 
+
+###Instant Gratification
+Create a new directory **demo**
 ```
 cd work
 rails new demo  # creates all necessary directories
