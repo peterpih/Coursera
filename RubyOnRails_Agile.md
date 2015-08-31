@@ -22,7 +22,11 @@ downloads: http://rubyinstaller.org/downloads
 - Download Ruby2.2.exe  
 - Run as Administrator to install  
 
-
+**ERROR MSG: Could not find railties**  
+Means the installation is faulty: http://stackoverflow.com/questions/9212116/rails-could-not-find-railties  
+```
+gem list              # list avaiable gems
+get install rails     # will install other gems
 ```
 cd C:\RubyDevKit
 ```
