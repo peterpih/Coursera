@@ -15,7 +15,7 @@ http://formus.pragprog.com/forums/148
 http://www.praprog.com/titles/rails4/errata  
 http://eee.pragprog.com/wikis.RailsPlayTime  
 
-###Installing Rails
+###Install Ruby
 
 Youtube video: https://search.yahoo.com/search?fr=mcafee&type=C211US0D19700101&p=install+json+rails  
 
@@ -46,24 +46,25 @@ gem install rails     # will install other gems
 
 GitHub info: https://github.com/oneclick/rubyinstaller/wiki/development-kit  
 Install into C:/DevKit  
+Useful info: http://rubyinstaller.org/add-ons/devkit/  
 ```
 cd C:\DevKit
 ruby dk.rb install
 gem install json --platform=ruby
 ```
-Test installation from GitHub documentation  
+Now test installation from GitHub documentation  
 
 
 cd C:\RubyDevKit
-```
+
 downloads: http://rubyinstaller.org/downloads  
 instructions: http://github.com/oneclick/rubyinstaller/wiki/Development-Kit  
 
 ###Instant Gratification
 Create a new directory **demo**
-```
 
-###RubyGems
+
+###Install RubyGems
 
 Main website: www.rubygems.org  
 ```
@@ -82,13 +83,45 @@ To install:
 gem install rails --version=4.2.4 --no-ri --no-rdoc
 ```
 --no-ri and --no-rdoc means do not install documentation (which can still be found on-line)  
+```
+rails -v                   # show version number of rails
+```
 
+###Install MySQL
+3 Steps to install MySQL:
+1) Download and install MySQL
+  - developer website: http://dev.mysql.com
+2) Default MySQL password
+3) Install MySQL RubyGem
 
+**Download MySQL*** 
+On the dev.mysql.com websote, find the Community Server download page  
+Find the MSI Installer download  
+Find the "No thanks, just install" choice at the bottom  
+The installer will check for any necessary updates  
+Choose the **Developer Default** since only developing on local machine  
 
+After installation, you can find the MySQL command line under Programs|MySQL  
+**It is not necessary to add MySQL to PATH**  
+
+**Add MySQL RubyGem**
+
+###Text Editor
+- Color coding, syntax highlighting
+  - Ruby, Rails, HTML, CSS, JavaScript
+- Easily navigate a while project
+  - Project widowws, open tabs, etc
+- Good search and replace
+- Auto-paring of parenthesis, brackets, and quotes
+- Auto-indent
+- Code completion
+- Customize document and code coloring (themes)
+
+```
 cd work
 rails new demo  # creates all necessary directories
 ```
-Examin the installation:  
+Examine the installation:  
 ```
 rake about
 ```
