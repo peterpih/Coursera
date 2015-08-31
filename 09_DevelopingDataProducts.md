@@ -1,3 +1,5 @@
+https://class.coursera.org/devdataprod-031  
+
 There are many, many graphics packages to explore, so budget time to download and install. Not all of them install quickly and easily.  
 
 I also strongly recommend you learn how to create GH-pages on github and your-logon.github.io project web site. When I took the class you could prepare and post one of the project deliverables to gh-pages or rpubs.   
