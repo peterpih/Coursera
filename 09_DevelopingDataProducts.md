@@ -1,4 +1,4 @@
-https://class.coursera.org/devdataprod-031  
+August 2015: https://class.coursera.org/devdataprod-031  
 
 There are many, many graphics packages to explore, so budget time to download and install. Not all of them install quickly and easily.  
 
