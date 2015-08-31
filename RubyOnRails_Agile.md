@@ -1,6 +1,7 @@
 Notes from **Agile Web Development with Rails 4**  
 
 **MVC** - Model-View-Controller architecture  
+**DRY** - Don't Repeat Yourself  
 
 Rails is **Agile**:
 - Individuals and interactions over processes and tools
