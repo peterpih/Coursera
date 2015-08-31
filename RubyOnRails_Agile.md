@@ -62,6 +62,29 @@ instructions: http://github.com/oneclick/rubyinstaller/wiki/Development-Kit
 ###Instant Gratification
 Create a new directory **demo**
 ```
+
+###RubyGems
+
+Main website: www.rubygems.org  
+```
+gem -v                    # checks installed version
+gem update --system       # check for updates
+gem --help                # for help
+gem list                  # list of gems currently installed
+```
+
+
+##Install Rails
+Rails is a Gem  
+Find the latest version of Rails on www.rubygems.org  
+To install:  
+```
+gem install rails --version=4.2.4 --no-ri --no-rdoc
+```
+--no-ri and --no-rdoc means do not install documentation (which can still be found on-line)  
+
+
+
 cd work
 rails new demo  # creates all necessary directories
 ```
