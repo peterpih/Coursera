@@ -17,6 +17,9 @@ http://eee.pragprog.com/wikis.RailsPlayTime
 
 ###Installing Rails
 
+```
+cd C:\RubyDevKit
+```
 downloads: http://rubyinstaller.org/downloads  
 instructions: http://github.com/oneclick/rubyinstaller/wiki/Development-Kit  
 
