@@ -48,9 +48,13 @@ GitHub info: https://github.com/oneclick/rubyinstaller/wiki/development-kit
 Install into C:/DevKit  
 Useful info: http://rubyinstaller.org/add-ons/devkit/  
 ```
-cd C:\DevKit
+cd C:\DevKit                        # directory where Dev Kit is installed
+ruby dk.rb init
 ruby dk.rb install
-gem install json --platform=ruby
+gem install json --platform=ruby    # JSON should install correctly and you should see with native extensions
+                                    # in the screen messages
+                                    
+ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"  #  to confirm that the json gem is working.
 ```
 Now test installation from GitHub documentation  
 
