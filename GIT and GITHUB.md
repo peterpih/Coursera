@@ -2,6 +2,8 @@
 
 useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
 useful video: http://www.git-tower.com/learn/git/videos/installing-configuring-git?channel=cli#start  
+branching and merging: https://help.github.com/articles/merging-a-pull-request/  
+
 ```
 git <parameter> --help
 ```
