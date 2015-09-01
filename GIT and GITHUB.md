@@ -1,9 +1,10 @@
 [gh-pages How To](#gh-pages-how-to)
 
-useful link: 
-http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users
-  
-  
+useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
+useful video: http://www.git-tower.com/learn/git/videos/installing-configuring-git?channel=cli#start  
+```
+git \<parameter\> --help
+```
 
 ##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[link to Git commands](#github-section)
 **Clone a local repository using Git on PC**
