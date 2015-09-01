@@ -56,6 +56,21 @@ $ git pull
 $ git status
 $ git push
 ```
+```
+git diff <filename>
+git difftool <filename>
+
+git add <filename>               # add a new file to the repository to be tracked
+git rm <filename>                # delete a file
+
+git log                          # shows history
+git log --stat                   # show which files were changed
+git log --p                      # shows the changes
+
+.git/info/exclude                # ignore file for only local repository
+```
+At any one time, onyl one branch is currently active, this is the **checked out** branch, or **HEAD** branch  
+Move from one branch to another using **checkout**  
 
 <div id='github-section'>
 #Github Commands
