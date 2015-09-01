@@ -69,8 +69,12 @@ git log --p                      # shows the changes
 
 .git/info/exclude                # ignore file for only local repository
 ```
-At any one time, onyl one branch is currently active, this is the **checked out** branch, or **HEAD** branch  
+At any one time, only one branch is currently active, this is the **checked out** branch, or **HEAD** branch  
 Move from one branch to another using **checkout**  
+
+###Restore a previous file version
+http://schacon.github.io/git/git-checkout.html  
+
 
 <div id='github-section'>
 #Github Commands
