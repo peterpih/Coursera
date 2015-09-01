@@ -1,13 +1,13 @@
 #Installing Ruby On Rails on Windows 8.1
 
 ###Install Ruby
-```
-http://rubyinstaller.org/downloads/
-```
-or
-```
-http://rubyonrails.org/download/
-```
+
+http://rubyinstaller.org/downloads/  
+
+or  
+
+http://rubyonrails.org/download/  
+
 
 Be sure to check the comments and install the most recent **stable** version
 **NB: currently not using 64-bit**
