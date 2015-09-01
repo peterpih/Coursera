@@ -42,6 +42,10 @@ gem list              # list avaiable gems
 gem install rails     # will install other gems
 ```
 
+**pessimistic lock**: https://robots.thoughtbot.com/rubys-pessimistic-operator  
+**bundler** best practices: https://github.com/thoughtbot/guides/tree/master/best-practices#bundler  
+
+
 ###Install DevKit  
 
 GitHub info: https://github.com/oneclick/rubyinstaller/wiki/development-kit  
