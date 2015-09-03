@@ -26,3 +26,6 @@ Run: gem install puma -- --with-opt-dir=c:\openssl
 If ruby 2.2.1 doesn't work, try with ruby 2.1.5 32bit. 
 ```
 For the openssl, had to use 7-Zip and unpack twice (once for .lzma, once for .tar)
+
+###PostGres Install
+http://postgresapp.com/  
