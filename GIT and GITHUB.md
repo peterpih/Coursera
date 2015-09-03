@@ -2,8 +2,11 @@
 
 useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
 useful video: http://www.git-tower.com/learn/git/videos/installing-configuring-git?channel=cli#start  
-branching and merging: https://help.github.com/articles/merging-a-pull-request/  
+branching and merging:  
+https://help.github.com/articles/merging-a-pull-request/  
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches  
+
+git and poshgit (has credentials link): https://gist.github.com/pcurylo/6575385  
 ```
 git <parameter> --help
 ```
