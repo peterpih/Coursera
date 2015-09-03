@@ -51,6 +51,8 @@ list = \{\<key\>:\<value\>, ...\}
 
 Code example: http://www.codeskulptor.org/#examples-dictionaries.py  
 
+**Only immutable values can be keys in a dictionary**
+
 ###Images
 ```
 im = simplegui.load_image(URL)
@@ -59,5 +61,7 @@ canvas.draw_image(im, image.center, image.size, canvas.center, canvas.size)
 
 Code example: http://www.codeskulptor.org/#examples-images.py  
 
-
+###Program: Memory
+http://www.codeskulptor.org/#examples-memory_template.py  
+http://www.codeskulptor.org/#examples-memory_template.py  
 
