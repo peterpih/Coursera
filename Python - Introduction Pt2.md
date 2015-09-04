@@ -64,7 +64,5 @@ Code example: http://www.codeskulptor.org/#examples-images.py
 ###Program: Memory
 http://www.codeskulptor.org/#examples-memory_template.py  
 http://www.codeskulptor.org/#examples-memory_template.py  
+Assignment: http://www.codeskulptor.org/#user40_0OfViPY4ky32vEH.py  
 
-http://www.codeskulptor.org/#user40_HW7IMIAxuw_0.py  
-http://www.codeskulptor.org/#user40_HW7IMIAxuw_8.py  
-http://www.codeskulptor.org/#user40_mBYPEfqZLU4pIAO.py
