@@ -1,3 +1,4 @@
+###Coursera Help: https://learner.coursera.help/hc/en-us/requests/new  
 
 ###R Studio Cheatsheets  
 https://www.rstudio.com/resources/cheatsheets/  
