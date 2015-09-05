@@ -4,7 +4,12 @@
 git new <project name>
 cd <project name>
 git init
-
+```
+At this point, the \<project name\> repository needs to be created on GiutHub  
+Then **push** from the remote
+```
+push 
+```
 
 [gh-pages How To](#gh-pages-how-to)
 
