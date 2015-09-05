@@ -1,3 +1,11 @@
+###Initializing Repository from PC
+```
+# goto directory above where you want the project
+git new <project name>
+cd <project name>
+git init
+
+
 [gh-pages How To](#gh-pages-how-to)
 
 useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
