@@ -6,9 +6,14 @@ cd <project name>
 git init
 ```
 At this point, the \<project name\> repository needs to be created on GiutHub  
-Then **push** from the remote
+Set the upstream name
+Then **fetch** from the GitHub to get the README.md file
 ```
-push 
+git push --set-upstream https://github.com/<username>/<project name>.git
+git fetch
+git add -A
+git commit -m "first commit"
+git push
 ```
 
 [gh-pages How To](#gh-pages-how-to)
