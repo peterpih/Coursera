@@ -1,5 +1,11 @@
 https://class.coursera.org/interactivepython2-007
 
+[Mouse Interactions](#mouse-interaction-section)
+[List Methods](#list-methods-section)
+[Classes](#python-class-section)
+
+#Week 5
+<div id='mouse-interation-section'></div>
 ###Mouse Interaction
 
 Top three excuses for losing a video game:
@@ -20,7 +26,7 @@ def mouse_clickhandler(position)    # position is a tuple of two integers
 
 frame.set_mouseclick_handler(mouseclick_handler)
 ```
-
+<div id='list-methods-section></div>
 ###List Methods
 
 myList = [...]  
@@ -65,4 +71,8 @@ Code example: http://www.codeskulptor.org/#examples-images.py
 http://www.codeskulptor.org/#examples-memory_template.py  
 http://www.codeskulptor.org/#examples-memory_template.py  
 Assignment: http://www.codeskulptor.org/#user40_0OfViPY4ky32vEH.py  
+
+#Week 6
+<div id='python-class-section'></div>
+###Classes
 
