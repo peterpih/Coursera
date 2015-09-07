@@ -1,11 +1,11 @@
-https://class.coursera.org/interactivepython2-007
+https://class.coursera.org/interactivepython2-007  
 
-[Mouse Interactions](#mouse-interaction-section)
-[List Methods](#list-methods-section)
-[Classes](#python-class-section)
+[Mouse Interactions](#mouse-interaction-section)  
+[List Methods](#list-methods-section)  
+[Classes](#python-class-section)  
 
 #Week 5
-<div id='mouse-interation-section'></div>
+<div id='mouse-interaction-section'></div>
 ###Mouse Interaction
 
 Top three excuses for losing a video game:
@@ -26,7 +26,7 @@ def mouse_clickhandler(position)    # position is a tuple of two integers
 
 frame.set_mouseclick_handler(mouseclick_handler)
 ```
-<div id='list-methods-section></div>
+<div id='list-methods-section'></div>
 ###List Methods
 
 myList = [...]  
