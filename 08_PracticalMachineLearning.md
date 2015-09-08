@@ -1,4 +1,4 @@
-June 2015: https://class.coursera.org/predmachlearn-015/forum/
+June 2015: https://class.coursera.org/predmachlearn-015/forum/  
 August 2015: https://class.coursera.org/predmachlearn-031/forum/  
 Sept 2015: https://class.coursera.org/predmachlearn-032/forum/  
 
