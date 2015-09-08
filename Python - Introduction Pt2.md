@@ -2,7 +2,7 @@ https://class.coursera.org/interactivepython2-007
 
 [Mouse Interactions](#mouse-interaction-section)  
 [List Methods](#list-methods-section)  
-[Classes](#python-class-section)  
+[Python Classes](#python-class-section)  
 
 #Week 5
 <div id='mouse-interaction-section'></div>
