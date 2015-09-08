@@ -3,17 +3,18 @@
 # goto directory above where you want the project
 git new <project name>
 cd <project name>
-git init
+                      # with a preexisting directory, start here
+git init              # initialize
 ```
 At this point, the \<project name\> repository needs to be created on GiutHub  
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
 ```
-git push --set-upstream https://github.com/<username>/<project name>.git
-git fetch
-git add -A
+git status                    # have a look
+git add -A                    # add files
 git commit -m "first commit"
-git push
+git pull https://github.com/<username>/<project name>.git
+git push --set-upstream https://github.com/<username>/<project name>.git master
 ```
 
 [gh-pages How To](#gh-pages-how-to)
