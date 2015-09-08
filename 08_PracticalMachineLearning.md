@@ -1,3 +1,9 @@
+June 2015: https://class.coursera.org/predmachlearn-015/forum/
+August 2015: https://class.coursera.org/predmachlearn-031/forum/  
+Sept 2015: https://class.coursera.org/predmachlearn-032/forum/  
+
+List of algorithms: http://topepo.github.io/caret/modelList.html  
+
 Gradient Boosting GBM: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/  
 Visual Introduction: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/  
  http://www.drivendata.org/competitions/  
