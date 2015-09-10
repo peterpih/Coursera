@@ -112,6 +112,6 @@ example()
 ```
 ###BlackJack
 main: http://www.codeskulptor.org/#user40_dtnMTC62aM_1.py  
-hand class: http://www.codeskulptor.org/#user40_dtnMTC62aM_10.py  
+hand class: http://www.codeskulptor.org/#user40_VkuZqEQQMEGFoQp.py   
 
 
