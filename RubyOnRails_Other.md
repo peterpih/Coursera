@@ -4,6 +4,7 @@
 Useful link: http://guides.rubyonrails.org/getting_started.html  
 
 ###Installing PostGreSQL on Mac
+Has instruction on starting server:  
 http://www.gotealeaf.com/blog/how-to-install-postgresql-on-a-mac  
 
 Generic database.yml
