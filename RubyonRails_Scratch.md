@@ -22,7 +22,14 @@ In `rails console` type "tp" to see it's installed, or
 show data_directory;
 ```
 
-###Postgres - dump restore
+###Postgres
+**start server**  
+http://www.postgresql.org/docs/9.1/static/server-start.html  
+```
+postgres -D /usr/local/pgsql/data
+```
+
+**dump restore**  
 http://www.postgresql.org/docs/9.4/static/backup-dump.html  
 ```
 pg_dump <databasename> > <txtdumpfile>
