@@ -17,4 +17,25 @@ bundle exec rake db:schema:dump
 - add **table_print** to Gemfile
 - bundle install
 
-In `rails console` type "tp" to see it's installed  
+In `rails console` type "tp" to see it's installed, or
+```
+show data_directory;
+```
+
+###Postgres - dump restore
+http://www.postgresql.org/docs/9.4/static/backup-dump.html  
+```
+pg_dump <databasename> > <txtdumpfile>
+
+psql <databasename> < <txtdumpfile>
+```
+psql will not create a data base, if the data base needs to be created:
+```
+createdb -T template0 <databasename>
+```
+To **DELETE** a database:
+```
+rails dbconsole
+\c <adifferent database>    # connect to a diferent database
+DROP DATABASE <databasename>
+```
