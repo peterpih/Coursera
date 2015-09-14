@@ -29,7 +29,7 @@ pg_dump <databasename> > <txtdumpfile>
 
 psql <databasename> < <txtdumpfile>
 ```
-psql will not create a data base, if the data base needs to be created:
+psql will not create a data base, to **create** a database:
 ```
 createdb -T template0 <databasename>
 ```
