@@ -25,8 +25,15 @@ show data_directory;
 ###Postgres
 **start server**  
 http://www.postgresql.org/docs/9.1/static/server-start.html  
+Possibly have to edit posgresql.conf for localhost and port  
+
 ```
-postgres -D /usr/local/pgsql/data
+postgres -D <directory for postgres.conf>
+```
+To find postgres.conf file directory:
+```
+rails dbconsole
+show config_file;
 ```
 
 **dump restore**  
