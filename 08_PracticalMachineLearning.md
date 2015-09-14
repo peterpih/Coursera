@@ -8,6 +8,7 @@ Gradient Boosting GBM: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/
 Visual Introduction: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/  
  http://www.drivendata.org/competitions/  
  UC Irvine maintains a collection of datasets: https://archive.ics.uci.edu/ml/datasets.html  
+ Oxford Lecture Notes: http://www.robots.ox.ac.uk/~az/lectures/ml/index.html  
  
 
 #Caret Package  
