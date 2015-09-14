@@ -1,0 +1,210 @@
+This page features MathJax technology to render mathematical formulae. If you are using a screen reader, please visit MathPlayer to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.Practical Machine Learning
+Top Navigation BarCoursesPeter J. Pih
+jhu
+Signature Track
+Practical Machine Learning
+by Jeff Leek, PhD, Roger D. Peng, PhD, Brian Caffo, PhD
+Course Home Page
+Search this course
+ Search
+Side Navigation Bar
+COURSE
+
+Announcements
+Video Lectures
+EXERCISES
+
+Quizzes
+Course Project: Writeup
+Course Project: Submission
+ABOUT THE COURSE
+
+Syllabus
+COMMUNITY
+
+Discussion Forums
+DSS Community Site opens in new browser tab
+Help Center
+Help Center
+Forums / Assignments
+Performance Enhancing Hacks
+ PINNED UNRESOLVEDThread controlsSubscribe for email updates.
+Sort replies by:
+Oldest first
+Newest first
+Most popular
+Tags  parallelprocessing Delete Tag×performance Delete Tag×tricks Delete Tag×tips Delete Tag× + Add Tag
+Controls
+Ronny RestrepoCOMMUNITY TA· a month ago 
+Training your learning algorithm will take a long time. I am creating this thread so people can discuss techniques they found useful to speed up the training process.
+
+Parallel Processing
+A technique I found useful when completing this class was to make use of parallel computing. Most modern computers will have multiple cores. This allows multiple things to be computed at the same time. By enabling and setting parallel processing in R, it will split up the computation task into several segments, and delegate them to different cores/threads in your computer processor to run simultaneously.
+
+If you are using the functions provided by the caret package, then they already have the option to make use of parallel processing on by default. All you have to do is set up and register parallel processing in your R session before calling the training function.
+
+#install.packages("doParallel")
+library(doParallel)
+registerDoParallel(cores=2)
+If your computer supports multi-threading within each core, then the cores argument will actually represent the number of threads you will assign, and not just the number of physical cores. So, if you have a Quad core computer, and each core is capable of 2 threads, then you could set cores=8. However, you might not want to do so for this assignment, for reasons that will be discussed next.
+
+Balancing number of cores, and memory usage:
+
+In theory, the more cores/threads you enlist to perform the training process, the quicker it will get done. However, With each core/thread that you enlist, you will also incur a certain amount of additional memory usage. We will be dealing with some big datasets for the assignment. This data set will have to be loaded separately for each core that we enlist. The more cores/threads we enlist, the more memory usage we use up.
+
+If you had an unlimited amount of memory, then you could simply set cores to the maximum number of threads that your computer is capable of, and get the training process done in the quickest possible time.
+
+However, you might only have something like 4, 8 or 16 gigs of RAM on your computer. If the training process requires more memory than you have in RAM, then it will be forced to make use of SWAP memory. This is essentially a portion of space reserved on your hard drive. When your RAM overflows, it moves some of the data to this SWAP space. Unfortunately this seriously slows things down, especially with the large datasets we are dealing. It means that large chunks of data are constantly having to move back and forth between the hard drive and RAM for short periods of usage before having to be returned to SWAP space to make memory for other data that another core needs.
+
+As such, you might get better performance from using a smaller number of cores/threads. Essentially what you want to do is make use of the most number of cores/threads without using up all your RAM.
+
+On my quad-core computer, with two threads per core, and 8Gigs of RAM, the most number of cores I could get away with using before overflowing into SWAP memory was 2. Although it is possible that I could have gotten away with 3 if I had closed some extra applications on my computer.
+
+10votes received.· flag
+Controls
+Ronny RestrepoCOMMUNITY TA· a month ago 
+Revolution R
+During one of the previous offerings of this class, some people recommended using Revolution R, which is an optimised version of R.
+
+There may be performance gains for some applications, but If you are using parallel processing anyway, then you may not see any difference for training a Machine Learning algorithm using this version of R.
+
+4votes received.· flag
++ Comment
+Controls
+Ronny RestrepoCOMMUNITY TA· a month ago 
+Caching Trained Models
+It is a good idea to try out different machine learning algorithms, and different parameters, to see what works well, and what doesn't work as well. The problem that you may encounter is that the training process can be very time consuming. It would be very frustrating to lose all your trained models if R-Studio accidentally crashes, or if you need to close it and rerun the script all over again.
+
+One way around this time consuming task is to cache your trained models.
+
+In R you can save any object (variable) as a file on your computer, and load it back up and assign it to some variable name.
+
+You can save the contents of some variable by using:
+
+saveRDS(myVariableName, file="myFile.rds")
+You can load the contents of an rds file and assign it to a variable in R by using:
+
+myVariableName = readRDS("myFile.rds")
+8votes received.· flag
++ Comment
+Controls
+Ronny RestrepoCOMMUNITY TA· a month ago 
+Amazon EC2
+If you have any experience setting up an amazon EC2 instance, or brave enough to give it a try, then that is an alternative approach.
+
+I dont have any experience with that yet, so i personally give you any tips in that regard, but there will likely be other people on these forums that could guide you if you want to learn.
+
+3votes received.· flag
+Controls
+Caleb MooreSignature Track· a month ago 
+I use an ec2 server as my workstation at work. You can get good performance out of ec2, as long as you choose the right instance type.
+
+For large data sets, go for an r3 instance. You can get one with 60 GB of RAM for a reasonable price. The downside is that the processor runs at 2.5GHZ.
+
+If you are working with really large datasets and need ffdf, make sure that you choose an instance with ephemeral storage on an SSD. Make sure ffdf is configured to write its disk cache to the ephemeral drive. Don't forget to move your work products to an EBS drive or out to S3 before you shut down your instance.
+
+For anything CPU bound that can fit in 8-16GB or RAM, you are really better off with an i5 or i7 desktop. You can get something decent through Dell for a good price. You can even go refurb, just make sure it has a Haswell or newer i5 or i7. RAM is cheap through Newegg, so don't bother buying the pricy Dell stuff.
+
+1votes received.· flag
++ Comment
+Controls
+Chris BrastedSignature Track· a month ago 
+Thanks for the sound advice Ronny! I'm retaking this course, and can vouch for the value of using parallel processing (especially on my creaky old computer) and caching/saving trained models. Also signed up for EC2, as I suspect that I will need it for the Capstone.
+
+There's instructions to help get you going with setting up EC2 for R here: http://www.louisaslett.com/RStudio_AMI/
+
+For anyone with an older computer, or limited memory: training an ML algorithm from a large data set can take a loooooong time, and there's no feedback to show  progress. And sometimes it finishes with an error. What worked for me was to make sure that everything behaved as expected when training on no more than 500 data points. You may get terrible accuracy, but you will have confidence in about half an hour, that it will come up with a model before you kick off an overnight training run on a monster data set.
+
+3votes received.· flag
++ Comment
+Controls
+Gregory D. Horne· a month ago 
+The caret package performs poorly without significant parameter tuning. Most people default to caret only to realise sub-optimal run-time performance compared to using the machine learning algorithm directly. The data set guarantees 100% accuracy on the out-of-sample test data if and only if you have properly trained and tested the in-sample data. The lecture videos and notes are absolutely critical unless you want to venture down the rabbit hole never to be heard from again. There is sufficient time to attempt the course project exercising various machine learning algorithms with an without caret. By the end of this course project you will learn a vitally important lesson which I will not disclose here.
+1votes received.· flag
++ Comment
+Controls
+Al AndersonSignature Track· a month ago 
+Just FYI, I ran a train on a small subset data, ~ 1900 obs, and on my quad-core i7 single core it took 179 seconds to complete, versus 59 seconds with 4 cores assigned. I understand that memory will become a major issue when the data set size increases. I am going to see what the damage is to the RAM with a larger dataset. 
+0votes received.· flag
+Controls
+Chris BrastedSignature Track· a month ago 
+The 'bgm' method gobbles up memory whilst its training; the others don't. 
+0votes received.· flag
+Controls
+Gregory D. Horne· a month ago 
+Memory utilisation is a critical factor affecting run-time. There are techniques available to R that spread the data over multiple computers but it is outside the scope of this course. If you are curious you can uncover various tutorials about splitting the data across multiple computers.
+0votes received.· flag
++ Comment
+Controls
+Patricia Ellen TresselCOMMUNITY TA· 25 days ago 
+Caution:  Folks have been talking about abandoning caret, or preventing it from tuning the classifier's parameters.  We can get away with that on this dataset, but in general, parameter tuning is vital.  Again, that's tuning the *classifier* parameters -- it is not caret's parameters that are being "tuned".  So beware learning the wrong lesson...  In general, caret is doing the correct and useful thing when it does lots of CV or resampling runs, over various combinations of classifier parameter values, to select the best.
+
+I recently participated in a Kaggle competition (for a different class) where the folks getting the best results were doing extensive parameter tuning.  That class had not introduced caret, so they were either doing the tuning by scripting the same thing as caret is doing...or they had discovered caret and were using it.
+1votes received.· flag
++ Comment
+Controls
+Patricia Ellen TresselCOMMUNITY TA· 25 days ago 
+Have a look at this, re. the effect of using a formula (see last post by Max Kuhn).  If it hasn't been fixed in R, this implies we should abandon formula parameters and use the x, y parameters:
+
+http://stackoverflow.com/questions/6543999/why-is-caret-train-taking-up-so-much-memory
+0votes received.· flag
+Controls
+Caleb MooreSignature Track· 24 days ago 
+hmm... that stack overflow link talks about multiple copies of the training data. R only makes a copy when the data is changed. I wonder how many of the "copies" caret uses are pointers to the original data and how many are actual copies. 
+
+http://stackoverflow.com/questions/15759117/what-exactly-is-copy-on-modify-semantics-in-r-and-where-is-the-canonical-source 
+0votes received.· flag
+Controls
+Patricia Ellen TresselCOMMUNITY TA· 23 days ago 
+I should mention, this is the paragraph that is concerning, apart from holding copies of the data:
+
+"First, using the formula interface can be an issue when you have a lot of predictors. This is something that R Core could fix; the formula approach requires a very large but sparse terms() matrix to be retained and R has packages to effectively deal with that issue. For example, with n = 3, 000 and p = 2, 000, a 3–tree random forest model object was 1.5 times larger in size and took 23 times longer to execute when using the formula interface (282s vs 12s)."
+0votes received.· flag
+Controls
+Patricia Ellen TresselCOMMUNITY TA· 23 days ago 
+Hi, Caleb!
+
+I don't know but that's an interesting point, and one that might be tricky to find out without adding code at the C/C++ level to check pointer addresses.
+
+A related question is, how does object.size(x) do its accounting when a referenced object is shared between x and some other object?  I'd guess that if x and y both have "copies" of z, object.size(x) and object.size(y) will both include z.  But if w then points to both x and y, I'd hope the shared copy of z would not be double-counted.  This is something one could try.  If it turned out that the size of z was not counted twice, that would hint we could trust object.size results on a model produced by train, to tell if it did or didn't actually have multiple copies of the data, not just multiple references.
+
+But one thing that's pretty certain is that the *operating system* won't be fooled by anything R does -- the poster really was running out of memory at the OS level, so something really was using up all that memory.
+0votes received.· flag
++ Comment
+Controls
+Jeff JettonSignature Track· 23 days ago 
+This might be old news to some, but I recently discovered an interesting trick.
+
+The model object returned by caret's train function actually contains some built-in benchmarking information. You can access it through the $time portion of the object:
+
+> fit$time
+$everything
+   user  system elapsed 
+ 176.01    1.57  178.20 
+
+$final
+   user  system elapsed 
+  29.87    0.26   30.21 
+
+$prediction
+[1] NA NA NA
+And here's a quick way to just get the overall minutes:
+
+> fit$time$everything[3]/60
+elapsed 
+   2.97 
+You might find this useful in comparing how long different model algorithms and/or tuning parameter sets take.
+
+4votes received.· flag
++ Comment
+New post
+To ensure a positive and productive discussion, please read our forum posting policies before posting.
+
+Message
+BI Link<code> PicMathPreviewEdit: Rich
+
+Resolve thread
+This thread is marked as unresolved. If the problem is fixed, please check the above box and make a post to let staff know that they no longer need to monitor this thread.
+Make this post anonymous to other students
+Subscribe to this thread at the same time
+Add post   
