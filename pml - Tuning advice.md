@@ -1,4 +1,4 @@
-***Attributed: Stuart Ward***  
+***Attributed: Stuart Ward (predmachlearn-031)***  
 
 **Validation advice**: K-fold cross validation is especially beneficial when your data set is limited in size, but as the number of samples increases, then the size of K can be significantly decreased. Or in the case of large, dense, robust data sets, a simple random stratified hold-out validation set (70/30 split of training data) may be all that is necessary to train and validate a highly accurate model.
 
