@@ -1,5 +1,46 @@
 ###Useful links
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
+https://git-scm.com/docs  
+
+###ßummary
+```
+git init                    # initialize
+
+                            # STATUS
+git status                    # tracked, untracked, modified, staged
+git status -s                 # short form: M-modified, A-staged(added), ??-untracked
+
+                            # ADD to staging
+git add <file>                # add to staging
+git add .
+git add -A
+
+                            # REMOVE from staging (files must be staged)
+git rm -f <filename>          # delete file and/or remove tracked deleted files from staging
+git rm --cached <filename>    # remove from staging area (does not delete underlying file)
+                              # in case accidentally added
+                              
+                            # DIFFERENCE
+git diff
+git diff --staged
+git diff <filename>
+
+                            # COMMIT
+git commit -m "<commit text>"
+
+                            # RENAME
+git mv <from_file> <to_file>
+
+                            # LOG
+git log
+git log -p                    # differnece between the last two commits
+git log -p -2                 # last 2 lines
+git log --stat
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --since=2.weeks
+git log -S<function_name>     # search logs for string <function name>
+```
 
 ###Initializing Repository from PC
 ```
