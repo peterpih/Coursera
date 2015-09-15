@@ -49,7 +49,14 @@ git log -S<function_name>     # search logs for string <function name>
 git remote -v                 # show connections
 git branch -a                 # show all branches
 
-git remote add <reponame> git@github.com:<username>/<githhub reponame>
+git remote add fff git@github.com:<username>/<githhub reponame>
+git remote -v
+git fetch fff
+
+git checkout master
+git reset -hard fff/master
+
+git checkout -b <my-branch-name>
 ```
 
 ###Initializing Repository from PC
