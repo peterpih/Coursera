@@ -2,6 +2,10 @@
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
 https://git-scm.com/docs  
 
+pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
+I use the Fork Workflow 
+
+
 ###ßummary
 ```
 git init                    # initialize
@@ -40,6 +44,12 @@ git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s"
 git log --since=2.weeks
 git log -S<function_name>     # search logs for string <function name>
+```
+```
+git remote -v                 # show connections
+git branch -a                 # show all branches
+
+git remote add <reponame> git@github.com:<username>/<githhub reponame>
 ```
 
 ###Initializing Repository from PC
