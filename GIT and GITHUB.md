@@ -1,3 +1,6 @@
+###Useful links
+https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
+
 ###Initializing Repository from PC
 ```
 # goto directory above where you want the project
