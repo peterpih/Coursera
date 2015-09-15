@@ -179,10 +179,10 @@ Now create a gh-pages branch (GitHub-pages)
 ```
 git branch gh-pages
 git checkout gh-pages
-git puch origin gh-pages
+git push origin gh-pages
 ```
 This will create a gh-pages branch on github  
-Also, create a push a .nojekyll file which avoids some of the fancy html in github
+Also, create and push a .nojekyll file which avoids some of the fancy html in github
 ```
 touch .nojekyll
 git add .nojekyll
