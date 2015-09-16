@@ -1,3 +1,7 @@
+**Links**  
+http://www.justinweiss.com/blog/2014/07/28/4-simple-memoization-patterns-in-ruby-and-one-gem/  
+
+
 ```
 rails console
 ```
