@@ -78,30 +78,30 @@ git pull https://github.com/<username>/<project name>.git
 git push --set-upstream https://github.com/<username>/<project name>.git master
 ```
 ###Change Origin Repository
-http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
+from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
 
 Where is the current **origin**  
-  `git remote -v`
+```
+  git remote -v
+      origin	git@github.com:phran/forever-family-foundation.git (fetch)
+      origin	git@github.com:phran/forever-family-foundation.git (push)
 
-  *origin	git@github.com:phran/forever-family-foundation.git (fetch)*  
-  *origin	git@github.com:phran/forever-family-foundation.git (push)*  
+  git remote rm origin
+  git remote -v
+  git remote add origin git@github.com:peterpih/forever-family-foundation
+  git remote -v
+      origin	git@github.com:peterpih/forever-family-foundation (fetch)
+      origin	git@github.com:peterpih/forever-family-foundation (push)
 
-  `git remote rm origin`  
-  `git remote -v`  
-  `git remote add origin git@github.com:peterpih/forever-family-foundation`  
-  `git remote -v`  
+  git config master.remote origin
+  git config master.merge refs/heads/master
+  git status
 
-  *origin	git@github.com:peterpih/forever-family-foundation (fetch)*  
-  *origin	git@github.com:peterpih/forever-family-foundation (push)*  
-
-  `git config master.remote origin`  
-  `git config master.merge refs/heads/master`  
-  `git status`  
-
-  then  
-  `git push --set-upstream origin master`  
-  -or-  
-  `git push --set-upstream origin master -force`  
+  (then either)
+  git push --set-upstream origin master
+      -or-
+  git push --set-upstream origin master -force
+```
 
 
 [gh-pages How To](#gh-pages-how-to)
