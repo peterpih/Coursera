@@ -78,6 +78,8 @@ git pull https://github.com/<username>/<project name>.git
 git push --set-upstream https://github.com/<username>/<project name>.git master
 ```
 ###Change Origin Repository
+http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
+
 Where is the current **origin**  
   `git remote -v`
 
