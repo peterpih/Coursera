@@ -26,6 +26,14 @@ In `rails console` type "tp" to see it's installed, or
 show data_directory;
 ```
 
+###Capybara
+cheatsheet: https://gist.github.com/zhengjia/428105  
+http://stackoverflow.com/questions/22872955/make-capybara-click-a-dropdown-option  
+https://github.com/jnicklas/capybara/blob/3ae284460b1af35d40b077bf14f7222c2982c120/lib/capybara/spec/session/has_select_spec.rb#L15  
+
+Look at the underlying html code on the webpage to find the variable names to test  
+
+
 ###Postgres
 **start server**  
 http://www.postgresql.org/docs/9.1/static/server-start.html  
