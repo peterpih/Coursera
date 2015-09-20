@@ -117,3 +117,5 @@ hand class: http://www.codeskulptor.org/#user40_VkuZqEQQMEGFoQp.py
 ###Space Rocks
 **part 1**: http://www.codeskulptor.org/#user40_gNLnG9u3znGFZ7c.py  
 good example: http://www.codeskulptor.org/#user40_hEcFYSjDix_6.py  
+teacher example: http://www.codeskulptor.org/#examples-ricerocks_template.py  
+
