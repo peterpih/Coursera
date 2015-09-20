@@ -115,4 +115,4 @@ main: http://www.codeskulptor.org/#user40_dtnMTC62aM_1.py
 hand class: http://www.codeskulptor.org/#user40_VkuZqEQQMEGFoQp.py   
 
 ###Space Rocks
-http://www.codeskulptor.org/#user40_xruRUp6rY8_0.py  
+**part 1**: http://www.codeskulptor.org/#user40_dxFW9ns3N9jtgOy.py
