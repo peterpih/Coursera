@@ -11,6 +11,10 @@ heroku update
   1. `heroku open` open a link to the app website
   2. `heroku ps` dynos running on Heroku
   3. `heroku logs` log file for Heroku
+  4. `heroku addons`
+  5. `heroku config`
+  6. `heroku pg` for postgres commands
+  
 
 **Example Heroku website**
   11. `git clone https://github.com/heroku/ruby-getting-started.git` this example app
