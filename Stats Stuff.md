@@ -1,3 +1,5 @@
+###Eigen Vectors PCA explaination: http://deeplearning4j.org/eigenvector  
+
 
 If an observed mean falls within the confidence interval then H(0) is not rejected
 
