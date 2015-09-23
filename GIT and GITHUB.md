@@ -101,6 +101,9 @@ Where is the current **origin**
   git push --set-upstream origin master
       -or-
   git push --set-upstream origin master -force
+  
+  git stash
+  https://git-scm.com/book/en/v1/Git-Tools-Stashing
 ```
 
 
