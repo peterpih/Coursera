@@ -57,6 +57,9 @@ git checkout master
 git reset -hard fff/master
 
 git checkout -b <my-branch-name>
+
+git stash
+https://git-scm.com/book/en/v1/Git-Tools-Stashing
 ```
 
 ###Initializing Repository from PC
@@ -101,9 +104,6 @@ Where is the current **origin**
   git push --set-upstream origin master
       -or-
   git push --set-upstream origin master -force
-  
-  git stash
-  https://git-scm.com/book/en/v1/Git-Tools-Stashing
 ```
 
 
