@@ -21,10 +21,10 @@ Overriding habit
 Change your reaction to your **Cue**
 
 **Cue** how cues happen and effect you  
-1. Location
-2. Time
-3. How you feel
-4. Reactions
+1. Location  
+2. Time  
+3. How you feel  
+4. Reactions  
 
 **Routine** the routine needs to change
 1. Have a plan, develop a new ritual
