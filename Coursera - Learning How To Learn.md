@@ -67,3 +67,18 @@ Procrastination - can be unaware when it happens
 6. Have backup plans for when you still procrastinate  
 7. "Eat your frogs first, every day"
 
+##Memory
+**Visual Memory System**  
+1. Mind is built to retain spatial memory  
+Images connect directly to right brain  
+Moving from working memory to long term memory  
+  - Should be memorable
+  - Repeated
+Repitiion is important, repeat sporatically  
+Writing and saying helps retention  
+Try to turn things into being memorable  
+Auditory hooks  
+Interleve your memory, mix up flash cards  
+
+  
+Where things are and how they look
