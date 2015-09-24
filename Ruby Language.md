@@ -1,6 +1,12 @@
 https://en.wikibooks.org/wiki/Ruby_Programming
 
-https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures#if
+https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures#if  
+
+It is conventional in **Ruby** to have "?" at the end of the methid if the method returns a boolean  
+
+**<<** appends two objects is strings  
+**+** concatenates two strings forming a third string (uses more memory)  
+
 
 **CODE BLOCKS**
 ```
