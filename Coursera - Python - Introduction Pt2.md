@@ -119,3 +119,5 @@ hand class: http://www.codeskulptor.org/#user40_VkuZqEQQMEGFoQp.py
 good example: http://www.codeskulptor.org/#user40_hEcFYSjDix_6.py  
 teacher example: http://www.codeskulptor.org/#examples-ricerocks_template.py  
 
+###Asteroids
+http://www.codeskulptor.org/#user40_R6yZijdXdQ_1.py  
