@@ -82,3 +82,17 @@ Interleve your memory, mix up flash cards
 
   
 Where things are and how they look
+
+###Overlearning
+A certain amount of overlearning is necessary, but repeating something you already know is not productive  
+Focus on what you find difficult, this is called **deliberate practice***
+**Einstellung** (mind set) your prior may stop you from learning something new, being in a rut, you will have to unlearn to learn
+
+**Memory Consolidation**  
+**Reconsolidation**
+
+
+**Long term memory**  
+**Working memory**  
+Repetition over several days is helpful  
+
