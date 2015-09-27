@@ -8,6 +8,7 @@ It is conventional in **Ruby** to have "?" at the end of the methid if the metho
 
 **<<** appends two objects is strings  
 **+** concatenates two strings forming a third string (uses more memory)  
+**::** constant lookup  
 
 
 **CODE BLOCKS**
