@@ -1,8 +1,11 @@
 ###Class names in Rails must be Capitalized  
 
+#TOC
+[Installing PostGrSQL on Mac](#postgres-section)
 
 Useful link: http://guides.rubyonrails.org/getting_started.html  
 
+<div id="postgres-section">
 ###Installing PostGreSQL on Mac
 Has instruction on starting server:  
 http://www.gotealeaf.com/blog/how-to-install-postgresql-on-a-mac  
