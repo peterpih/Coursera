@@ -1,9 +1,13 @@
 ###Class names in Rails must be Capitalized  
+Useful link: http://guides.rubyonrails.org/getting_started.html  
 
 #TOC
+[Pry Debugger](#pry-section)
 [Installing PostGrSQL on Mac](#postgres-section)
 
-Useful link: http://guides.rubyonrails.org/getting_started.html  
+<div id="pry-section")
+###Pry Debugger
+**Useful link**: http://pryrepl.org  
 
 <div id="postgres-section">
 ###Installing PostGreSQL on Mac
