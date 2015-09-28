@@ -2,10 +2,10 @@
 Useful link: http://guides.rubyonrails.org/getting_started.html  
 
 #TOC
-[Pry Debugger](#pry-section)
-[Installing PostGrSQL on Mac](#postgres-section)
+1. [Pry Debugger](#pry-section)
+1. [Installing PostGrSQL on Mac](#postgres-section)
 
-<div id="pry-section")
+<div id="pry-section">
 ###Pry Debugger
 **Useful link**: http://pryrepl.org  
 
