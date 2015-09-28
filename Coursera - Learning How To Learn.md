@@ -96,3 +96,11 @@ Focus on what you find difficult, this is called **deliberate practice***
 **Working memory**  
 Repetition over several days is helpful  
 
+###How To Be A Better Learner
+
+**Excercise** is the best "drug" to help you learn better  
+
+**Critical Times For Learning**
+Lsnguage acquisition up until puberty  
+**Depth perception** forms in the first two years of life - "Fixing My Gaze" book  
+
