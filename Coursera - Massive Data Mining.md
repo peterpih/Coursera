@@ -82,5 +82,7 @@ Pages that know about newspaper may point to many newspapers
 #PageRank
 **Flow Model**
 
+**Stochastic Adjacency Matrix**
 
-
+Power Iteration: http://www.codeskulptor.org/#user40_7DWAfop9GV_1.py
+**Power Iteration with beta**: http://www.codeskulptor.org/#user40_7DWAfop9GV_2.py  
