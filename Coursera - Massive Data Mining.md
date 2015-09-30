@@ -86,3 +86,4 @@ Pages that know about newspaper may point to many newspapers
 
 Power Iteration: http://www.codeskulptor.org/#user40_7DWAfop9GV_1.py
 **Power Iteration with beta**: http://www.codeskulptor.org/#user40_7DWAfop9GV_2.py  
+http://www.codeskulptor.org/#user40_7DWAfop9GV_6.py
