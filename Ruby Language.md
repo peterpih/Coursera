@@ -14,14 +14,18 @@ It is conventional in **Ruby** to have "?" at the end of the methid if the metho
 from: https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants  
 1. **local_variable** starting with (a..z) or (_) are local variable define by the block the are in  
 2. **@instance_variable** available within the instance of a class  
-  - An instance variable belongs to the object itself. Uninitialized instance variables have a value of nil.  
+
+    An instance variable belongs to the object itself. Uninitialized instance variables have a value of nil.
 
 3. **@@class_variable** available within all instances of a class, and has inheritance  
-  - A class variable is shared by all instances of a class and begins with '@@'  
+
+    A class variable is shared by all instances of a class and begins with '@@'  
  
 4. **$global_variable** available everywhere  
 5. **CONSTANT** begins with (A..Z) uppercase  
-  - A variable whose name begins with an uppercase letter (A-Z) is a constant. A constant can be reassigned a value after its initialization, but doing so will generate a warning. Every class is a constant.  
+
+    A variable whose name begins with an uppercase letter (A-Z) is a constant. A constant can be reassigned a value after its initialization, but doing so will generate a warning. Every class is a constant.  
+
 5. "**::**" is the scope resolution operator  
 
 **CODE BLOCKS**
