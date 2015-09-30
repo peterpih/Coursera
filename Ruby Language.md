@@ -13,11 +13,12 @@ It is conventional in **Ruby** to have "?" at the end of the methid if the metho
 **Variable Names**  
 from: https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants  
 1. **local_variable** starting with (a..z) or (_) are local variable define by the block the are in  
-2. **@instance_variable** available within the instance of a class  
+2. **@instance_variable** available within the instance of a class
 
-    An instance variable belongs to the object itself. Uninitialized instance variables have a value of nil.
-
-3. **@@class_variable** available within all instances of a class, and has inheritance  
+    An instance variable belongs to the object itself.  
+    Uninitialized instance variables have a value of nil.
+    
+3. **@@class_variable** available within all instances of a class, and has inheritance
 
     A class variable is shared by all instances of a class and begins with '@@'  
  
