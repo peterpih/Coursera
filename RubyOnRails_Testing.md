@@ -13,7 +13,7 @@ Use **describe** for *things*
 ```
 describe "#matriculate"
 ```
-**context** names should not be the same as method names, explain why the user calls the method
+**context** names should not be the same as method names, they explain why the user calls the method
 ```
 # Bad:
 describe #assign
@@ -47,21 +47,20 @@ let(:grade_lavels) { [1, 2, 3] }
 ```
 **context** is used for *state*, **before** is used to get to that *state*  
 
-**let** vs **subject**
+###let vs subject
 Use **subject** for things you are testing, use **let** for *dependencies*  
-**before** vs **let**
+###before vs let
 ```
 # Bad:
 let(:classroom) { Classroom.new(grade: 5) }
 
-# Good:
+# Good: (also names subject)
 subject(:classroom) { Classroom.new(grade: 5) }
 ```
 Note: If your constructor takes no parameters, there's no need to define subject, but giving it a name is still a good idea.  
 
+###subject & describe
 **describe** is used for *things*, **subject** specifies thet things to test  
-
-**subject** & **describe**
 ```
 # At top level:
 describe ParentNotifier do
