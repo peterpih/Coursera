@@ -2,8 +2,9 @@ https://robots.thoughtbot.com/how-we-test-rails-applications
 
 From: http://jakegoulding.com/presentations/rspec-structure/#slide-0  
 **describe** and **context** group related tests together, they are the same method  
-Rspec encourages to organize by *things*, tests usually involved changes in *state*
-Use **context** for *states*, but not available at the top level
+Rspec encourages to organize by *things*, tests usually involved changes in *state*  
+
+Use **context** for *states*, but not available at the top level  
 
 ```
 context "when the student is sick"
@@ -16,16 +17,15 @@ describe "#matriculate"
 ```
 # Bad:
 describe #assign
+
 # Good:
 context "assingning homework to students"
 ```
-**before** vs **let**  
-**before** runs code  
-**let** lazily runs code, when first called  
+###before vs let
+**before** runs code, use for *actions*  
+**let** lazily runs code, when first called, use for *dependencies*, assigning values  
 
-Use **before** for actions  
-Use **let** for dependencies, assigning values
-For actions:
+For *actions*:
 ```
 # Bad:
 let(:dummy) do
@@ -37,7 +37,7 @@ before do
   @classroom.initialize_roster
 end
 ```
-For depedencies:
+For *depedencies*:
 ```
 # Bad:
 before { @grade_levels = [1, 2, 3] }
