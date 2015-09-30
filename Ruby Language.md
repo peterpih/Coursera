@@ -2,6 +2,8 @@ Good beginning tutorial: http://rubymonk.com
 
 https://en.wikibooks.org/wiki/Ruby_Programming
 
+Classes/Methods: http://ruby-doc.org/core-2.2.0/index.html#classes  
+
 https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures#if  
 
 It is conventional in **Ruby** to have "?" at the end of the methid if the method returns a boolean  
