@@ -1,4 +1,4 @@
-**Beginning Rails 4**: https://books.google.co.uk/books?id=KdvTAAAAQBAJ&pg=PA52&lpg=PA52&dq=%22%3D%3E%22+operator+in+rails+4&source=bl&ots=UdU7f90zix&sig=aFHc2JnL8LGYbFTnSJITeAZJFkg&hl=en&sa=X&ved=0CEMQ6AEwBWoVChMI3Yrpka-iyAIVSJ0aCh0H0gAk#v=onepage&q=%22%3D%3E%22%20operator%20in%20rails%204&f=false  
+**Beginning Rails 4** book: https://books.google.co.uk/books?id=KdvTAAAAQBAJ&pg=PA52&lpg=PA52&dq=%22%3D%3E%22+operator+in+rails+4&source=bl&ots=UdU7f90zix&sig=aFHc2JnL8LGYbFTnSJITeAZJFkg&hl=en&sa=X&ved=0CEMQ6AEwBWoVChMI3Yrpka-iyAIVSJ0aCh0H0gAk#v=onepage&q=%22%3D%3E%22%20operator%20in%20rails%204&f=false  
 
 #Installing Ruby On Rails on Windows 8.1
 
