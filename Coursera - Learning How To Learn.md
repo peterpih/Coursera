@@ -104,3 +104,19 @@ Repetition over several days is helpful
 Lsnguage acquisition up until puberty  
 **Depth perception** forms in the first two years of life - "Fixing My Gaze" book  
 
+###Checklist For Taking Tests
+1. Did you make a serious effect to understand the text?
+2. Did you work with classmates on homework problems, or check solutions with others?
+3. Did you attempt to outline homwork problem solutions?
+4. Did you participate actively in homework group discussions? contributing ideas and asking questions
+5. Did you consult with the instructor or TAs?
+6. Did you unerstand all your homework problems when they were handed in?
+7. Did you as in class for explainations of homework problems that were not clear to you?
+8. Did you use the study guide?
+9. Did you go to the review session?
+10. Did you get a good night's sleep before the test?
+
+###Hard Start, Jump To Easy
+
+Start on hard problems first since the **diffuse mode** is most effective for this, then quickly jump to the **focussed mode**.
+
