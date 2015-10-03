@@ -44,3 +44,13 @@ Personalization
   3. Ratings
   4. (Community)
 
+###Non Personal Recommenders  
+**Averages** a blunt instrument  
+**Product Associations** - products that are related together  
+  - what people bought at the same time, not good for follow up  
+  - time windows - what people bought within a time window
+**Ephemerally Personalized** reccomendation - people doing x basically will do y  
+
+**How scores change over time**  
+Self selection - only people interested will vote  
+Survivor bias - people stop going, lower scores disappear  
