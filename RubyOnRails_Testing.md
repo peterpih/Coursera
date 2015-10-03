@@ -1,5 +1,5 @@
 https://robots.thoughtbot.com/how-we-test-rails-applications  
-**ook chapter**: http://www.justinweiss.com/files/practicing-rails-sample.pdf  
+**book chapter**: http://www.justinweiss.com/files/practicing-rails-sample.pdf  
 
 From: http://jakegoulding.com/presentations/rspec-structure/#slide-0  
 **describe** and **context** group related tests together, they are the same method  
