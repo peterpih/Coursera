@@ -53,4 +53,31 @@ Personalization
 
 **How scores change over time**  
 Self selection - only people interested will vote  
-Survivor bias - people stop going, lower scores disappear  
+Survivor bias - people stop going, lower scores disappear, giving upward bias of scoring  
+
+###Predictions and Reccomendations
+Reccomendations are suggestions 
+  - pros: provides set of good choices  
+  - cons: can stop exploring if perceived to be top-n, will stop when less relevent  
+Predictions involve accuracy and more precision  
+  - pros: helps quinatify, how much would you like it, how accurate  
+  - cons: provides something falsifiable, can be wrong  
+
+###Scale and Normalization
+Aggregate Preferences  
+  - Average rating, upvote proporation, 
+  - Net upvotes (Reddit), shows popularity, doesn't show controversy
+  - Likes (Facebook)  
+  - Histogram  
+
+Why not use rating as score?
+  - data is too sparse  
+  - may be old  
+  - maye want to bias toward local interntionally  
+
+Ranking consideration  
+  - How confident are you in the ranking?  
+  - risk aversion, what if wrong?  
+
+Confidence Intervals  
+
