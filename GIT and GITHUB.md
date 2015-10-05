@@ -53,10 +53,11 @@ git remote add fff git@github.com:<username>/<githhub reponame>
 git remote -v
 git fetch fff
 
-git checkout master
-git reset -hard fff/master
+git checkout master                   # switch branches
+git checkout -b <my-branch-name>      # do checkout and create new branch
+git checkout ####### file             # restore a file from commit tag ####### (seven digits)
 
-git checkout -b <my-branch-name>
+git reset -hard fff/master
 
 git stash
 https://git-scm.com/book/en/v1/Git-Tools-Stashing
