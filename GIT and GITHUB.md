@@ -14,28 +14,39 @@ git status                    # tracked, untracked, modified, staged
 git status -s                 # short form: M-modified, A-staged(added), ??-untracked
 
 #---ADD--- to staging
+
 git add <file>                # add to staging
 git add .
 git add -A
 
 #---COMMIT---
+
 git commit -m "<commit text>" # one line commit comment
 git commit                    # will open text editor for commenting
 
 #---REMOVE--- from staging (files must be staged)
+
 git rm -f <filename>          # delete file and/or remove tracked deleted files from staging
 git rm --cached <filename>    # remove from staging area (does not delete underlying file)
                               # in case accidentally added
                               
+#---CHECKOUT--- go back to version at last commit
+
+git checkout <filename>       # restore previous file version from last commit
+git checkout <branch name>    # switch to branch <branch name>
+
 #---DIFFERENCE---
+
 git diff
 git diff --staged
 git diff <filename>
 
-#---RENAME---
+#---RENAME--- a file
+
 git mv <from_file> <to_file>
 
-#---LOG---
+#---LOG--- show changes between two different branches
+
 git log
 git log -p                    # difference between the last two commits
 git log -p -2                 # last 2 lines
@@ -61,7 +72,8 @@ git checkout -b <my-branch-name>      # do checkout and create new branch
 git checkout ####### file             # restore a file from commit tag ####### (seven digits)
 
 #---RESET--- reset a branch
-git reset --hard HEAD^          # resets branch to last commit and removes last commit from history
+git reset                       # unstage any staged files
+git reset --hard HEAD^          # resets current branch to last commit and removes last commit from history
 git reset --hard HEAD~2         # resets last 2 commits
 git reset --hard fff/master
 
