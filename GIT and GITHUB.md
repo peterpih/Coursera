@@ -5,37 +5,37 @@ https://git-scm.com/docs
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
 I use the Fork Workflow 
 
-
-###Summary
+###For Files
 ```
-git init                    # initialize
+git init                      # initialize a local repository
 
-                            # STATUS
+#---STATUS---
 git status                    # tracked, untracked, modified, staged
 git status -s                 # short form: M-modified, A-staged(added), ??-untracked
 
-                            # ADD to staging
+#---ADD--- to staging
 git add <file>                # add to staging
 git add .
 git add -A
 
-                            # REMOVE from staging (files must be staged)
+#---COMMIT---
+git commit -m "<commit text>" # one line commit comment
+git commit                    # will open text editor for commenting
+
+#---REMOVE--- from staging (files must be staged)
 git rm -f <filename>          # delete file and/or remove tracked deleted files from staging
 git rm --cached <filename>    # remove from staging area (does not delete underlying file)
                               # in case accidentally added
                               
-                            # DIFFERENCE
+#---DIFFERENCE---
 git diff
 git diff --staged
 git diff <filename>
 
-                            # COMMIT
-git commit -m "<commit text>"
-
-                            # RENAME
+#---RENAME---
 git mv <from_file> <to_file>
 
-                            # LOG
+#---LOG---
 git log
 git log -p                    # difference between the last two commits
 git log -p -2                 # last 2 lines
@@ -46,22 +46,26 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git log --since=2.weeks
 git log -S<function_name>     # search logs for string <function name>
 ```
+###For Repositories and Branches
 ```
 git remote -v                 # show connections
 git branch -a                 # show all branches
 
 git remote add fff git@github.com:<username>/<githhub reponame>
-git remote -v
 git fetch fff
+git pull 
 
+#---CHECKOUT--- switch branches
 git checkout master                   # switch branches
 git checkout -b <my-branch-name>      # do checkout and create new branch
 git checkout ####### file             # restore a file from commit tag ####### (seven digits)
-]
+
+#---RESET--- reset a branch
 git reset --hard HEAD^          # resets branch to last commit and removes last commit from history
 git reset --hard HEAD~2         # resets last 2 commits
 git reset --hard fff/master
 
+#---STASH--- push a branch onto a saved stack
 git stash                       # creates a stash  
 git stash save  
 git stash save "description"  
