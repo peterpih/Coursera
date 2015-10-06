@@ -37,8 +37,9 @@ git mv <from_file> <to_file>
 
                             # LOG
 git log
-git log -p                    # differnece between the last two commits
+git log -p                    # difference between the last two commits
 git log -p -2                 # last 2 lines
+git log --one-line            # show each commit on one line
 git log --stat
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s"
