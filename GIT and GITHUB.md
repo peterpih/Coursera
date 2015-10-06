@@ -56,10 +56,18 @@ git fetch fff
 git checkout master                   # switch branches
 git checkout -b <my-branch-name>      # do checkout and create new branch
 git checkout ####### file             # restore a file from commit tag ####### (seven digits)
+]
+git reset --hard HEAD^          # resets branch to last commit and removes last commit from history
+git reset --hard HEAD~2         # resets last 2 commits
+git reset --hard fff/master
 
-git reset -hard fff/master
-
-git stash
+git stash                       # creates a stash  
+git stash save  
+git stash save "description"  
+git stash list                  # lists stashes  
+git stash drop stash@{0}        # delete first stash
+git stash drop stash@{1}        # delete second stash
+git stash 
 https://git-scm.com/book/en/v1/Git-Tools-Stashing
 ```
 
