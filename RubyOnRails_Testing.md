@@ -1,3 +1,9 @@
+###Logging output
+```
+logger.debug <blah>          # => log/developement.log
+Rails.logger.debug <blah>    # => log/test.log
+```
+
 https://robots.thoughtbot.com/how-we-test-rails-applications  
 **book chapter**: http://www.justinweiss.com/files/practicing-rails-sample.pdf  
 
