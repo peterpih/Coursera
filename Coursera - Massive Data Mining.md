@@ -87,3 +87,20 @@ Pages that know about newspaper may point to many newspapers
 Power Iteration: http://www.codeskulptor.org/#user40_7DWAfop9GV_1.py
 **Power Iteration with beta**: http://www.codeskulptor.org/#user40_7DWAfop9GV_2.py  
 http://www.codeskulptor.org/#user40_7DWAfop9GV_6.py
+
+
+#Similar Sets
+Finding textual data that is similar
+###Shingling
+false positives and false negatives  
+***k-shingle*** a sequence of **k** concsecutive characters (white space is considered a character)  
+Usually k =5..10  
+Changing words or moving entire paragraphs will only effect the boundary shingles  
+Shingles can be further hashed into **tokens**  
+
+###Minhashing
+
+###Locality Sensitive Hashing
+
+###Jaccard Similarities
+size of the intersection of 2 sets divided by the size of their union  
