@@ -485,6 +485,7 @@ rails generate model <model name>
 **Generate Controller**
 ```
 rails generate controller <name of controller>
+```
 
 **has_many**
 **belongs_to**
@@ -568,6 +569,4 @@ end
   </div>
 </div>
 ```
-```
 test
-```
