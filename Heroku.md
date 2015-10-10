@@ -12,7 +12,7 @@ heroku update
   2. `heroku ps` dynos running on Heroku
   3. `heroku logs` log file for Heroku
   4. `heroku addons`
-  5. `heroku config`
+  5. `heroku config` show configuration and the database url
   6. `heroku pg` for postgres commands
   
 
