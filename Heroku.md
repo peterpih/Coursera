@@ -1,4 +1,5 @@
-**Useful setup link**: http://sourabhbajaj.com/mac-setup/Heroku/README.html  
+Useful **setup** link: http://sourabhbajaj.com/mac-setup/Heroku/README.html  
+Useful **posgres** link: https://devcenter.heroku.com/articles/heroku-postgresql#pg-push-and-pg-pull  
 
 ###Install Heroku
 On OSX, use Homebrew:  
