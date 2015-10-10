@@ -12,7 +12,7 @@ heroku update
 ```
 
 ###Heroku Commands
-  1. `heroku open` open a link to the app website
+  1. `heroku open` open a link to the app website in local browser
   2. `heroku ps` dynos running on Heroku
   3. `heroku logs` log file for Heroku
   4. `heroku addons`
