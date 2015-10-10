@@ -1,7 +1,7 @@
 ###Useful links
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
 https://git-scm.com/docs  
-###Some Thougts:
+###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
 '''
