@@ -1,6 +1,21 @@
 ###Useful links
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
 https://git-scm.com/docs  
+###Some Thougts:
+Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
+
+'''
+git checkout feature_branch
+...
+git status
+git add .
+git commit
+git status
+git merge master
+...   # resolve any conflicts if necessart
+git checkout master
+git merge feature_branch # there will be no comflicts at this point
+```
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
 I use the Fork Workflow 
