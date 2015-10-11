@@ -1,5 +1,8 @@
 #Machine Learning
 
+[Aggregating Algortihms](#aggregating-algortithms-section)
+[Final Project](#final-project-section)
+
 ##Tour of Machine Learning Algorithms  
 http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/?__s=39qwimyqas1dxyxzhr6w
 
@@ -20,5 +23,10 @@ Continue in that fashion for probability of 4 positives and 1 negative, then 5 p
 
 Note that the second term has an error in it. It should be 5 * (0.7)^4(0.3)^1
 
+<div id='aggregating-algorithms-section'>
+###Aggregating Algorithms
+http://vovk.net/aa/index.html  
+
+<div id='final-project-section'>
 Examples of Final Project:  
 http://rpubs.com/deeptendu/112973  
