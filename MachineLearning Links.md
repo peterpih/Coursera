@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=TK4qLwTye_s  
 
+http://neuralnetworksanddeeplearning.com/chap1.html  
+
 Ebook:  
 http://www.iro.umontreal.ca/~bengioy/dlbook/  
 
