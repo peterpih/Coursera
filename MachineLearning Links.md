@@ -61,7 +61,7 @@ Use when the model has a probabilistic setup
 Use whent he number of features is pretty small, will tell you which features are important  
 Has good explainability, training is fast, but not very precise  
 
-###Clustering  
+**Clustering**  
 Builds "coherent" groups of data  
 Look at representative data point in each cluster  
 Setup **centroids** (seed center of clusters  
