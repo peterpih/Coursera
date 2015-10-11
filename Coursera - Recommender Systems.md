@@ -81,3 +81,28 @@ Ranking consideration
 
 Confidence Intervals  
 
+###TFIDF
+Motivation behind TFIDF is the failure of search engines  
+Things to consider:  
+1. How often does the term appear in the document  
+2. Not all terms are equally relevent  
+
+###TFIDF Weighting** = Term Frequency * Inverse Document Frequency  
+**Term Frequency** - how often does the term appear in the document  
+**Inverse Document Frequency** - inverse of how many documents have a term in it, rarity is good usually:  
+```
+log (# documents) / (# documents with term)
+```
+keywords - metadata  
+tags - descriptive phrases applied by the community  
+Automatically demotes stop words
+TFIDF fails when the document itself does not contain the necessary term  
+
+BM25 (aka Okapi BM25)  
+
+Problems with TFIDF:  
+1. Phrases and n-grams, adjacency  
+2. Significance within a document, ie title, heading, paragraph  
+3. General document authority: Page ranks (are other documents linked to it)  
+4. Implied content ie links  
+
