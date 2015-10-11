@@ -6,4 +6,4 @@ http://www.iro.umontreal.ca/~bengioy/dlbook/
 
 Standford Machine Learning Videos:  
 cs229.stanford.edu  
-**lecture 1**: https://www.youtube.com/watch?v=UzxYlbK2c7E  
+20 lectures: https://www.youtube.com/watch?v=UzxYlbK2c7E&list=PLA89DCFA6ADACE599  
