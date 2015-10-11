@@ -19,3 +19,6 @@ From the binomial distribution. First term 10 * (0.7)^3(0.3)^2  is the probabili
 Continue in that fashion for probability of 4 positives and 1 negative, then 5 positives and 0 negatives, summing them all together for the total probability of a majority vote.
 
 Note that the second term has an error in it. It should be 5 * (0.7)^4(0.3)^1
+
+Examples of Final Project:  
+http://rpubs.com/deeptendu/112973  
