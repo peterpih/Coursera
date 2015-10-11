@@ -1,7 +1,7 @@
 #Machine Learning
 
-[Aggregating Algortihms](#aggregating-algortithms-section)
-[Final Project](#final-project-section)
+[Aggregating Algortihms](#aggregating-algortithms-section)  
+[Final Project](#final-project-section)  
 
 ##Tour of Machine Learning Algorithms  
 http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/?__s=39qwimyqas1dxyxzhr6w
