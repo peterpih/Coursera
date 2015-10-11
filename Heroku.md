@@ -2,6 +2,7 @@ Useful links:
 **setup**: http://sourabhbajaj.com/mac-setup/Heroku/README.html  
 **posgres**: https://devcenter.heroku.com/articles/heroku-postgresql#pg-push-and-pg-pull  
 **git deploy**: https://dashboard.heroku.com/apps/aqueous-spire-6633/deploy/heroku-git   
+**pulling down database**: 
 
 
 ###Install Heroku
