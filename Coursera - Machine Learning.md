@@ -1,6 +1,6 @@
 #Machine Learning
 
-[Aggregating Algortihms](#aggregating-algortithms-section)  
+[Aggregating Algortihms](#aggregating-algorithms-section)  
 [Final Project](#final-project-section)  
 
 ##Tour of Machine Learning Algorithms  
