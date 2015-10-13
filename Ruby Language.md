@@ -3,6 +3,7 @@ Good beginning tutorial: http://rubymonk.com
 https://en.wikibooks.org/wiki/Ruby_Programming
 
 Classes/Methods: http://ruby-doc.org/core-2.2.0/index.html#classes  
+Class Method vs Instance Method: http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/  
 
 https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures#if  
 
