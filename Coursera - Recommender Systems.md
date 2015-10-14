@@ -1,7 +1,32 @@
 **LensKit**: http://lenskit.org/  
-
-
 Provided by University of Minnesota
+
+[Content Based Reccomender Systems)(#content-based-reccommender-section)
+
+<div id="content-based-reccommender-section>
+###Content Based Rccommender Systems
+**Keyword Vector**  
+description can be in projected in keyword vector space as can user preference  
+cosine appoaches 1 as angle gets small  
+https://en.wikipedia.org/wiki/Vector_space_model  
+https://en.wikipedia.org/wiki/Generalized_vector_space_model  
+
+Representing keyword vector:  
+1. simple - yes(1) or no(0) to each keyword  
+2. occurance - number of times a keyword is used to discribe  
+3. TFIDF -  inverse document frequency measures scarcity  
+
+When to normailize vector: when you want it to be equally weighted, when not many observations  
+
+**Compupting Predictions**
+**prediction** is the **cosine** of the angle between two vectors: feature vector and user vector  
+Compute the dot product of two normailized vectors: multiply corresponding elements, add and take square root  
+Using unnormalized vectors, divide by the product of the the two lengths  
+Cosine ranges between -1 and 1 or 0 and 1 (if all positive, 1 is better  
+
+Keyword vectors can not handle interdepencies, ie I like 
+
+
 
 ###Domain of Reccommendation
 What's being reccomended?  
