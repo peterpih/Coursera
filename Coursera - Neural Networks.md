@@ -53,3 +53,18 @@ Different parts of the brain do different things (modularization)
    Weights are the same in both directions  
    Symetric networks re much easier to analyze than recurrent networks (John Hopfield)  
    More restricted in what they do, restricted by an energy function  
+
+<div id="perceptron-section">
+###Perceptron
+Popularized by Frank Rosenblatt in 1960's  
+Minsky and Papert book "Perceptron" in 1969  
+
+**Binary Threshold Unit** McCulloch-Pitts (1943)  
+Weighted sum of inputs from other neurons (plus bias)  
+If above a threshold, output=1, otherwise output=0  
+The **bias** is the same as begin a weight on an input node of 1 (1 * bias)  
+
+**Perceptron Convergence**
+
+
+
