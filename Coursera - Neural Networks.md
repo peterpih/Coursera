@@ -15,7 +15,7 @@ Understand how the brain works
 Understand a stype of parrallel computing  
 Different parts of the brain do different things (modularization)  
 
-div id="types-of-learning-section">
+<div id="types-of-learning-section">
 ###Three Types Of Learning
 1. **Supervised Learning** learning to predict an output given an input  
    
