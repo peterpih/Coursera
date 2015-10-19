@@ -22,8 +22,8 @@ Different parts of the brain do different things (modularization)
    Another way to think about a model class is to ask yourself: are these models performing a fundamentally  
    different set of computations? In this case, the first neural network is performing nonlinear computations which    cannot be represented by a linear network.
 
-  a. **Regression** target output is a number
-  b. **Classification** the target output is a class label
+  a. **Regression** target output is a number  
+  b. **Classification** the target output is a class label  
 
 2. **Reinforcement Learning** learning to maximize a payoff  
    Usually use a discount for payoffs in the future  
