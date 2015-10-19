@@ -1,6 +1,6 @@
 #TOC
-[Types of Learning](#types-of-learning-section)
-[Neural Network Architecture](#nn-architecture-section)
+[Types of Learning](#types-of-learning-section)  
+[Neural Network Architecture](#nn-architecture-section)  
 
 
 Examples of tasks best solved by machine learning:  
