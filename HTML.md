@@ -19,3 +19,17 @@
   </body>
 </html>
 ```
+**Include a link**
+```
+<a href="put url here">"some label here"</a>
+```
+**Include an image**
+```
+<img src="image url here">
+```
+**Text Alignment**
+```
+style="text-align:center"
+style="text-align:right"
+stype="text-align:left"
+```
