@@ -92,7 +92,7 @@ selector {
   property: value;
 }
 ```
-**Include Stylesheets**
+**Include CSS stylesheets**  
 ```
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 ```
