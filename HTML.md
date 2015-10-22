@@ -30,6 +30,12 @@ Always has `<head>...</head>`, and `<body>...</body>` go inside `<html>..</html>
 **Include a link**
 ```
 <a href="put url here">"some label here"</a>
+
+In the .css can format the link:
+a {
+  text-decoration: none   <!-- will not show the underline -->
+  color: red              <!-- change the color of the text -->
+}
 ```
 **Include an image**
 ```
@@ -74,6 +80,10 @@ table data `<td>...</td>`
 ```
 ```
 <table style="border-collapse:collapse>
+
+table { <!-- in css -->
+  border: 1px dashed blue;
+}
 ```
 ###CSS  
 `selector`s are any HTML element  
@@ -86,3 +96,4 @@ selector {
 ```
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 ```
+
