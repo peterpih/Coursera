@@ -106,7 +106,7 @@ div {
     background-color: #bcd2ee;
     border-style: dashed;
     border-width: 2px;
-    border-radius: 5px;
+    border-radius: 5px;  <!--- detemines how rounded the corners are --->
     margin: auto;
     text-align: center;
 }
@@ -154,3 +154,33 @@ Use when several different elements have the same styling
 
 `p:first-child`  
 `p:nth-child(n)`  
+
+###HTML blocks  
+`block:block` the default, blocks take up an entire line  
+`block:inline-block` blocks can sit next to each other  
+`block:inline` they all sit on top of each other on the same line  
+`block:none` they all disappear  
+
+**margin**
+`margin-top: 10px`  
+`margin-right: 20px`  
+`margin-bottom: 30px`
+`margin-left: 40px`  
+Can also be specified on one line, going counter-clockwise as:  
+`margin: 10px 20px 30px 40px`  
+Can also be done for:  
+`padding`  
+
+
+**Floating Boxes**
+`float: right`  
+`float: left`  
+`clear: right` makes sure no floating elements to the right   
+`clear: left` makes sure no floating elements to the left  
+`clear: both` makes sure no floating elements either side  
+
+**Position**
+`position: relative` position relative to html (the page) not what it's in  
+`position: absolute`  position relative to what it's in ie body  
+`position: fixed`  does not scroll
+
