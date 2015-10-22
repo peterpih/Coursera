@@ -3,7 +3,7 @@ Always starts with `<!DOCTYPE html>`
 Always has `<html>...</html>` as first and last tags  
 Always has `<head>...</head>`, and `<body>...</body>` go inside `<html>..</html>`  
 
-
+Example:  
 ```
 <!DOCTYPE html>
 <html>
@@ -97,3 +97,60 @@ selector {
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 ```
 
+###Making a Button
+```
+div {
+    height: 50px;
+    width: 120px;
+    border-color: #6495ed;
+    background-color: #bcd2ee;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+```
+#Choose All Elements
+```
+* {
+}
+```
+**Nesting Elements**  
+```
+body ul li{
+}
+body ul li p {
+}
+```
+
+###id=
+Use for when **one** element needs a certain styling  
+```
+<body id="myid">...</body>
+<p id="myid">...</p>
+
+<!--- in the .css --->
+#myid {
+  selector: property;
+}
+```
+
+###class=
+Use when several different elements have the same styling  
+```
+<body class="mystyle">...</body>
+<p class="mystyle">...</p>
+
+<!--- in the .css --->
+.mystyle {
+  selector: property;
+}
+```
+###pseuo-class selectors for links
+`a:link`  
+`a:visited`  
+`a:hover`  
+
+`p:first-child`  
+`p:nth-child(n)`  
