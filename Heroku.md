@@ -27,3 +27,19 @@ heroku update
   3. `git push heroku master` deploy app to Heroku git
   4. `heroku open` open the website in browser
 
+###Papertrail
+```
+heroku addons                   # show addons
+heroku addons:doc papertrail    # documentation for papertrail
+heroku addons:open papertrail   # open a dashboard for papertrail
+
+heroku run bash                 # runs a remote shell
+heroku run <command>            # runs a comandline command
+heroku run bundle install
+heroku run rake db:migrate
+
+heroku config                   # show config settings
+                                # database url is shown here
+heroku config:set TIMES=10      # set TIMES env var to 10
+```
+
