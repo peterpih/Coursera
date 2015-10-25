@@ -4,21 +4,38 @@ https://git-scm.com/docs
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
-'''
-git checkout feature_branch
+```
+cd <working_directory>
+git init
+
+git init <working_directory>
+
+git checkout feature_branch   # change branch to feature_branch
 ...
-git status
-git add .
-git commit
-git status
+git status                # shows status if branch
+git add .                 # add modified files to staging area
+git add -A                # add modified and untracked files to staging area
+git commit -m <comment>   # make a commit, comment on one line
+git commit                # make a commit, use text editor
+git reset                 # remove files from staging area, before commit(ting)
+git push origin feature_branch    # push the commits from feature_branch to remote origin
+
+git remote -v             # list remote repos
+git remote add origin git@github.com:<username>/<reponame>
+git remote add origin https://github.com/<username>/<reponame>
+
+git branch -l             # list branches
+git branch -d <branch>    # delete a <branch>
+git branch -D <branch>    # forecfully delete <branch>
+
 git merge master
-...   # resolve any conflicts if necessart
+...   # resolve any conflicts if necessary
 git checkout master
 git merge feature_branch # there will be no comflicts at this point
 ```
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
-I use the Fork Workflow 
+We use the Fork Workflow 
 
 ###For Files
 ```
@@ -75,6 +92,7 @@ git log -S<function_name>     # search logs for string <function name>
 ###For Repositories and Branches
 ```
 git remote -v                 # show connections
+
 git branch -a                 # show all branches
 
 git remote add fff git@github.com:<username>/<githhub reponame>
