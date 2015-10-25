@@ -4,52 +4,41 @@ https://git-scm.com/docs
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
+###Typical git command flow
 ```
-cd <working_directory>
-git init
-
-git init <working_directory>
-
 git checkout feature_branch   # change branch to feature_branch
 ...
 git status                # shows status if branch
-git add .                 # add modified files to staging area
 git add -A                # add modified and untracked files to staging area
 git commit -m <comment>   # make a commit, comment on one line
-git commit                # make a commit, use text editor
-git reset                 # remove files from staging area, before commit(ting)
+
 git push origin feature_branch    # push the commits from feature_branch to remote origin
-
-git remote -v             # list remote repos
-git remote add origin git@github.com:<username>/<reponame>
-git remote add origin https://github.com/<username>/<reponame>
-
-git branch -l             # list branches
-git branch -d <branch>    # delete a <branch>
-git branch -D <branch>    # forecfully delete <branch>
-
+```
+While on feature_branch, when ready to push to master branch  
+Check for conflicts:  
+```
+(on feature_branch)
 git merge master
-...   # resolve any conflicts if necessary
-git checkout master
-git merge feature_branch # there will be no comflicts at this point
+...                           # resolve any conflicts if necessary
+git checkout master           # cheange back to master
+git merge <feature_branch>    # there will be no comflicts at this point
 ```
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
 We use the Fork Workflow 
 
-###For Files
+###File commands
 ```
-git init                      # initialize a local repository
-
-#---STATUS---
-git status                    # tracked, untracked, modified, staged
-git status -s                 # short form: M-modified, A-staged(added), ??-untracked
-
 #---ADD--- to staging
 
-git add <file>                # add to staging
-git add .
-git add -A
+git add <filename>            # add a file to staging area
+git add .                     # add modified files to staging area
+git add -A                    # add modified and untracked files to staging area
+
+#---RESET--- 
+
+git reset                     # remove files from staging area, before commit(ting)
+git reset <filename>
 
 #---COMMIT---
 
@@ -89,28 +78,54 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git log --since=2.weeks
 git log -S<function_name>     # search logs for string <function name>
 ```
+
 ###For Repositories and Branches
 ```
-git remote -v                 # show connections
+cd <working_directory>
+git init                      # initialize an existing local working_directory
 
-git branch -a                 # show all branches
+git init <working_directory>  # initialize and create a local working_directory
+
+
+#---STATUS--- show status of files in working tree
+
+git status                    # tracked, untracked, modified, staged
+git status -s                 # short form: M-modified, A-staged(added), ??-untracked
+
+#---BRANCH---
+
+git branch -l                 # show local branches
+git branch -a                 # show all branches, local and remote
+git branch -d <branch>        # delete a <branch>
+git branch -D <branch>        # forcefully delete <branch>
+
+#---REMOTE---
+
+git remote -v                 # list remote repos
+git remote add origin git@github.com:<username>/<reponame>
+git remote add origin https://github.com/<username>/<reponame>
+
+git remote rm origin          # remove remote connection
 
 git remote add fff git@github.com:<username>/<githhub reponame>
 git fetch fff
 git pull 
 
 #---CHECKOUT--- switch branches
+
 git checkout master                   # switch branches
 git checkout -b <my-branch-name>      # do checkout and create new branch
 git checkout ####### file             # restore a file from commit tag ####### (seven digits)
 
 #---RESET--- reset a branch
+
 git reset                       # unstage any staged files
 git reset --hard HEAD^          # resets current branch to last commit and removes last commit from history
 git reset --hard HEAD~2         # resets last 2 commits
 git reset --hard fff/master
 
 #---STASH--- push a branch onto a saved stack
+
 git stash                       # creates a stash  
 git stash save  
 git stash save "description"  
