@@ -8,6 +8,7 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 [Typical Work Flow](#work-flow-section)  
 [Files](#file-section)  
 [Repo and Branches](#repo-branch-section)  
+[Rename Local and Remote Branches](#rename=local-remote-branches-section)
 [Where Is Current Origin](#where-is-current-origin-section)  
 [GitHub](#github-section)  
 [gh-pages](#gh-pages-how-to-section)  
