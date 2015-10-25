@@ -14,8 +14,7 @@ git commit -m <comment>   # make a commit, comment on one line
 
 git push origin feature_branch    # push the commits from feature_branch to remote origin
 ```
-While on feature_branch, when ready to push to master branch  
-Check for conflicts:  
+While on feature_branch, when ready to push to master branch, check for conflicts:  
 ```
 (on feature_branch)
 git merge master
