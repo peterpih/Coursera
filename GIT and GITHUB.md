@@ -113,6 +113,8 @@ git branch -m <current name> <new name>
 #---REMOTE---
 
 git remote -v                 # list remote repos
+
+                              # add remote repo connections
 git remote add origin git@github.com:<username>/<reponame>
 git remote add origin https://github.com/<username>/<reponame>
 
