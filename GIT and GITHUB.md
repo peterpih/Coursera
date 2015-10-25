@@ -4,6 +4,15 @@ https://git-scm.com/docs
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
+#TOC
+[Typical Work Flow](#work-flow-section)  
+[Files](#file-section)  
+[Repo and Branches](#repo-branch-section)  
+[Where Is Current Origin](#where-is-current-origin-section)  
+[GitHub](#github-section)  
+[gh-pages](#gh-pages-how-to-section)  
+
+<div id="work-flow-section">
 ###Typical git command flow
 ```
 git checkout feature_branch   # change branch to feature_branch
@@ -26,6 +35,7 @@ git merge <feature_branch>    # there will be no comflicts at this point
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
 We use the Fork Workflow 
 
+<div id="file-section">
 ###File commands
 ```
 #---ADD--- to staging
@@ -77,7 +87,7 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git log --since=2.weeks
 git log -S<function_name>     # search logs for string <function name>
 ```
-
+<div id="repo-branch-section">
 ###For Repositories and Branches
 ```
 cd <working_directory>
@@ -97,6 +107,7 @@ git branch -l                 # show local branches
 git branch -a                 # show all branches, local and remote
 git branch -d <branch>        # delete a <branch>
 git branch -D <branch>        # forcefully delete <branch>
+git branch -m <current name> <new name>
 
 #---REMOTE---
 
@@ -153,6 +164,7 @@ git commit -m "first commit"
 git pull https://github.com/<username>/<project name>.git
 git push --set-upstream https://github.com/<username>/<project name>.git master
 ```
+<div id="where-is-current-origin-section">
 ###Change Origin Repository
 from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
 
@@ -304,7 +316,7 @@ After the repository is created, click the **+** after the repository name to cr
 - Click on **Settings** icon (right hand column)
 - Click on **Delete Repository** at bottom of page
 
-<div id='gh-pages-how-to'>
+<div id='gh-pages-how-to-section'>
 ###gh-pages in GitHub  
 
 **github.io url generator**: http://drastudio.github.io/url-generator/  
