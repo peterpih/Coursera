@@ -155,7 +155,7 @@ Use when several different elements have the same styling
 `p:first-child`  
 `p:nth-child(n)`  
 
-###HTML blocks  
+###HTML block layout   
 `block:block` the default, blocks take up an entire line  
 `block:inline-block` blocks can sit next to each other  
 `block:inline` they all sit on top of each other on the same line  
