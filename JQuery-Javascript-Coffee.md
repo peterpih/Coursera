@@ -1,3 +1,4 @@
+#Coffee is the rails lightweight version of javascript
 #JQuery
 File extension is **.js** since it is ***javascript***
 https://pragmaticstudio.com/blog/2015/3/18/rails-jquery-ajax  
