@@ -173,3 +173,13 @@ class Point3D(object):
 my_point = Point3D(1, 2, 3)
 print my_point      #=> (1, 2, 3)
 ```
+
+###with..as  
+Automatically closes the file, no need for .close()  
+```
+with open("text.txt", "r+") as my_file:
+    my_file.write("Hello!")
+if not(my_file.closed):   #=> already closed
+    my_file.close()
+print my_file.closed      #=> True
+```
