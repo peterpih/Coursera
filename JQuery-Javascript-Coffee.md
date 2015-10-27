@@ -1,6 +1,19 @@
 #Coffee is the rails lightweight version of javascript
+
+**jQuery UI**: http://jqueryui.com  
+
+***for rails***
+```
+# standard jQuery:
+$(document).ready();
+
+# for rails use:
+$(document).on("page:change", ->
+```
+```
+
 #JQuery
-File extension is **.js** since it is ***javascript***
+File extension is **.js** since it is ***javascript***  
 Used for making effects (ie animations)  
 https://pragmaticstudio.com/blog/2015/3/18/rails-jquery-ajax  
 
@@ -50,6 +63,16 @@ $('element').click();
 $(this).addClass('active');
 	.hide();
 ```
+###jQuery UI events
+```
+	.effect('explode');
+	.accordion({collapsible: true, active: false);
+	.effect('bounce', {times:3}, 500);
+	.resizable();
+	.selectable()
+	.sortable()			# can move elements in a list around
+```
+
 ###Example of form input
 **html**
 ```
