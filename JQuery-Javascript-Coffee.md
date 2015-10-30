@@ -10,7 +10,6 @@ $(document).ready();
 # for rails use:
 $(document).on("page:change", ->
 ```
-```
 
 #JQuery
 File extension is **.js** since it is ***javascript***  
