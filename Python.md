@@ -190,7 +190,8 @@ print my_file.closed      #=> True
 ###Reading Files
 ```
 fhand = open(<filename>, <access>)
-```
+
+
 count = 0
 for line in fhand
   count = count + 1
@@ -199,3 +200,19 @@ print count
 line.startswith("From:")
 
 whole_file = fhand.read()
+```
+###Lists
+List is a ttype of **collection**  
+Lists are **mutable**  
+```
+list = []
+list[n] is the nth element of a list
+List index starts at 0
+
+list = list()
+list = []
+list.append(...)
+list1 + list2
+x in list
+list.sort()
+list_of_words = string.split()
