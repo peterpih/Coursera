@@ -216,3 +216,13 @@ list1 + list2
 x in list
 list.sort()
 list_of_words = string.split()
+```
+
+###Tuples
+Are not mutable, can not be changed  
+Use as temporary variables  
+Mort efficient than **lists** since will not change  
+Can sort a **list** of **tuples**
+```
+(1, 3, 2) < (2, 1, 4)  #=> true 1 < 2, then stops comparing
+```
