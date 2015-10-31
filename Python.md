@@ -1,6 +1,6 @@
 #Installing Python
 http://docs.python-guide.org/en/latest/starting/install/osx/  
-
+http://docs.python.org/lib/built-in-funcs.html
 
 ###Printing  
 use of **%** in printing  
@@ -187,3 +187,15 @@ if not(my_file.closed):   #=> already closed
     my_file.close()
 print my_file.closed      #=> True
 ```
+###Reading Files
+```
+fhand = open(<filename>, <access>)
+```
+count = 0
+for line in fhand
+  count = count + 1
+print count
+
+line.startswith("From:")
+
+whole_file = fhand.read()
