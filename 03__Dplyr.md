@@ -1,5 +1,5 @@
 ```{R}
-install.packacges("dplyr")
+install.packages("dplyr")
 library(dplyr)
 
 mydf <- read.csv(file, stringsAsFactors=FALSE)
