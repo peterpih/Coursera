@@ -106,3 +106,23 @@ Shingles can be further hashed into **tokens**
 
 ###Jaccard Similarities
 size of the intersection of 2 sets divided by the size of their union  
+```
+rows are books
+columns are customers
+each book a customer has has a '1' otherwise '0'
+compare the books owned by two different customers
+if they both have 3 books and the total number of books is 15
+then Jaccard similarity is 3/15
+```
+###MinHashing
+Example:  
+```
+                   P1  P2
+1) 1 | 0 | 1 | 0   3   4      p1.1  0 | 1 | 0 | 1
+2) 1 | 0 | 0 | 1   4   2      p1.2  2 | 1 | 2 | 1   each value is the iteration #
+3) 0 | 1 | 0 | 1   7   1                            when no 0's minhash is done
+4) 0 | 1 | 0 | 1   6   3      p2.1  0 | 1 | 0 | 1
+5) 0 | 1 | 0 | 1   1   6      p2.2  2 | 1 | 0 | 1 
+6) 1 | 0 | 1 | 0   2   7      p2.3  2 | 1 | 0 | 1
+7) 1 | 0 | 1 | 0   5   5      p2.4  2 | 1 | 4 | 1
+```
