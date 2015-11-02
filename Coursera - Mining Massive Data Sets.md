@@ -115,14 +115,45 @@ if they both have 3 books and the total number of books is 15
 then Jaccard similarity is 3/15
 ```
 ###MinHashing
+Properties of MinHashing:  
+
+- The probability (oer all permutations of thw rows) the h(C1) = h(C2) is the same as the probability of ***Sim***(C1,C2)
+- The expected similarity of two signatures equals the Jaccard similarity of the columns or sets that the signatures represent
+- The longer the signatures, the smaller the standard deviation
 Example:  
 ```
-                   P1  P2
-1) 1 | 0 | 1 | 0   3   4      p1.1  0 | 1 | 0 | 1
-2) 1 | 0 | 0 | 1   4   2      p1.2  2 | 1 | 2 | 1   each value is the iteration #
-3) 0 | 1 | 0 | 1   7   1                            when no 0's minhash is done
-4) 0 | 1 | 0 | 1   6   3      p2.1  0 | 1 | 0 | 1
-5) 0 | 1 | 0 | 1   1   6      p2.2  2 | 1 | 0 | 1 
-6) 1 | 0 | 1 | 0   2   7      p2.3  2 | 1 | 0 | 1
-7) 1 | 0 | 1 | 0   5   5      p2.4  2 | 1 | 4 | 1
+To find the MinHash of a column, take permutations (P1, P2) of the row (usually about 100)
+Then mark where there are occurances
+
+                   P1  P2  P3         signatures
+1) 1 | 0 | 1 | 0   3   4   1      p1.1  0 | 1 | 0 | 1
+2) 1 | 0 | 0 | 1   4   2   3      p1.2  2 | 1 | 2 | 1   each value is the iteration #
+3) 0 | 1 | 0 | 1   7   1   7                            when no 0's minhash is done
+4) 0 | 1 | 0 | 1   6   3   6      p2.1  0 | 1 | 0 | 1
+5) 0 | 1 | 0 | 1   1   6   2      p2.2  2 | 1 | 0 | 1 
+6) 1 | 0 | 1 | 0   2   7   5      p2.3  2 | 1 | 0 | 1
+7) 1 | 0 | 1 | 0   5   5   4      p2.4  2 | 1 | 4 | 1
+
+                                  p3.1  1 | 0 | 1 | 0
+                                  p3.2  1 | 2 | 1 | 2
+                                  
+p1   2 | 1 | 2 | 1                                  
+p2   2 | 1 | 4 | 1                                  
+p3   1 | 2 | 1 | 2 
+
+compare C1 & C3
+
+1) 1 | 0 | 1 | 0   both are 1       p1   2 | 1 | 2 | 1  both are 2
+2) 1 | 0 | 0 | 1   1, 0             p2   2 | 1 | 4 | 1  2 and 4   
+3) 0 | 1 | 0 | 1   0, 0             p3   1 | 2 | 1 | 2  both are 1
+4) 0 | 1 | 0 | 1   0, 0
+5) 0 | 1 | 0 | 1   0, 0             signature similarity is 2/3
+6) 1 | 0 | 1 | 0   both are 1
+7) 1 | 0 | 1 | 0   both are 1
+
+column similarity is 3/4
+
 ```
+Similarity for columns is the Jaccard similiarity, for signatures it is the fraction of components where two signatures agree
+
+
