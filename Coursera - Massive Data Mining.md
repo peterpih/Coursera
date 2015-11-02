@@ -1,3 +1,5 @@
+**Power Iteration**: http://www.codeskulptor.org/#user40_7DWAfop9GV_1.py  
+
 ###MapReduce
 **Classic Model of Computing** single cpu and memory  
 **Cluster Architecture** multiple cpus  
