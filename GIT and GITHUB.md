@@ -1,3 +1,6 @@
+###If connection times out, may be due to firewall  
+Run `ssh -T git@github.com`, if it times out, need to connect using `http:` protocol.  
+
 ###Useful links
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
 https://git-scm.com/docs  
