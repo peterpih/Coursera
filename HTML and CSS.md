@@ -52,7 +52,7 @@ stype="text-align:left"
 <strong>
 </strong>
 ```
-**Italics**
+**Italics**  
 ```
 <em>
 </em>
@@ -111,7 +111,7 @@ div {
     text-align: center;
 }
 ```
-#Choose All Elements
+#Choose All Elements  
 ```
 * {
 }
@@ -124,7 +124,7 @@ body ul li p {
 }
 ```
 
-###id=
+###id=  
 Use for when **one** element needs a certain styling  
 ```
 <body id="myid">...</body>
@@ -136,7 +136,7 @@ Use for when **one** element needs a certain styling
 }
 ```
 
-###class=
+###class=  
 Use when several different elements have the same styling  
 ```
 <body class="mystyle">...</body>
@@ -147,7 +147,7 @@ Use when several different elements have the same styling
   selector: property;
 }
 ```
-###pseuo-class selectors for links
+###pseudo-class selectors for links  
 `a:link`  
 `a:visited`  
 `a:hover`  
@@ -161,7 +161,7 @@ Use when several different elements have the same styling
 `block:inline` they all sit on top of each other on the same line  
 `block:none` they all disappear  
 
-**margin**
+**margin**  
 `margin-top: 10px`  
 `margin-right: 20px`  
 `margin-bottom: 30px`
@@ -172,14 +172,14 @@ Can also be done for:
 `padding`  
 
 
-**Floating Boxes**
+**Floating Boxes**  
 `float: right`  
 `float: left`  
 `clear: right` makes sure no floating elements to the right   
 `clear: left` makes sure no floating elements to the left  
 `clear: both` makes sure no floating elements either side  
 
-**Position**
+**Position**  
 `position: relative` position relative to html (the page) not what it's in  
 `position: absolute`  position relative to what it's in ie body  
 `position: fixed`  does not scroll
