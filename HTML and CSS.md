@@ -162,6 +162,7 @@ Use when several different elements have the same styling
 `block:none` they all disappear  
 
 **margin**  
+To center:  `margin: auto`  
 `margin-top: 10px`  
 `margin-right: 20px`  
 `margin-bottom: 30px`
