@@ -42,4 +42,17 @@ heroku config                   # show config settings
                                 # database url is shown here
 heroku config:set TIMES=10      # set TIMES env var to 10
 ```
+###Postgres on Heroku  
+NOTE: `DATABASE_URL` and `DATABASE` are the literal strings not sibstitutions  
+```
+heroku pg:info                      # show some info about the database
 
+heroku pg:reset DATABASE_URL        # empties the database (DO NOT DELETE THE DATABASE, empty it using this)
+
+heroku pg:credentials DATABASE      # shows the database credentials (username, password)
+
+git push heroku test:master         # push 'test' branch to 'master' on heroku
+
+heroku pg:push mylocaldb DATABASE_URL
+heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
+ ```
