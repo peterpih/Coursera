@@ -1,6 +1,8 @@
 #Installing Python
 http://docs.python-guide.org/en/latest/starting/install/osx/  
 http://docs.python.org/lib/built-in-funcs.html
+**list of tutorials**: http://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-data-science-python/?utm_content=buffer04902&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer  
+**google python tutorial**: https://developers.google.com/edu/python/  
 
 ###Printing  
 use of **%** in printing  
