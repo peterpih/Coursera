@@ -15,8 +15,9 @@ heroku update
 ###Heroku Commands
   1. `heroku open` open a link to the app website in local browser
   2. `heroku ps` dynos running on Heroku
-  3. `heroku logs` log file for Heroku
+  3. `heroku logs` show log file for Heroku
   4. `heroku addons`
+  5. `heroku local` run the app locally from heroku
   5. `heroku config` show configuration and the database url
   6. `heroku pg` for postgres commands
   
