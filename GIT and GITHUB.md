@@ -69,11 +69,15 @@ git rm --cached <filename>    # remove from staging area (does not delete underl
 git checkout <filename>       # restore previous file version from last commit
 git checkout <branch name>    # switch to branch <branch name>
 
+#---SHOW---
+
+git show <revhash>            # show changes in a particular hash (hash from git log)
+
 #---DIFFERENCE---
 
 git diff
 git diff --staged
-git diff <filename>
+git diff <filename>           # show difference between modified and staging area
 
 #---RENAME--- a file
 
