@@ -1,6 +1,8 @@
 ###Class names in Rails must be Capitalized  
 Useful link: http://guides.rubyonrails.org/getting_started.html  
 
+Rails tutorial: http://www.theodinproject.com/courses  
+
 #TOC
 1. [Pry Debugger](#pry-section)
 1. [Installing PostGrSQL on Mac](#postgres-section)
