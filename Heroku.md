@@ -57,3 +57,8 @@ git push heroku test:master         # push 'test' branch to 'master' on heroku
 heroku pg:push mylocaldb DATABASE_URL
 heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
  ```
+###Accessing database remotely
+Need to be made a Collaborator on the database, then:  
+```
+heroku pg:psql --app aqueous-spire-6633
+```
