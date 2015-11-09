@@ -56,6 +56,10 @@ git push heroku test:master         # push 'test' branch to 'master' on heroku
 
 heroku pg:push mylocaldb DATABASE_URL
 heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
+
+#
+# To pull down a database:
+heroku pg:pull AMBER fff_development --app forever-family-foundation
  ```
 ###Accessing database remotely
 Need to be made a Collaborator on the database, then:  
