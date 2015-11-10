@@ -30,7 +30,7 @@ git commit -m <comment>   # make a commit, comment on one line
 git push origin feature_branch            # push the commits from feature_branch to remote origin
 git push -f origin <feature_branch>       # force push to origin
 
-git push heroku <feature_branch<:master   # push to master branch on heroku to start install
+git push heroku <feature_branch>:master   # push to master branch on heroku to start install
 ```
 While on feature_branch, when ready to push to master branch, check for conflicts:  
 ```
