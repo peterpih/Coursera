@@ -154,10 +154,15 @@ git reset --hard fff/master
 git stash                       # creates a stash  
 git stash save  
 git stash save "description"  
+
+git stash apply                 # apply most recent stash
+git stash apply stash@{2}       # apply second stash
+
 git stash list                  # lists stashes  
+
 git stash drop stash@{0}        # delete first stash
 git stash drop stash@{1}        # delete second stash
-git stash 
+
 https://git-scm.com/book/en/v1/Git-Tools-Stashing
 ```
 
