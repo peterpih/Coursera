@@ -14,5 +14,6 @@ UPDATE <table> SET <column>=<value> WHERE id=<userid>;
 
 DELETE FROM <table>;                                    # clear all rows from a table
 
-SELECT * FROM users WHERE email ILIKE 'ppih@panix%';    # '%' is the wildcard
+SELECT * FROM users WHERE email LIKE 'ppih@panix%';     # '%' is the wildcard
+SELECT * FROM users WHERE email ILIKE 'ppih@panix%';
 ```
