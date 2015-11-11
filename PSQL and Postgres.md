@@ -8,9 +8,12 @@
 
 ###SQL commands
 ```
-SELECT * FROM <table>;        # select all rows
+SELECT * FROM <table>;                                  # select all rows
 
 UPDATE <table> SET <column>=<value> WHERE id=<userid>;
 
-delete FROM <table>;         # clear all rows frlm a table
+DELETE FROM <table>;                                    # clear all rows from a table
+
+SELECT * FROM users WHERE email ILIKE 'ppih@panix%';    # '%' is the wildcard
+SELECT * FROM users WHERE email SIMILAR TO 'ppih@panix%'
 ```
