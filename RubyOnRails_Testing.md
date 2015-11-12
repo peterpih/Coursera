@@ -1,6 +1,19 @@
 ***Test Driven Development (TDD) Videos:***   
 https://www.youtube.com/watch?v=Im1lyxSZEu4
 
+###Rails Testing
+Write testing code first to drive implementation  
+**Unit Test** tests models  
+**Functional Testing** used to test controllers, also allows for ***view*** testing by looking for key HTML elements, look for tables or rows **NOT** HTML directly  
+**Integration Testing** tests ***interactions*** between different controllers  
+
+###Arrange-Act-Assert
+**Arrange** setup the test  
+**Act** run code under test  
+**Assert** verify code did wht you expect  
+Keep tests small as possible, reduce ordering dependency, keep less brittle  
+
+
 ###Logging output
 ```
 logger.debug <blah>          # => log/developement.log
