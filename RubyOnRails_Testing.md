@@ -1,3 +1,6 @@
+***Videos:***   
+https://www.youtube.com/watch?v=Im1lyxSZEu4
+
 ###Logging output
 ```
 logger.debug <blah>          # => log/developement.log
