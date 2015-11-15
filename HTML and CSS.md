@@ -1,6 +1,6 @@
 https://css-tricks.com/scale-svg/  
 **reference:** http://www.w3schools.com/css/default.asp  
-
+http://tutorials.jenkov.com/svg/image-element.html  
 
 ###General HTML layout
 Always starts with `<!DOCTYPE html>`  
