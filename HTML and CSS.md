@@ -1,3 +1,6 @@
+https://css-tricks.com/scale-svg/  
+
+
 ###General HTML layout
 Always starts with `<!DOCTYPE html>`  
 Always has `<html>...</html>` as first and last tags  
