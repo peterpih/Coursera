@@ -1,4 +1,5 @@
 https://css-tricks.com/scale-svg/  
+**reference:** http://www.w3schools.com/css/default.asp  
 
 
 ###General HTML layout
