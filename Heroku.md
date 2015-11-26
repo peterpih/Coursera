@@ -66,3 +66,7 @@ Need to be made a Collaborator on the database, then:
 ```
 heroku pg:psql --app aqueous-spire-6633
 ```
+**Records created since 1 month ago**  
+```
+SELECT * FROM <table_name> WHERE <column_name> > CURRENT_DATE - INTERVAL '1 month';
+```
