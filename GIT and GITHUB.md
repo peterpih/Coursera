@@ -123,6 +123,10 @@ git branch -d <branch>        # delete a <branch>
 git branch -D <branch>        # forcefully delete <branch>
 git branch -m <current name> <new name>
 
+#---SHOW-BRANCH---     https://robots.thoughtbot.com/compare-commits-between-git-branches
+
+git show-branch <branch> <origin/master>
+
 #---REMOTE---
 
 git remote -v                 # list remote repos
