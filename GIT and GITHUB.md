@@ -37,11 +37,11 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 
 While on feature_branch, when ready to push to master branch, check for conflicts:  
 <pre>
-<b>git checkout</b> <em>branch</em>     # on to feature branch
-<b>git merge master</b>            # merge from master to check for conflicts
-...                                 # resolve any conflicts if necessary
+<b>git checkout</b> <em>branch</em>           # on to feature branch
+<b>git merge master</b>              # merge from master to check for conflicts
+...                           # resolve any conflicts if necessary
 <b>git checkout master</b>           # change back to master
-<b>git merge</b> <em>branch</em>    # there will be no comflicts at this point
+<b>git merge</b> <em>branch</em>              # there will be no comflicts at this point
 </pre>
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
@@ -58,8 +58,9 @@ We use the Fork Workflow
 
 --- RESET ---
 
-<b>git reset</b>                     # remove files from staging area, before commit(ting)
-<b>git reset</b> <em>filename</em>
+<b>git reset</b>                     # remove all files from staging area, before commit(ting)
+<b>git reset</b> <em>filename</em>    # remove filename from staging area
+<git>git reset</b>  <em>rvhash</em>     # roll back to rvhash commit
 
 --- COMMIT ---
 
