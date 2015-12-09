@@ -1,3 +1,4 @@
+#JQuery is a library of javascript routines
 #Coffee is the rails lightweight version of javascript
 
 **jQuery UI**: http://jqueryui.com  
