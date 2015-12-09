@@ -13,7 +13,7 @@ $(document).on("page:change", ->
 
 <pre>
 # standard jQuery:  
-<b>$(document).ready();**</b>
+<b>$(document).ready();</b>
 
 # for rails use:  
 <b>$(document).on("page:change", -> </b>
@@ -43,18 +43,19 @@ $("#green")           # in .js, '#' is for id's, '.' is for class
 $('.red')
 ```
 ###Generalized jQuery setup
-```
-$(document).ready(function() {
-    $('thingToTouch').event(function() {
-        $('thingToAffect').effect();
+<pre>
+$(<b>document</b>).ready(function() {
+    $('<b>thingToTouch</b>').event(function() {
+        $('<b>thingToAffect</b>').effect();
     });
 });
 
 where:
-document is the entire document (focus)
-"thing to touch" is the HTML element you'll click on, hover over, or otherwise interact with
-"thing to affect" is the HTML element that fades away, changes size, or undergoes some other transformation
-```
+<b>document</b> is the entire document (focus)
+<b>thing to touch</b> is the HTML element you'll click on, hover over, or otherwise interact with
+<b>thing to affect</b> is the HTML element that fades away, changes size, or undergoes some other transformation
+</pre>
+
 ###jQuery events
 ```
 $('element').click();
