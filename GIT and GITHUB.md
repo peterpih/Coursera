@@ -63,20 +63,20 @@ We use the Fork Workflow
 
 --- COMMIT ---
 
-<b>git commit -m</b> <em>commit text</em> # one line commit comment
+<b>git commit -m</b> <em>commit_text</em> # one line commit comment
 <b>git commit</b>                    # will open text editor for commenting
 
 --- REMOVE --- <em>from staging, files must be staged</em>
 
-<b>git rm -f</b> <em>filename</em>          # delete file and/or remove tracked deleted files from staging
-<b>git rm --cached</b> <em>filename</em>    # remove from staging area (does not delete underlying file)
+<b>git rm -f</b> <em>filename</em>            # delete file and/or remove tracked deleted files from staging
+<b>git rm --cached</b> <em>filename</em>      # remove from staging area (does not delete underlying file)
                               # in case accidentally added
 <b>git reset</b> <em>filename</em>
 
 --- CHECKOUT --- <em>go back to version at last commit</em>
 
-<b>git checkout</b> <em>filename</em>       # restore previous file version from last commit
-<b>git checkout</b> <em>branch</em>    # switch to <em>branch</em>
+<b>git checkout</b> <em>filename</em>        # restore previous file version from last commit
+<b>git checkout</b> <em>branch</em>          # switch to <em>branch</em>
 
 --- SHOW ---
 
