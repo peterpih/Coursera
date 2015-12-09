@@ -50,49 +50,49 @@ We use the Fork Workflow
 <div id="file-section">
 ###File commands
 <pre>
-<b>ADD</b> <em>to staging</em>
+---<b>ADD</b>--- <em>to staging</em>
 
 <b>git add</b> <em>filename</em>            # add a file to staging area
 <b>git add .</b>                     # add modified files to staging area
 <b>git add -A</b>                    # add modified and untracked files to staging area
 
-<b>RESET</b>
+---<b>RESET</b>---
 
 <b>git reset</b>                     # remove files from staging area, before commit(ting)
 <b>git reset</b> <em>filename</em>
 
-<b>COMMIT</b>
+---<b>COMMIT</b>---
 
 <b>git commit -m</b> <em>commit text</em> # one line commit comment
 <b>git commit</b>                    # will open text editor for commenting
 
-<b>REMOVE</b> <em>from staging, files must be staged</em>
+---<b>REMOVE</b>--- <em>from staging, files must be staged</em>
 
 <b>git rm -f</b> <em>filename</em>          # delete file and/or remove tracked deleted files from staging
 <b>git rm --cached</b> <em>filename</em>    # remove from staging area (does not delete underlying file)
                               # in case accidentally added
 <b>git reset</b> <em>filename</em>
 
-<b>CHECKOUT</b> <em>go back to version at last commit</em>
+---<b>CHECKOUT</b>--- <em>go back to version at last commit</em>
 
-<b>git checkout <em>filename</em>       # restore previous file version from last commit
+<b>git checkout</b> <em>filename</em>       # restore previous file version from last commit
 <b>git checkout</b< <em>branch name</em>    # switch to branch <branch name>
 
-<b>SHOW</b>
+---<b>SHOW</b>---
 
 <b>git show</b> <em>revhash</em>            # show changes in a particular hash (hash from git log)
 
-<b>DIFFERENCE</b>
+---<b>DIFFERENCE</b>---
 
 <b>git diff</b>
 <b>git diff --staged</b>
 <b>git diff</b> <em>filename</em>           # show difference between modified and staging area
 
-<b>RENAME</b> <em>a file</em>
+---<b>RENAME</b>--- <em>a file</em>
 
 <b>git mv</b> <em>from_file  to_file</em>
 
-<b>LOG</b> <em>show changes between two different branches</em>
+---<b>LOG</b>--- <em>show changes between two different branches</em>
 
 <b>git log</b>
 <b>git log -p</b>                    # difference between the last two commits
