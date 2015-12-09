@@ -11,7 +11,7 @@ $(document).ready();
 $(document).on("page:change", ->
 ```
 
->>\# standard jQuery:  
+>\# standard jQuery:  
 **$(document).ready();**  
 
 \# for rails use:  
