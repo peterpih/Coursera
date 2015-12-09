@@ -42,7 +42,7 @@ While on feature_branch, when ready to push to master branch, check for conflict
 ...                                 # resolve any conflicts if necessary
 <b>git checkout master</b>           # change back to master
 <b>git merge</b> <em>branch</em>    # there will be no comflicts at this point
-```
+</pre>
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
 We use the Fork Workflow 
