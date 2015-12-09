@@ -19,20 +19,22 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 
 <div id="work-flow-section">
 ###Typical git command flow
-```
-git checkout feature_branch   # change branch to feature_branch
+<pre>
+<b>git checkout</b> <em>feature_branch</em>   # change branch to feature_branch
 ...
-git status                # shows status if branch
-git add -A                # add modified and untracked files to staging area
-git commit -m <comment>   # make a commit, comment on one line
-#
-#--- PUSHING ---
-#
-git push origin feature_branch            # push the commits from feature_branch to remote origin
-git push -f origin <feature_branch>       # force push to origin
+<b>git status</b>               # shows status of branch
+<b>git add -A</b>                # add modified and untracked files to staging area
+<b>git commit -m</b> <em>comment</em>   # make a commit, comment on one line
 
-git push heroku <feature_branch>:master   # push to master branch on heroku to start install
-```
+<b>PUSHING</b>
+
+<b>git push</b> <em>origin feature_branch</em>            # push the commits from feature_branch to remote origin
+<b>git push -f</b> <em>origin feature_branch</em>       # force push to origin
+
+                            #push directly to Heroku
+<b>git push heroku</b> <em>feature_branch:master</em>   # push to master branch on heroku to start install
+</pre>
+
 While on feature_branch, when ready to push to master branch, check for conflicts:  
 ```
 (on feature_branch)
