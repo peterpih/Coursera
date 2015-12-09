@@ -22,26 +22,26 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 <pre>
 <b>git checkout</b> <em>feature_branch</em>   # change branch to feature_branch
 ...
-<b>git status</b>               # shows status of branch
-<b>git add -A</b>                # add modified and untracked files to staging area
-<b>git commit -m</b> <em>comment</em>   # make a commit, comment on one line
+<b>git status</b>                              # shows status of branch
+<b>git add -A</b>                              # add modified and untracked files to staging area
+<b>git commit -m</b> <em>comment</em>                   # make a commit, comment on one line
 
-<b>PUSHING</b>
+--- PUSHING ----
 
-<b>git push</b> <em>origin feature_branch</em>            # push the commits from feature_branch to remote origin
+<b>git push</b> <em>origin feature_branch</em>          # push the commits from feature_branch to remote origin
 <b>git push -f</b> <em>origin feature_branch</em>       # force push to origin
 
-                            #push directly to Heroku
+                                        #push directly to Heroku
 <b>git push heroku</b> <em>feature_branch:master</em>   # push to master branch on heroku to start install
 </pre>
 
 While on feature_branch, when ready to push to master branch, check for conflicts:  
-```
-(on feature_branch)
-git merge master
-...                           # resolve any conflicts if necessary
-git checkout master           # cheange back to master
-git merge <feature_branch>    # there will be no comflicts at this point
+<pre>
+<b>git checkout</b> <em>branch</em>     # on to feature branch
+<b>git merge master</b>            # merge from master to check for conflicts
+...                                 # resolve any conflicts if necessary
+<b>git checkout master</b>           # change back to master
+<b>git merge</b> <em>branch</em>    # there will be no comflicts at this point
 ```
 
 pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
