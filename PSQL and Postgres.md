@@ -1,19 +1,19 @@
 #PSQL commands
 **Show databases***
-```
-\l                  # list databases letter el
-\c <database>       # connect to a database
-\d+ <table>         # list columns of a table
-```
+<pre>
+<b>\l</b>                  # list databases letter el
+<b>\c</b> <em>database</em>         # connect to a database
+<b>\d+</b> <em>table</em>           # list columns of a table
+</pre>
 
 ###SQL commands
-```
-SELECT * FROM <table>;                                  # select all rows
+<pre>
+<b>SELECT</b> * <b>FROM</b> <em>table</em><b>;</b>                                    # select all rows
 
-UPDATE <table> SET <column>=<value> WHERE id=<userid>;
+<b>UPDATE</b> <em>table</em> <b>SET</b> <em>column=value</em> <b>WHERE</b> <em>id=userid</em><b>;</b>
 
-DELETE FROM <table>;                                    # clear all rows from a table
+<b>DELETE</b> <b>FROM</b> <em>table</em> <b>WHERE</b> <em>=userid</em><b>;</b>                        # clear all rows from a table
 
-SELECT * FROM users WHERE email LIKE 'ppih@panix%';     # '%' is the wildcard
-SELECT * FROM users WHERE email ILIKE 'ppih@panix%';
-```
+<b>SELECT</b> * <b>FROM</b> <em>users</em> <b>WHERE</b> <em>email</em> <b>LIKE</b> <em>'ppih@panix%'</em><b>;</b>     # '%' is the wildcard
+<b>SELECT</b> * <b>FROM</b> <em>users</em> <b>WHERE</b> <em>email='ppih@panix%'</em><b>;</b>  
+</pre>
