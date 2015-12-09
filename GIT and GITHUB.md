@@ -49,60 +49,61 @@ We use the Fork Workflow
 
 <div id="file-section">
 ###File commands
-```
-#---ADD--- to staging
+<pre>
+<b>ADD</b> <em>to staging</em>
 
-git add <filename>            # add a file to staging area
-git add .                     # add modified files to staging area
-git add -A                    # add modified and untracked files to staging area
+<b>git add</b> <em>filename</em>            # add a file to staging area
+<b>git add .</b>                     # add modified files to staging area
+<b>git add -A</b>                    # add modified and untracked files to staging area
 
-#---RESET--- 
+<b>RESET</b>
 
-git reset                     # remove files from staging area, before commit(ting)
-git reset <filename>
+<b>git reset</b>                     # remove files from staging area, before commit(ting)
+<b>git reset</b> <em>filename</em>
 
-#---COMMIT---
+<b>COMMIT</b>
 
-git commit -m "<commit text>" # one line commit comment
-git commit                    # will open text editor for commenting
+<b>git commit -m</b> <em>commit text</em> # one line commit comment
+<b>git commit</b>                    # will open text editor for commenting
 
-#---REMOVE--- from staging (files must be staged)
+<b>REMOVE</b> <em>from staging, files must be staged</em>
 
-git rm -f <filename>          # delete file and/or remove tracked deleted files from staging
-git rm --cached <filename>    # remove from staging area (does not delete underlying file)
+<b>git rm -f</b> <em>filename</em>          # delete file and/or remove tracked deleted files from staging
+<b>git rm --cached</b> <em>filename</em>    # remove from staging area (does not delete underlying file)
                               # in case accidentally added
-                              
-#---CHECKOUT--- go back to version at last commit
+<b>git reset</b> <em>filename</em>
 
-git checkout <filename>       # restore previous file version from last commit
-git checkout <branch name>    # switch to branch <branch name>
+<b>CHECKOUT</b> <em>go back to version at last commit</em>
 
-#---SHOW---
+<b>git checkout <em>filename</em>       # restore previous file version from last commit
+<b>git checkout</b< <em>branch name</em>    # switch to branch <branch name>
 
-git show <revhash>            # show changes in a particular hash (hash from git log)
+<b>SHOW</b>
 
-#---DIFFERENCE---
+<b>git show</b> <em>revhash</em>            # show changes in a particular hash (hash from git log)
 
-git diff
-git diff --staged
-git diff <filename>           # show difference between modified and staging area
+<b>DIFFERENCE</b>
 
-#---RENAME--- a file
+<b>git diff</b>
+<b>git diff --staged</b>
+<b>git diff</b> <em>filename</em>           # show difference between modified and staging area
 
-git mv <from_file> <to_file>
+<b>RENAME</b> <em>a file</em>
 
-#---LOG--- show changes between two different branches
+<b>git mv</b> <em>from_file  to_file</em>
 
-git log
-git log -p                    # difference between the last two commits
-git log -p -2                 # last 2 lines
-git log --one-line            # show each commit on one line
-git log --stat
-git log --pretty=oneline
-git log --pretty=format:"%h - %an, %ar : %s"
-git log --since=2.weeks
-git log -S<function_name>     # search logs for string <function name>
-```
+<b>LOG</b> <em>show changes between two different branches</em>
+
+<b>git log</b>
+<b>git log -p</b>                    # difference between the last two commits
+<b>git log -p -2</b>                 # last 2 lines
+<b>git log --one-line</b>            # show each commit on one line
+<b>git log --stat</b>
+<b>git log --pretty=oneline</b>
+<b>git log --pretty=format:"%h - %an, %ar : %s"</b>
+<b>git log --since=2.weeks</b>
+<b>git log -S</b><em>function_name</em>     # search logs for string <function name>
+</pre>
 <div id="repo-branch-section">
 ###For Repositories and Branches
 ```
