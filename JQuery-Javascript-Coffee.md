@@ -11,12 +11,13 @@ $(document).ready();
 $(document).on("page:change", ->
 ```
 
->\# standard jQuery:  
-**$(document).ready();**  
+<pre>
+# standard jQuery:  
+<b>$(document).ready();**</b>
 
->\# for rails use:  
-**$(document).on("page:change", -> **
-
+# for rails use:  
+<b>$(document).on("page:change", -> </b>
+</pre>
 
 #JQuery
 File extension is **.js** since it is ***javascript***  
