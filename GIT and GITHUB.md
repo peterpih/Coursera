@@ -59,8 +59,8 @@ We use the Fork Workflow
 --- RESET ---
 
 <b>git reset</b>                     # remove all files from staging area, before commit(ting)
-<b>git reset</b> <em>filename</em>    # remove filename from staging area
-<git>git reset</b>  <em>rvhash</em>     # roll back to rvhash commit
+<b>git reset</b> <em>filename</em>            # remove filename from staging area
+<b>git reset</b> <em>revhash</em>             # roll back to revhash commit
 
 --- COMMIT ---
 
