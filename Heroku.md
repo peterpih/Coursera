@@ -74,12 +74,13 @@ heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
 
 ###Accessing database remotely
 Need to be made a Collaborator on the database, then:  
-```
+<pre>
+<b>heroku pg:psql --app</b> <em>\<appname\></em>  
 heroku pg:psql --app aqueous-spire-6633
-```
+</pre>
 **Records created since 1 month ago**  
-```
-SELECT * FROM <table_name> WHERE <column_name> > CURRENT_DATE - INTERVAL '1 month';
-```
+<pre>
+<b>SELECT * FROM</b> <em>table_name</em> <b>WHERE</b> <em>column_name</em> > <b>CURRENT_DATE - INTERVAL '1 month';</b>
+</pre>
 ###Production Check  
 On the **Heroku  Dashboard**, click on hamburger in upper right-hand corner, then click **Production Check**
