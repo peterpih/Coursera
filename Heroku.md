@@ -81,3 +81,5 @@ heroku pg:psql --app aqueous-spire-6633
 ```
 SELECT * FROM <table_name> WHERE <column_name> > CURRENT_DATE - INTERVAL '1 month';
 ```
+###Production Check  
+On the **Heroku  Dashboard**, click on hamburger in upper right-hand corner, then click **Production Check**
