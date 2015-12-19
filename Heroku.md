@@ -12,21 +12,29 @@ brew install heroku-toolbelt
 heroku update
 ```
 
-###Heroku Commands
-  1. `heroku open` open a link to the app website in local browser
-  2. `heroku ps` dynos running on Heroku
-  3. `heroku logs` show log file for Heroku
-  4. `heroku addons`
-  5. `heroku local` run the app locally from heroku
-  5. `heroku config` show configuration and the database url
-  6. `heroku pg` for postgres commands
+###Heroku Commands  
+add **--app** ***\<app name\>*** to specify non default app  
+<pre>
+<b>heroku open</b> open a link to the app website in local browser
+<b>heroku ps</b> dynos running on Heroku
+<b>heroku logs</b> show log file for Heroku
+<b>heroku addons</b>
+<b>heroku local</b> run the app locally from heroku
+<b>heroku config</b> show configuration and the database url
+<b>heroku pg:psql</b> for postgres commands
+<b>heroku maintenance:on</b> take site down for maintenance
+<b>heroku maintenance:off</b>
+<b>heroku console</b>
+</pre>
   
 
-**Example Heroku website**
-  11. `git clone https://github.com/heroku/ruby-getting-started.git` this example app
-  2. `heroku create`
-  3. `git push heroku master` deploy app to Heroku git
-  4. `heroku open` open the website in browser
+###Example Heroku website
+<pre>
+<b>git clone https://github.com/heroku/ruby-getting-started.git</b> get the example app
+<b>heroku create</b> link to Heroku
+<b>git push heroku master</b> <em>branch</em><b>:master</b> deploy app to Heroku git
+<b>heroku open</b> open the website in a local browser
+</pre>
 
 ###Papertrail
 ```
@@ -44,23 +52,26 @@ heroku config                   # show config settings
 heroku config:set TIMES=10      # set TIMES env var to 10
 ```
 ###Postgres on Heroku  
-NOTE: `DATABASE_URL` and `DATABASE` are the literal strings not sibstitutions  
-```
-heroku pg:info                      # show some info about the database
+NOTE: **DATABASE_URL** and **DATABASE** are the literal strings not env variables  
+<pre>
+<b>heroku pg:info</b>                      # show some info about the database
 
-heroku pg:reset DATABASE_URL        # empties the database (DO NOT DELETE THE DATABASE, empty it using this)
+<b>heroku pg:reset DATABASE_URL</b>        # empties the database (DO NOT DELETE THE DATABASE, empty it using this)
 
-heroku pg:credentials DATABASE      # shows the database credentials (username, password)
+<b>heroku pg:credentials DATABASE</b>      # shows the database credentials (username, password)
 
-git push heroku test:master         # push 'test' branch to 'master' on heroku
+<b>git push heroku test:master</b>         # push 'test' branch to 'master' on heroku
 
-heroku pg:push mylocaldb DATABASE_URL
+<b>heroku pg:push</b> <em>mylocaldb</em> <b>DATABASE_URL</b>
 heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
+</pre>
 
-#
-# To pull down a database:
-heroku pg:pull AMBER fff_development --app forever-family-foundation
- ```
+###To pull down a database:
+<pre>
+<b>heroku pg:pull</b>
+<b>heroku pg:pull AMBER fff_development --app forever-family-foundation</b>
+</pre>
+
 ###Accessing database remotely
 Need to be made a Collaborator on the database, then:  
 ```
