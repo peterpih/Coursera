@@ -1,5 +1,5 @@
 ###Sqlite3 installed in C:/Windows
-**Useful likns:**
+**Useful links:**
 
 http://zetcode.com/db/sqlite/datamanipulation/
 
