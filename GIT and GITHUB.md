@@ -6,6 +6,8 @@ http://gitref.org
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
 https://git-scm.com/docs  
 http://longair.net/blog/2009/04/16/git-fetch-and-merge/  
+How to update a GitHub forked repository?:
+http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository   
 
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
