@@ -1,3 +1,5 @@
+Useful graph of SQL joins:  
+http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  
 #PSQL commands
 **Show databases***
 <pre>
