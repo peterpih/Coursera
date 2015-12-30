@@ -13,18 +13,25 @@ heroku update
 ```
 
 ###Heroku Commands  
-add **--app** ***\<app name\>*** to specify non default app  
+<b>heroku local</b> run the app locally from heroku
+
+add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
 <b>heroku open</b> open a link to the app website in local browser
 <b>heroku ps</b> dynos running on Heroku
-<b>heroku logs</b> show log file for Heroku
-<b>heroku addons</b>
-<b>heroku local</b> run the app locally from heroku
-<b>heroku config</b> show configuration and the database url
-<b>heroku pg:psql</b> for postgres commands
+<b>heroku config</b> show configuration vars and the database url
+<b>heroku addons</b> show additional services
+
+<b>heroku pg:psql</b> for [postgres on Heroku](#'accessing-database-remotely')
+
 <b>heroku maintenance:on</b> take site down for maintenance
 <b>heroku maintenance:off</b>
-<b>heroku console</b>
+
+<b>heroku logs --app <em>APP</em></b> show log file for Heroku <em>APP</em>
+<b>heroku restart --app <em>APP</em></b> restart <em>APP</em>
+
+<b>heroku run console</b>
+<b>heroku run bash --app <em>APP</em></b> remote Unix command line
 </pre>
   
 
@@ -72,6 +79,7 @@ heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
 <b>heroku pg:pull AMBER fff_development --app forever-family-foundation</b>
 </pre>
 
+<id='accessing-database-remotely'>
 ###Accessing database remotely
 Need to be made a Collaborator on the database, then:  
 <pre>
