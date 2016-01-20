@@ -10,6 +10,7 @@ Gemfile records preferences ie "~>"
 
 ###Bundler
 <pre>
+<b>bundle -v</b>                    # show bundler version number
 <b>bundle install</b>                # install a gem in this scope
 <b>bundle install</b> <em>gem</em>
 <br>
