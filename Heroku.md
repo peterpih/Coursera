@@ -17,33 +17,36 @@ heroku update
 
 add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
-<b>heroku open</b> open a link to the app website in local browser
-<b>heroku ps</b> dynos running on Heroku
-<b>heroku config</b> show configuration vars and the database url
-<b>heroku addons</b> show additional services
+<b>heroku open</b>      open a link to the app website in local browser
+<b>heroku ps</b>        dynos running on Heroku
+<b>heroku config</b>    show configuration vars and the database url
+<b>heroku addons</b>    show additional services
 
-<b>heroku pg:psql</b> for [postgres on Heroku](#'accessing-database-remotely')
+<b>heroku pg:psql</b>   for [postgres on Heroku](#'accessing-database-remotely')
 
-<b>heroku maintenance:on</b> take site down for maintenance
+<b>heroku maintenance:on</b>    take site down for maintenance
 <b>heroku maintenance:off</b>
 
-<b>heroku logs --app <em>APP</em></b> show log file for Heroku <em>APP</em>
-<b>heroku logs --app <em>APP</em> -n <em>nlines</em></b> show <em>nlines</em> in log file for Heroku <em>APP</em>
-<b>heroku logs --app <em>APP</em> --tail</b> 
+<b>heroku logs --app <em>APP</em></b>                      show log file for Heroku <em>APP</em>
+<b>heroku logs --app <em>APP</em> -n <em>nlines</em></b>            show <em>nlines</em> in log file for Heroku <em>APP</em>
+<b>heroku logs --app <em>APP</em> --tail</b>               tail the logs
 
 <b>heroku restart --app <em>APP</em></b> restart <em>APP</em>
 
 <b>heroku run console</b>
-<b>heroku run bash --app <em>APP</em></b> remote Unix command line
+<b>heroku run bash --app <em>APP</em></b>   remote Unix command line
 </pre>
   
 
 ###Example Heroku website
 <pre>
+<b>heroku git:clone -a</b> <em>heroku_app</em> <em>dest_dir</em>
 <b>git clone https://github.com/heroku/ruby-getting-started.git</b> get the example app
-<b>heroku create</b> link to Heroku
+
+<b>heroku create</b>    link to Heroku
+
 <b>git push heroku master</b> <em>branch</em><b>:master</b> deploy app to Heroku git
-<b>heroku open</b> open the website in a local browser
+<b>heroku open</b>           open the website in a local browser
 </pre>
 
 ###Papertrail
