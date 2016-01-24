@@ -28,8 +28,8 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <b>heroku maintenance:off</b>
 
 <b>heroku logs --app <em>APP</em></b> show log file for Heroku <em>APP</em>
-<b>heroku logs -n <em>nlines</em> --app <em>APP</em></b> show <em>nlines</em> in log file for Heroku <em>APP</em>
-<b>heroku logs --app <em>APP</em>  --tail</b> 
+<b>heroku logs --app <em>APP</em> -n <em>nlines</em></b> show <em>nlines</em> in log file for Heroku <em>APP</em>
+<b>heroku logs --app <em>APP</em> --tail</b> 
 
 <b>heroku restart --app <em>APP</em></b> restart <em>APP</em>
 
