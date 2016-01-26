@@ -86,6 +86,7 @@ We use the Fork Workflow
 --- SHOW ---
 
 <b>git show</b> <em>revhash</em>            # show changes in a particular hash (hash from git log)
+<b>git show</b> <em>revhash:filename</em>  
 
 --- DIFFERENCE ---
 
