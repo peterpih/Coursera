@@ -13,3 +13,7 @@ rbenv install 2.2.4       # install specific version
 
 rbenv global 2.2.4        # set default version number
 </pre>
+<pre>
+Had a problem that `rbenv` could not see `bundle`  
+Ran `bundle` from ~/rbenv/versions/.../bin and it was fixed
+</pre>
