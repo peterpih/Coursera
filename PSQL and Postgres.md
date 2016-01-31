@@ -1,3 +1,5 @@
+For **rake db:migrate** commands to **up** or **down** a database look [here](https://github.com/peterpih/Miscellaneous/blob/master/RubyOnRails%20Rake.md)
+
 Useful graph of SQL joins:  
 http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  
 #PSQL commands
