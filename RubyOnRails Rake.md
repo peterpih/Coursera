@@ -1,3 +1,19 @@
+###Rake Migration file  
+db/migration/20160129073118_create_recc_book_categories.rb
+<pre>
+class CreateReccBookCategories < ActiveRecord::Migration
+  def change
+    create_table :recc_book_categories do |t|
+      t.text :name
+      t.integer :reccbookcat_id
+
+      t.timestamps null: false
+    end
+  end
+end
+</pre>
+
+###Rake commands
 <pre>
 <b>rake db:migrate:redo VERSION=</b><em>20080906120000</em>  <em>(does <b>down</b> then <b>up</b>)</em>
 <b>rake db:migrate:up VERSION=</b><em>20080906120000</em>
