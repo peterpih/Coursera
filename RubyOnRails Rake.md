@@ -1,5 +1,7 @@
+for **psql** commands look [here](https://github.com/peterpih/Miscellaneous/blob/master/PSQL%20and%20Postgres.md)
+
 ###Rake Migration file  
-db/migration/20160129073118_create_recc_book_categories.rb
+**db/migration/**20160129073118_create_recc_book_categories.rb
 <pre>
 class CreateReccBookCategories < ActiveRecord::Migration
   def change
