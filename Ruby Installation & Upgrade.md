@@ -15,9 +15,9 @@
 
 <b>gem install bundler</b>       # to get <b>bundler</b> for new ruby version
 
-<b>cd</b> <em>back-to-dev-directory<em>
+<b>cd</b> <em>back-to-dev-directory</em>
 
-<b>bundler</b>
+<b>bundler</b>                   # run bundler, entire list of gems will appear
 
 </pre>
 <pre>
