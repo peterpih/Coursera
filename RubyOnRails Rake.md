@@ -21,3 +21,8 @@ end
 <b>rake db:migrate:up VERSION=</b><em>20080906120000</em>
 <b>rake db:migrate:udown VERSION=</b><em>20080906120000</em>
 </pre>
+
+###Check the tables
+<pre>
+<b>\c</b> <em>database name</em>   <em>(to **connect** to a database)</em>
+<b>\d</b>                 <em>(to see the **tables** in the database)</em>
