@@ -11,7 +11,7 @@
 
 <b>rbenv install</b> <em>2.2.4</em>       # install specific version
 
-<b>rbenv global</b> <em>2.2.4</em>        # set default version number
+<b>rbenv global</b> <em>2.2.4</em>        # set default version number in ~/.rbenv/version
 </pre>
 <pre>
 Had a problem that <b>rbenv</b> could not see <b>bundle</b>  
