@@ -15,6 +15,10 @@
 
 <b>gem install bundler</b>       # to get <b>bundler</b> for new ruby version
 
+<b>cd</b> <em>back-to-dev-directory<em>
+
+<b>bundler</b>
+
 </pre>
 <pre>
 Had a problem that <b>rbenv</b> could not see <b>bundle</b>  
