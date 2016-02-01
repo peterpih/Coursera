@@ -1,17 +1,17 @@
 [Ruby Upgrade](https://github.com/rbenv/rbenv/issues/285)
 <pre>
-ruby --version            # show the ruby version  
+<b>ruby --version</b>            # show the ruby version  
 
-rbenv versions            # shows the versions of ruby available  
+<b>rbenv versions</b>            # shows the versions of ruby available  
 
-rbenv install 2.2.4       # install specific version  
+<b>rbenv install</b> <em>2.2.4</em>       # install specific version  
                           # if not available try upgrading ruby-build  
 
-brew upgrade ruby-build   # upgrade
+<b>brew upgrade ruby-build</b>   # upgrade
 
-rbenv install 2.2.4       # install specific version
+<b>rbenv install</b> <em>2.2.4</em>       # install specific version
 
-rbenv global 2.2.4        # set default version number
+<b>rbenv global</b> <em>2.2.4</em>        # set default version number
 </pre>
 <pre>
 Had a problem that `rbenv` could not see `bundle`  
