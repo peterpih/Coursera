@@ -14,6 +14,6 @@
 <b>rbenv global</b> <em>2.2.4</em>        # set default version number
 </pre>
 <pre>
-Had a problem that `rbenv` could not see `bundle`  
-Ran `bundle` from ~/rbenv/versions/.../bin and it was fixed
+Had a problem that <b>rbenv</b> could not see <b>bundle</b>  
+Ran <b>bundle</b> from ~/rbenv/versions/.../bin and it was fixed
 </pre>
