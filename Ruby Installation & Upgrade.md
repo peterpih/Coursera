@@ -13,7 +13,7 @@
 
 <b>rbenv global</b> <em>2.2.4</em>        # set default version number in ~/.rbenv/version
 
-<b>gem install bundler</b>
+<b>gem install bundler</b>       # to get <b>bundler</b> for new ruby version
 
 </pre>
 <pre>
