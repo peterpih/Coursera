@@ -1,5 +1,17 @@
 for **psql** commands look [here](https://github.com/peterpih/Miscellaneous/blob/master/PSQL%20and%20Postgres.md)
 
+###Rake commands
+<pre>
+<b>rake db:migrate:redo VERSION=</b><em>20080906120000</em>  <em>(does <b>down</b> then <b>up</b>)</em>
+<b>rake db:migrate:up VERSION=</b><em>20080906120000</em>
+<b>rake db:migrate:udown VERSION=</b><em>20080906120000</em>
+</pre>
+
+###Check the tables
+<pre>
+<b>\c</b> <em>database name</em>   <em>(to **connect** to a database)</em>
+<b>\d</b>                 <em>(to see the **tables** in the database)</em>
+
 ###Rake Migration file  
 **db/migration/**20160129073118_create_recc_book_categories.rb
 <pre>
@@ -15,14 +27,3 @@ class CreateReccBookCategories < ActiveRecord::Migration
 end
 </pre>
 
-###Rake commands
-<pre>
-<b>rake db:migrate:redo VERSION=</b><em>20080906120000</em>  <em>(does <b>down</b> then <b>up</b>)</em>
-<b>rake db:migrate:up VERSION=</b><em>20080906120000</em>
-<b>rake db:migrate:udown VERSION=</b><em>20080906120000</em>
-</pre>
-
-###Check the tables
-<pre>
-<b>\c</b> <em>database name</em>   <em>(to **connect** to a database)</em>
-<b>\d</b>                 <em>(to see the **tables** in the database)</em>
