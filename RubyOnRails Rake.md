@@ -7,6 +7,8 @@ for **psql** commands look [here](https://github.com/peterpih/Miscellaneous/blob
 <b>rake db:migrate:down VERSION=</b><em>20080906120000</em>
 </pre>
 
+[Run a single migration](http://stackoverflow.com/questions/753919/run-a-single-migration-file)
+
 ###Check the tables
 <pre>
 <b>\c</b> <em>database name</em>   <em>(to **connect** to a database)</em>
