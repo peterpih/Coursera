@@ -30,6 +30,10 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 <b>git add -A</b>                              # add modified and untracked files to staging area
 <b>git commit -m</b> <em>comment</em>                   # make a commit, comment on one line
 
+--- SHOW ---
+
+<b>git show HEAD</b>
+
 --- PUSHING ----
 
 <b>git push</b> <em>origin feature_branch</em>          # push the commits from feature_branch to remote origin
@@ -57,8 +61,9 @@ We use the Fork Workflow
 --- ADD --- <em>to staging</em>
 
 <b>git add</b> <em>filename</em>              # add a file to staging area
-<b>git add .</b>                     # add modified files to staging area
-<b>git add -A</b>                    # add modified and untracked files to staging area
+<b>git add</b> <em>filename1, filename2, filename3</em>
+<b>git add .</b>                     # add <b>modified only</b> files to staging area
+<b>git add -A</b>                    # add <b>modified and untracked</b> files to staging area
 
 --- RESET ---
 
@@ -71,6 +76,10 @@ We use the Fork Workflow
 <b>git commit -m</b> <em>commit_text</em> # one line commit comment
 <b>git commit</b>                    # will open text editor for commenting
 
+--- MERGE ---
+
+<b>git merge</b> <em>branch_to_merge</em>
+
 --- REMOVE --- <em>from staging, files must be staged</em>
 
 <b>git rm -f</b> <em>filename</em>            # delete file and/or remove tracked deleted files from staging
@@ -81,6 +90,8 @@ We use the Fork Workflow
 --- CHECKOUT --- <em>go back to version at last commit</em>
 
 <b>git checkout</b> <em>filename</em>        # restore previous file version from last commit
+<b>git checkout HEAD</b> <em>filename</em>
+
 <b>git checkout</b> <em>branch</em>          # switch to <em>branch</em>
 
 --- SHOW ---
@@ -110,19 +121,24 @@ We use the Fork Workflow
 <b>git log --since=2.weeks</b>
 <b>git log -S</b><em>function_name</em>     # search logs for string <function name>
 </pre>
+
 <div id="repo-branch-section">
 ###For Repositories and Branches
-```
-cd <working_directory>
-git init                      # initialize an existing local working_directory
+<pre>
+<b>cd</b> <em>working-directory</em>
+<b>git init</b>                      # initialize an existing local working_directory
 
-git init <working_directory>  # initialize and create a local working_directory
+<b>git init</b> <em>working_directory</em>  # initialize and create a local working_directory
 
 
-#---STATUS--- show status of files in working tree
+--- STATUS --- <em>show status of files in working tree</em>
 
-git status                    # tracked, untracked, modified, staged
-git status -s                 # short form: M-modified, A-staged(added), ??-untracked
+<b>git status</b>                    # tracked, untracked, modified, staged
+<b>git status -s</b>                 # short form: M-modified, A-staged(added), ??-untracked
+
+--- CLONE ---
+
+<b>git clone</b> <em>remote_name</em> <em>local_directory</em>
 
 #---BRANCH---
 
@@ -178,7 +194,7 @@ git stash drop stash@{0}        # delete first stash
 git stash drop stash@{1}        # delete second stash
 
 https://git-scm.com/book/en/v1/Git-Tools-Stashing
-```
+</pre>
 
 ###Initializing Repository from PC
 ```
