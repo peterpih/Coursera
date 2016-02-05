@@ -24,11 +24,11 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 <div id="work-flow-section">
 ###Typical git command flow
 <pre>
-<b>git checkout</b> <em>feature_branch</em>   # change branch to feature_branch
+<b>git checkout</b> <em>feature_branch</em>        # change branch to feature_branch
 ...
-<b>git status</b>                              # shows status of branch
-<b>git add -A</b>                              # add modified and untracked files to staging area
-<b>git commit -m</b> <em>comment</em>                   # make a commit, comment on one line
+<b>git status</b>                         # shows status of branch
+<b>git add -A</b>                         # add modified and untracked files to staging area
+<b>git commit -m</b> <em>comment</em>              # make a commit, comment on one line
 
 --- SHOW ---
 
@@ -61,7 +61,7 @@ We use the Fork Workflow
 --- ADD --- <em>to staging</em>
 
 <b>git add</b> <em>filename</em>              # add a file to staging area
-<b>git add</b> <em>filename1, filename2, filename3</em>
+<b>git add</b> <em>file1, file2, file3</em>   # add multiple files to staging area
 <b>git add .</b>                     # add <b>modified only</b> files to staging area
 <b>git add -A</b>                    # add <b>modified and untracked</b> files to staging area
 
