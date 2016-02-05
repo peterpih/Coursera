@@ -128,7 +128,7 @@ We use the Fork Workflow
 <b>cd</b> <em>working-directory</em>
 <b>git init</b>                      # initialize an existing local working_directory
 
-<b>git init</b> <em>working_directory</em>  # initialize and create a local working_directory
+<b>git init</b> <em>working-directory</em>  # initialize and create a local working_directory
 
 
 --- STATUS --- <em>show status of files in working tree</em>
@@ -138,31 +138,31 @@ We use the Fork Workflow
 
 --- CLONE ---
 
-<b>git clone</b> <em>remote_name</em> <em>local_directory</em>
+<b>git clone</b> <em>remote-name</em> <em>local-directory</em>
 
 #---BRANCH---
 
-git branch -l                 # show local branches
-git branch -a                 # show all branches, local and remote
-git branch -d <branch>        # delete a <branch>
-git branch -D <branch>        # forcefully delete <branch>
-git branch -m <current name> <new name>
+<b>git branch -l</b>                    # show local branches
+<b>git branch -a</b>                    # show all branches, local and remote
+<b>git branch -d</b> <em>branch</em>        # delete a <branch>
+<b>git branch -D</b> <em>branch</em>        # forcefully delete <branch>
+<b>git branch -m</b> <em>current-name new-name</em>
 
 #---SHOW-BRANCH---     https://robots.thoughtbot.com/compare-commits-between-git-branches
 
-git show-branch <branch> <origin/master>
+<b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
 #---REMOTE---
 
-git remote -v                 # list remote repos
+<b>git remote -v</b>                 # list remote repos
 
                               # add remote repo connections
-git remote add origin git@github.com:<username>/<reponame>
-git remote add origin https://github.com/<username>/<reponame>
+<b>git remote add</b> <em>origin</em> <b>git@github.com:</b><em>user-name</em><b>/</b><em>repo-name</em>
+<b>git remote add origin https://github.com/</b><em>user-name</em><b>/</b><em>repo-name</em>
 
-git remote rm origin          # remove remote connection
+<b>git remote rm</b> <em>origin</em>          # remove remote connection
 
-git remote add fff git@github.com:<username>/<githhub reponame>
+<b>git remote add</b> <em>fff</em> <b>git@github.com:</b><em>user-name</em><b>/</b><em>githhub-reponame</em>
 git fetch fff
 git pull 
 
