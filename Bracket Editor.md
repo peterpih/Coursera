@@ -6,4 +6,4 @@
 
 [Bracket Video Course](http://css-snippets.com/brackets-course/)
 
-
+[Bracket Markdown Extension](https://github.com/gruehle/MarkdownPreview)
