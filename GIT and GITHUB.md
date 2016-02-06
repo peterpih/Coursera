@@ -73,14 +73,14 @@ We use the Fork Workflow
 
 --- COMMIT ---
 
-<b>git commit -m</b> <em>commit_text</em> # one line commit comment
+<b>git commit -m</b> <em>commit_text</em>     # one line commit comment
 <b>git commit</b>                    # will open text editor for commenting
 
 --- MERGE ---
 
 <b>git merge</b> <em>branch_to_merge</em>
 
---- REMOVE --- <em>from staging, files must be staged</em>
+--- REMOVE (delete) --- <em>from staging, files must be staged</em>
 
 <b>git rm -f</b> <em>filename</em>            # delete file and/or remove tracked deleted files from staging
 <b>git rm --cached</b> <em>filename</em>      # remove from staging area (does not delete underlying file)
@@ -131,7 +131,7 @@ We use the Fork Workflow
 <b>git init</b> <em>working-directory</em>  # initialize and create a local working_directory
 
 
---- STATUS --- <em>show status of files in working tree</em>
+--- <b>STATUS</b> --- <em>show status of files in working tree</em>
 
 <b>git status</b>                    # tracked, untracked, modified, staged
 <b>git status -s</b>                 # short form: M-modified, A-staged(added), ??-untracked
@@ -142,8 +142,8 @@ We use the Fork Workflow
 
 #---BRANCH---
 
-<b>git branch -l</b>                    # show local branches
-<b>git branch -a</b>                    # show all branches, local and remote
+<b>git branch -l</b>               # show local branches
+<b>git branch -a</b>               # show all branches, local and remote
 <b>git branch -d</b> <em>branch</em>        # delete a <branch>
 <b>git branch -D</b> <em>branch</em>        # forcefully delete <branch>
 <b>git branch -m</b> <em>current-name new-name</em>
@@ -158,52 +158,54 @@ We use the Fork Workflow
 
                               # add remote repo connections
 <b>git remote add</b> <em>origin</em> <b>git@github.com:</b><em>user-name</em><b>/</b><em>repo-name</em>
-<b>git remote add origin https://github.com/</b><em>user-name</em><b>/</b><em>repo-name</em>
+<b>git remote add</b> <em>origin</em> <b>https://github.com/</b><em>user-name</em><b>/</b><em>repo-name</em>
 
 <b>git remote rm</b> <em>origin</em>          # remove remote connection
 
 <b>git remote add</b> <em>fff</em> <b>git@github.com:</b><em>user-name</em><b>/</b><em>githhub-reponame</em>
-git fetch fff
-git pull 
+<b>git fetch</b> <em>fff</em>
+<b>git pull</b>
 
 #---CHECKOUT--- switch branches
 
-git checkout master                   # switch branches
-git checkout -b <my-branch-name>      # do checkout and create new branch
-git checkout ####### file             # restore a file from commit tag ####### (seven digits)
+<b>git checkout</b> <em>master</em>                 # switch branches
+<b>git checkout -b</b> <em>my-branch-name</em>      # do checkout and create new branch
+<b>git checkout</b> <em>revhash file</em>           # restore a file from commit tag ####### (seven digits)
 
 #---RESET--- reset a branch
 
-git reset                       # unstage any staged files
-git reset --hard HEAD^          # resets current branch to last commit and removes last commit from history
-git reset --hard HEAD~2         # resets last 2 commits
-git reset --hard fff/master
+<b>git reset</b>                       # unstage any staged files
+<b>git reset --hard HEAD^</b>          # resets current branch to last commit and removes last commit from history
+<b>git reset --hard HEAD~2</b>         # resets last 2 commits
+<b>git reset --hard fff/master</b>
 
-#---STASH--- push a branch onto a saved stack
+#---[STASH](https://git-scm.com/book/en/v1/Git-Tools-Stashing)--- push a branch onto a saved stack
 
-git stash                       # creates a stash  
-git stash save  
-git stash save "description"  
+<b>git stash</b>                       # creates a stash  
+<b>git stash save</b>  
+<b>git stash save</b> <em>description</em>  
 
-git stash apply                 # apply most recent stash
-git stash apply stash@{2}       # apply second stash
+<b>git stash apply</b>                 # apply most recent stash
+<b>git stash apply stash@{2}</b>       # apply second stash
 
-git stash list                  # lists stashes  
+<b>git stash list</b>                  # lists stashes  
 
-git stash drop stash@{0}        # delete first stash
-git stash drop stash@{1}        # delete second stash
+<b>git stash drop stash@{0}</b>        # delete first stash
+<b>git stash drop stash@{1}</b>        # delete second stash
 
-https://git-scm.com/book/en/v1/Git-Tools-Stashing
+
 </pre>
 
 ###Initializing Repository from PC
-```
-# goto directory above where you want the project
-git new <project name>
-cd <project name>
-                      # with a preexisting directory, start here
-git init              # initialize
-```
+
+goto directory above where you want the project
+<pre>
+<b>git new</b> <em>project-name</em>
+<b>cd</b> <em>project-name</em>
+                    # with a preexisting directory, start here
+<b>git init</b>            # initialize
+</pre>
+
 At this point, the \<project name\> repository needs to be created on GiutHub  
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
