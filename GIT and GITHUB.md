@@ -148,7 +148,7 @@ We use the <b>Fork Workflow</b>
 <b>git branch -m</b> <em>current-name new-name</em>
 
 #---SHOW-BRANCH---     
-[compare commits between git branches](https://robots.thoughtbot.com/compare-commits-between-git-branches)
+[compare commits between git branches](https://robots.thoughtbot.com/compare-commits-between-git-branches)  
 <b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
 #---REMOTE---
