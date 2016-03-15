@@ -51,15 +51,15 @@ While on feature_branch, when ready to push to master branch, check for conflict
 <b>git merge</b> <em>branch</em>              # there will be no comflicts at this point
 </pre>
 
-[making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example
-We use the <b>Fork Workflow</b> 
+[making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example  
+We use the <b>Fork Workflow</b> method  
 
 <div id="file-section">
 ###File commands
 <pre>
 --- ADD --- <em>to staging</em>
 
-<b>git add</b> <em>filename</em>              # add a file to staging area
+<b>git add</b> <em>file-name</em>              # add a file to staging area
 <b>git add</b> <em>file1, file2, file3</em>   # add multiple files to staging area
 <b>git add .</b>                     # add <b>modified only</b> files to staging area
 <b>git add -A</b>                    # add <b>modified and untracked</b> files to staging area
@@ -67,7 +67,7 @@ We use the <b>Fork Workflow</b>
 --- RESET ---
 
 <b>git reset</b>                     # remove all files from staging area, before commit(ting)
-<b>git reset</b> <em>filename</em>            # remove filename from staging area
+<b>git reset</b> <em>file-name</em>            # remove filename from staging area
 <b>git reset</b> <em>revhash</em>             # roll back to revhash commit
 
 --- COMMIT ---
@@ -102,11 +102,11 @@ We use the <b>Fork Workflow</b>
 
 <b>git diff</b>
 <b>git diff --staged</b>
-<b>git diff</b> <em>filename</em>           # show difference between modified and staging area
+<b>git diff</b> <em>file-name</em>           # show difference between modified and staging area
 
 --- RENAME --- <em>a file</em>
 
-<b>git mv</b> <em>from_file  to_file</em>
+<b>git mv</b> <em>from-file  to-file</em>
 
 --- LOG --- <em>show changes between two different branches</em>
 
@@ -119,6 +119,7 @@ We use the <b>Fork Workflow</b>
 <b>git log --pretty=format:"%h - %an, %ar : %s"</b>
 <b>git log --since=2.weeks</b>
 <b>git log -S</b><em>function_name</em>     # search logs for string <function name>
+<b>git log --graph --oneline --decorate --all</b>       # makes a graph of the branches
 </pre>
 
 <div id="repo-branch-section">
@@ -209,10 +210,10 @@ At this point, the \<project name\> repository needs to be created on GiutHub
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
 <pre>
-git status                    # have a look
-git add -A                    # add files
-git commit -m "first commit"
-git pull https://github.com/<username>/<project name>.git
+<b>git status</b>                    # have a look
+<b>git add -A</b>                    # add all files
+<b>git commit -m</b> <em>"first commit"</em>
+<b>git pull https://github.com/</b><em>username</em><b>/</b><em>project name</em><b>.git</b>
 git push --set-upstream https://github.com/<username>/<project name>.git master
 </pre>
 <div id="where-is-current-origin-section">
@@ -285,28 +286,28 @@ GitHub staging:
 ##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[link to Git commands](#github-section)
 **Clone a local repository using Git on PC**
 <pre>
-# First create the repository in GitHub
-$ cd <directory you want the repository to be in>
-$ git clone https://github.com/peterpih/<repository name>
-```
+<em>First create the repository in GitHub</em>
+<b>cd</b> <em>directory_you_want_the_repository_to_be_in</em>
+<b>git clone https://github.com/peterpih/</b><em>repository name</em>
+</pre>
 alternatively you can do this on PC (these steps will aso create a README.md file):
-```{R}
-# cd <directory>
-echo "# 09_DevelopingDataProducts >> README.md"
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
-git push -u origin master
-```
+<pre>
+<b>cd</b> <em>directory</em>
+<b>echo</b> <em>"# 09_DevelopingDataProducts >> README.md"</em>
+<b>git init</b>
+<b>git add README.md</b>
+<b>git commit -m</b> <em>"first commit"</em>
+<b>git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git</b>
+<b>git push -u origin master</b>
+<pre>
 
 **Change the name of a directory(branch)**
-```{R}
-rm --ignore-fail-on-non-empty .git
-git init
-git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
-git push -u origin master
-```
+<pre>
+<b>rm --ignore-fail-on-non-empty .git</b>
+<b>git init</b>
+<b>git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git</b>
+<b>git push -u origin master</b>
+</pre>
 
 **delete the **.git** file in the PC directory**
 
@@ -327,24 +328,24 @@ $ git push
 ```
 If the **push is rejected**, it is because there have been other updates to the branch on GitHub  
 You will need to **git pull** first so changes are merged, and the **git push**  
-```{R}
-$ git pull
-$ git status
-$ git push
-```
-```
-git diff <filename>
-git difftool <filename>
+<pre>
+$ <b>git pull</b>
+$ <b>git status</b>
+$ <b>git push</b>
+</pre>
+<pre>
+<b>git diff</b> <em>file-name</em>
+<b>git difftool</b> <em>file-name</em>
 
-git add <filename>               # add a new file to the repository to be tracked
-git rm <filename>                # delete a file
+<b>git add</b> <em>file-name</em>               # add a new file to the repository to be tracked
+<b>git rm</b> <em>file-name</em>                # delete a file
 
-git log                          # shows history
-git log --stat                   # show which files were changed
-git log --p                      # shows the changes
+<b>git log</b>                          # shows history
+<b>git log --stat</b>                   # show which files were changed
+<b>git log --p</b>                      # shows the changes
 
-.git/info/exclude                # ignore file for only local repository
-```
+<b>.git/info/exclude</b>                # ignore file for only local repository
+</pre>
 At any one time, only one branch is currently active, this is the **checked out** branch, or **HEAD** branch  
 Move from one branch to another using **checkout**  
 
