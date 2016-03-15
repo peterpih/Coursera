@@ -7,6 +7,8 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 [git-scm.com docs](https://git-scm.com/docs)  
 [Git Fetch and Merge](http://longair.net/blog/2009/04/16/git-fetch-and-merge/)  
 [How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
+[Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
 
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
@@ -115,7 +117,7 @@ We use the <b>Fork Workflow</b> method
 <b>git log -p -2</b>                 # last 2 lines
 <b>git log --one-line</b>            # show each commit on one line
 <b>git log --stat</b>
-<b>git log --pretty=oneline</b>
+<b>git log --pretty=oneline</b>       #single line summary
 <b>git log --pretty=format:"%h - %an, %ar : %s"</b>
 <b>git log --since=2.weeks</b>
 <b>git log -S</b><em>function_name</em>     # search logs for string <function name>
@@ -222,43 +224,44 @@ from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/
 
 Where is the current **origin**  
 <pre>
-  git remote -v
+  <b>git remote -v</b>
       origin	git@github.com:phran/forever-family-foundation.git (fetch)
       origin	git@github.com:phran/forever-family-foundation.git (push)
 
-  git remote rm origin
-  git remote -v
-  git remote add origin git@github.com:peterpih/forever-family-foundation
-  git remote -v
+  <b>git remote rm origin</b>
+  <b>git remote -v</b>
+  <b>git remote add origin git@github.com:peterpih/forever-family-foundation</b>
+  <b>git remote -v</b>
       origin	git@github.com:peterpih/forever-family-foundation (fetch)
       origin	git@github.com:peterpih/forever-family-foundation (push)
 
-  git config master.remote origin
-  git config master.merge refs/heads/master
-  git status
+  <b>git config master.remote origin</b>
+  <b>git config master.merge refs/heads/master</b>
+  <b>git status</b>
 
-  (then either)
-  git push --set-upstream origin master
+  <em>then either</em>
+  <b>git push --set-upstream origin master</b>
       -or-
-  git push --set-upstream origin master -force
+  <b>git push --set-upstream origin master -force</b>
 </pre>
 
 <div id="rename-local-remote-branches-section">
 ###Rename local and remote branches  
 from: https://gist.github.com/lttlrck/9628955  
-```
+<pre>
 git branch -m old_branch new_branch         # Rename branch locally    
 git push origin :old_branch                 # Delete the old branch    
 git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
-```
+</pre>
 
 [gh-pages How To](#gh-pages-how-to)
 
-useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
+useful link: 
+[Basic Git Command Line Reference for Windows Users](http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users)  
 useful video: http://www.git-tower.com/learn/git/videos/installing-configuring-git?channel=cli#start  
 branching and merging:  
-https://help.github.com/articles/merging-a-pull-request/  
-https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches  
+[Merging A Pull Request](https://help.github.com/articles/merging-a-pull-request/)  
+[Create A New Branch And Merge Branches](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)  
 
 git and poshgit (has credentials link): https://gist.github.com/pcurylo/6575385  
 <pre>
