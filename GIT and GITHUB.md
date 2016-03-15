@@ -209,19 +209,19 @@ goto directory above where you want the project
 At this point, the \<project name\> repository needs to be created on GiutHub  
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
-```
+<pre>
 git status                    # have a look
 git add -A                    # add files
 git commit -m "first commit"
 git pull https://github.com/<username>/<project name>.git
 git push --set-upstream https://github.com/<username>/<project name>.git master
-```
+</pre>
 <div id="where-is-current-origin-section">
 ###Change Origin Repository
 from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
 
 Where is the current **origin**  
-```
+<pre>
   git remote -v
       origin	git@github.com:phran/forever-family-foundation.git (fetch)
       origin	git@github.com:phran/forever-family-foundation.git (push)
@@ -241,7 +241,8 @@ Where is the current **origin**
   git push --set-upstream origin master
       -or-
   git push --set-upstream origin master -force
-```
+</pre>
+
 <div id="rename-local-remote-branches-section">
 ###Rename local and remote branches  
 from: https://gist.github.com/lttlrck/9628955  
@@ -260,9 +261,9 @@ https://help.github.com/articles/merging-a-pull-request/
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches  
 
 git and poshgit (has credentials link): https://gist.github.com/pcurylo/6575385  
-```
-git <parameter> --help
-```
+<pre>
+<b>git</b> <em>parameter</em> <b>--help</b>
+</pre>
 ###GitHub Flow
 Useful link: https://guides.github.com/introduction/flow/  
 
@@ -284,7 +285,7 @@ GitHub staging:
 
 ##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[link to Git commands](#github-section)
 **Clone a local repository using Git on PC**
-```{R}
+<pre>
 # First create the repository in GitHub
 $ cd <directory you want the repository to be in>
 $ git clone https://github.com/peterpih/<repository name>
