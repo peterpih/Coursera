@@ -2,12 +2,11 @@
 Run `ssh -T git@github.com`, if it times out, need to connect using `http:` protocol.  
 
 ###Useful links
-http://gitref.org  
-https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
-https://git-scm.com/docs  
-http://longair.net/blog/2009/04/16/git-fetch-and-merge/  
-How to update a GitHub forked repository?:  
-http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository   
+[gitref.org](http://gitref.org)  
+[Git Basics Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)  
+[git-scm.com docs](https://git-scm.com/docs)  
+[Git Fetch and Merge](http://longair.net/blog/2009/04/16/git-fetch-and-merge/)  
+[How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
 
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
@@ -52,8 +51,8 @@ While on feature_branch, when ready to push to master branch, check for conflict
 <b>git merge</b> <em>branch</em>              # there will be no comflicts at this point
 </pre>
 
-pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
-We use the Fork Workflow 
+[making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example
+We use the <b>Fork Workflow</b> 
 
 <div id="file-section">
 ###File commands
@@ -148,8 +147,8 @@ We use the Fork Workflow
 <b>git branch -D</b> <em>branch</em>        # forcefully delete <branch>
 <b>git branch -m</b> <em>current-name new-name</em>
 
-#---SHOW-BRANCH---     https://robots.thoughtbot.com/compare-commits-between-git-branches
-
+#---SHOW-BRANCH---     
+[compare commits between git branches](https://robots.thoughtbot.com/compare-commits-between-git-branches)
 <b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
 #---REMOTE---
@@ -166,7 +165,7 @@ We use the Fork Workflow
 <b>git fetch</b> <em>fff</em>
 <b>git pull</b>
 
-#---CHECKOUT--- switch branches
+#---CHECKOUT--- <em>switch branches</em>
 
 <b>git checkout</b> <em>master</em>                 # switch branches
 <b>git checkout -b</b> <em>my-branch-name</em>      # do checkout and create new branch
