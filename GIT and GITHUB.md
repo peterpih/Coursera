@@ -181,7 +181,7 @@ We use the <b>Fork Workflow</b> method
 <b>git reset --hard HEAD~2</b>         # resets last 2 commits
 <b>git reset --hard fff/master</b>
 
-#---[STASH](https://git-scm.com/book/en/v1/Git-Tools-Stashing)--- push a branch onto a saved stack
+#--- <a href="https://git-scm.com/book/en/v1/Git-Tools-Stashing"><b>STASH</b></a> --- <em>push a branch onto a saved stack</em>
 
 <b>git stash</b>                       # creates a stash  
 <b>git stash save</b>  
