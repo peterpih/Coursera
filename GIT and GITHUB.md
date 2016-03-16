@@ -7,8 +7,8 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 [git-scm.com docs](https://git-scm.com/docs)  
 [Git Fetch and Merge](http://longair.net/blog/2009/04/16/git-fetch-and-merge/)  
 [How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
-[Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-
+[Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)  
+[Git Guide](http://rogerdudler.github.io/git-guide/)
 
 ###Some Thoughts:
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
