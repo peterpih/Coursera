@@ -151,7 +151,7 @@ We use the <b>Fork Workflow</b> method
 <b>git branch -m</b> <em>current-name new-name</em>
 
 #---SHOW-BRANCH---     
-[compare commits between git branches](https://robots.thoughtbot.com/compare-commits-between-git-branches)  
+<a href="https://robots.thoughtbot.com/compare-commits-between-git-branches">compare commits between git branches</a>
 <b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
 #---REMOTE---
@@ -195,7 +195,17 @@ We use the <b>Fork Workflow</b> method
 <b>git stash drop stash@{0}</b>        # delete first stash
 <b>git stash drop stash@{1}</b>        # delete second stash
 
+</pre>
+###[Updating local master from origin master master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
+<pre>
+<b>cd</b> <em>local-repo</em>
+<b>git checkout master</b>
 
+<b>git fetch</b> <em>origin</em> <b>master</b>
+<b>git merge-base FETCH_HEAD master</b>
+<b>git merge-tree</b> <em>mergebase</em> <b>master FETCH_HEAD</b>
+      <em>( where mergebase is the hexcidecimal id merge-base printed in previous step )</em>
+      <em>( search for <b><<</b> or <b>>></b> for conflicts )*</em>
 </pre>
 
 ###Initializing Repository from PC
