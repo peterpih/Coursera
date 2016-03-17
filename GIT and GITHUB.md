@@ -197,12 +197,12 @@ We use the <b>Fork Workflow</b> method
 <b>git stash drop stash@{1}</b>        # delete second stash
 
 </pre>
-###[Updating local master from origin master master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
+###[Updating local master from origin master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
 <pre>
 <b>cd</b> <em>local-repo</em>
 <b>git checkout master</b>
 
-<b>git fetch</b> <em>origin</em> <b>master</b>
+<b>git fetch</b> <em>repo-name</em> <b>master</b>   <em>( repo-name usually origin or phran )</em>
 <b>git merge-base FETCH_HEAD master</b>
 <b>git merge-tree</b> <em>mergebase</em> <b>master FETCH_HEAD</b>
       <em>( where mergebase is the hexcidecimal id merge-base printed in previous step )</em>
