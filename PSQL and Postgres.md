@@ -5,7 +5,7 @@ For **rake db:migrate** commands to **up** or **down** a database look
 
 Useful graph of SQL joins: [difference between join and inner join](http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  )
 #PSQL commands
-**Show databases***
+**Show databases**
 <pre>
 <b>\l</b>                        # list databases letter el
 
