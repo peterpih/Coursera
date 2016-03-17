@@ -1,7 +1,9 @@
-For **rake db:migrate** commands to **up** or **down** a database look [here](https://github.com/peterpih/Miscellaneous/blob/master/RubyOnRails%20Rake.md)
+For **rake db:migrate** commands to **up** or **down** a database look  
+[RubyOnRails Rake](https://github.com/peterpih/Miscellaneous/blob/master/RubyOnRails%20Rake.md)
 
-Useful graph of SQL joins:  
-[difference between join and inner join](http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  )
+[PostgreSQL](http://www.postgresql.org/docs/9.1/static/sql-altertable.html) documentation
+
+Useful graph of SQL joins: [difference between join and inner join](http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  )
 #PSQL commands
 **Show databases***
 <pre>
