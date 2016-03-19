@@ -419,30 +419,33 @@ Plus some "extras":
 3) A few other files you can provide to help people find things in your repo and github.io site.  
 4) Some notes on git, Github, and revision control.  
 
-***Another way using git**  
+***Another way using git***  
 Push html pages to master branch  
-```
-git push origin master
-```
-Now create a gh-pages branch (GitHub-pages)
-```
-git branch gh-pages
-git checkout gh-pages
-git push origin gh-pages
-```
+<pre>
+<b>git push</b> <em>origin</em> <b>master</b>
+</pre>
+
+###Now create a gh-pages branch (GitHub-pages)
+<pre>
+<b>git branch gh-pages</b>
+<b>git checkout gh-pages</b>
+<b>git push origin gh-pages</b>
+</pre>
+
 This will create a gh-pages branch on github  
 Also, create and push a .nojekyll file which avoids some of the fancy html in github
-```
-touch .nojekyll
-git add .nojekyll
-git commit -m "adding .nojekyll"
-git push origin gh-pages
-```
+<pre>
+<b>touch .nojekyll</b>
+<b>git add .nojekyll</b>
+<b>git commit -m</b> <em>"adding .nojekyll"</em>
+<b>git push origin gh-pages</b>
+</pre>
+
 **To view the webpage, the url is**:  
-http://\<github username\>.github.io/\<repo name\>/\<presentation name\>.html  
+<b>http://</b><em>github-username</em><b>.github.io/</b><em>repo-name</em><b>/</b><em>presentation-name</em><b>.html</b>  
 
 **To keep the master and gh-pages branches in sync**:  
-http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html  
+[Automating gh pages integration](http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html)  
 
 
 ###Authorization to see repo characterisitics (from quiz excercise)  
