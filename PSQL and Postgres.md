@@ -28,11 +28,12 @@ Useful graph of SQL joins: [difference between join and inner join](http://stack
 <b>SELECT</b> * <b>FROM</b> <em>users</em> <b>WHERE</b> <em>email='ppih@panix%'</em><b>;</b>  
 
 <b>ALTER TABLE</b> <em>table-name</em> <b>RENAME TO</b> <em>new-table-name</em>;  <em>( rename a table )</em>
-<b>ALTER TABLE</b> <em>table-name</em> <b>RENAME</b> <em>column-name</em> <b>TO</b> <em>new-column-name<em>;
+<b>ALTER TABLE</b> <em>table-name</em> <b>RENAME</b> <em>column-name</em> <b>TO</b> <em>new-column-name</em>;
 </pre>
 
 ###Dump a database
 <pre>
+<em>creates dump file of table-name to output-file</em>
 <b>pg_dump -t</b> <em>table-name</em> <b>-f</b> <em>output-file  database-name</em>
-    <em>creates dump file of table-name to output-file</em>
+    
 </pre>
