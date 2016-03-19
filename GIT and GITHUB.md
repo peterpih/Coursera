@@ -9,9 +9,7 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 [How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
 [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)  
 [Git Guide](http://rogerdudler.github.io/git-guide/)  
-[Git Reference](http://gitref.org/remotes/)
-
-###Some Thoughts:
+[Git Reference](http://gitref.org/remotes/)c
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
 #TOC
@@ -313,7 +311,7 @@ alternatively you can do this on PC (these steps will aso create a README.md fil
 <b>git commit -m</b> <em>"first commit"</em>
 <b>git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git</b>
 <b>git push -u origin master</b>
-<pre>
+</pre>
 
 **Change the name of a directory(branch)**
 <pre>
