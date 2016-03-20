@@ -7,34 +7,35 @@ Useful links:
 
 ###Install Heroku
 On OSX, use Homebrew:  
-```
-brew install heroku-toolbelt
-heroku update
-```
+<pre>
+<b>brew install heroku-toolbelt</b>
+<b>heroku update</b>
+</pre>
 
 ###Heroku Commands  
-<b>heroku local</b> run the app locally from heroku
+<b>heroku local</b> <em>( run the app locally from heroku )</em>
 
 add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
-<b>heroku open</b>      open a link to the app website in local browser
-<b>heroku ps</b>        dynos running on Heroku
-<b>heroku config</b>    show configuration vars and the database url
-<b>heroku addons</b>    show additional services
+<b>heroku open</b>      <em>open a link to the app website in local browser</em>
+<b>heroku ps</b>        <em>dynos running on Heroku</em>
+<b>heroku config</b>    <em>show configuration vars and the database url</em>
+<b>heroku addons</b>    <em>show additional services</em>
 
-<b>heroku pg:psql</b>   for [postgres on Heroku](#'accessing-database-remotely')
+<b>heroku pg:psql</b>   <em>for [postgres on Heroku](#'accessing-database-remotely')</em>
+<b>heroku pg:dump -t</b> <em>table-name [-t database-name] database-name</em>
 
-<b>heroku maintenance:on</b>    take site down for maintenance
+<b>heroku maintenance:on</b>    <em>take site down for maintenance</em>
 <b>heroku maintenance:off</b>
 
-<b>heroku logs --app <em>APP</em></b>                      show log file for Heroku <em>APP</em>
-<b>heroku logs --app <em>APP</em> -n <em>nlines</em></b>            show <em>nlines</em> in log file for Heroku <em>APP</em>
-<b>heroku logs --app <em>APP</em> --tail</b>               tail the logs
+<b>heroku logs --app</b> <em>APP</em>                      <em>show log file for Heroku APP</em>
+<b>heroku logs --app</b> <em>APP</em> <b>-n</b> <em>nlines</em>            <em>show nlines in log file for Heroku</em> <em>APP</em>
+<b>heroku logs --app</b> <em>APP</em> <b>--tail</b>               <em>tail the logs</em>
 
-<b>heroku restart --app <em>APP</em></b> restart <em>APP</em>
+<b>heroku restart --app</b> <em>APP</em>
 
 <b>heroku run console</b>
-<b>heroku run bash --app <em>APP</em></b>   remote Unix command line
+<b>heroku run bash --app</b> <em>APP</em>   <em>remote Unix command line</em>
 </pre>
   
 
@@ -50,22 +51,23 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 </pre>
 
 ###Papertrail
-```
-heroku addons                   # show addons
-heroku addons:doc papertrail    # documentation for papertrail
-heroku addons:open papertrail   # open a dashboard for papertrail
+<pre>
+<b>heroku addons</b>                   # show addons
+<b>heroku addons:doc papertrail</b>    # documentation for papertrail
+<b>heroku addons:open papertrail</b>   # open a dashboard for papertrail
 
-heroku run bash                 # runs a remote shell
-heroku run <command>            # runs a comandline command
-heroku run bundle install
-heroku run rake db:migrate
+<b>heroku run bash</b>                 # runs a remote shell
+<b>heroku run <em>command</em>            # runs a commandline command
+<b>heroku run bundle install</b>
+<b>heroku run rake db:migrate</b>
 
-heroku config                   # show config settings
+<b>heroku config</b>                   # show config settings
                                 # database url is shown here
-heroku config:set TIMES=10      # set TIMES env var to 10
-```
+<b>heroku config:set TIMES=10</b>      # set TIMES env var to 10
+</pre>
+
 ###Postgres on Heroku  
-NOTE: **DATABASE_URL** and **DATABASE** are the literal strings not env variables  
+NOTE: <b>DATABASE_URL</b> and <b>DATABASE</b> are the <b>literal strings</b> not env variables  
 <pre>
 <b>heroku pg:info</b>                      # show some info about the database
 
@@ -82,7 +84,7 @@ heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
 ###To pull down a database:
 <pre>
 <b>heroku pg:pull</b>
-<b>heroku pg:pull AMBER fff_development --app forever-family-foundation</b>
+<b>heroku pg:pull</b> <em>AMBER fff_development</em> <b>--app</b> <em>forever-family-foundation</em>
 </pre>
 
 <id='accessing-database-remotely'>
