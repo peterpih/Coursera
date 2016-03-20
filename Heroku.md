@@ -1,6 +1,6 @@
 Useful links:  
-**setup**: http://sourabhbajaj.com/mac-setup/Heroku/README.html  
-**posgres**: https://devcenter.heroku.com/articles/heroku-postgresql#pg-push-and-pg-pull  
+<b>setup</b>: http://sourabhbajaj.com/mac-setup/Heroku/README.html  
+[pg:push and pg:pull]posgres</b>: https://devcenter.heroku.com/articles/heroku-postgresql#pg-push-and-pg-pull  
 **git deploy**: https://dashboard.heroku.com/apps/aqueous-spire-6633/deploy/heroku-git   
 **pulling down database**: 
 
@@ -13,19 +13,19 @@ On OSX, use Homebrew:
 </pre>
 
 ###Heroku Commands  
-<b>heroku local</b> <em>( run the app locally from heroku )</em>
+<b>heroku local</b>             <em>( run the app locally from heroku )</em>
 
 add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
-<b>heroku open</b>      <em>( open a link to the app website in local browser )</em>
-<b>heroku ps</b>        <em>( dynos running on Heroku )</em>
-<b>heroku config</b>    <em>( show configuration vars and the database url )</em>
-<b>heroku addons</b>    <em>( show additional services )</em>
+<b>heroku open</b>              <em>( open a link to the app website in local browser )</em>
+        <b>heroku ps</b>        <em>( dynos running on Heroku )</em>
+<b>heroku config</b>            <em>( show configuration vars and the database url )</em>
+<b>heroku addons</b>            <em>( show additional services )</em>
 
-<b>heroku pg:psql</b>   <em>( for <a href="#accessing-database-remotely">postgres on Heroku</a> )</em>
+<b>heroku pg:psql</b>           <em>( for <a href="#accessing-database-remotely">postgres on Heroku</a> )</em>
 <b>heroku pg:dump -t</b> <em>table-name [-t database-name] database-name</em>
 
-<b>heroku maintenance:on</b>    <em>take site down for maintenance</em>
+<b>heroku maintenance:on</b>    <em>( take site down for maintenance )</em>
 <b>heroku maintenance:off</b>
 
 <b>heroku logs --app</b> <em>APP</em>                      <em>show log file for Heroku APP</em>
