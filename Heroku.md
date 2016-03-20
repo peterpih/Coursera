@@ -59,26 +59,26 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <em>get the example app</em>
 <b>git clone https://github.com/heroku/ruby-getting-started.git</b> 
 
-<b>heroku create</b>    link to Heroku
+<b>heroku create</b>                       <em>( link to Heroku )</em>
 
-<b>git push heroku master</b> <em>branch</em><b>:master</b> deploy app to Heroku git
-<b>heroku open</b>           open the website in a local browser
+<b>git push heroku master</b> <em>branch</em><b>:master</b> <em>( deploy app to Heroku git )</em>
+<b>heroku open</b>                         <em>( open the website in a local browser )</em>
 </pre>
 
 ###Papertrail
 <pre>
-<b>heroku addons</b>                   # show addons
-<b>heroku addons:doc papertrail</b>    # documentation for papertrail
-<b>heroku addons:open papertrail</b>   # open a dashboard for papertrail
+<b>heroku addons</b>                       <em>( show addons )</em>
+<b>heroku addons:doc papertrail</b>        <em>( documentation for papertrail )</em>
+<b>heroku addons:open papertrail</b>       <em>( open a dashboard for papertrail )</em>
 
-<b>heroku run bash</b>                 # runs a remote shell
-<b>heroku run <em>command</em>            # runs a commandline command
+<b>heroku run bash</b>                     <em>( runs a remote shell )</em>
+<b>heroku run</b> <em>command</em>                  <em>( runs a commandline command )</em>
 <b>heroku run bundle install</b>
 <b>heroku run rake db:migrate</b>
 
-<b>heroku config</b>                   # show config settings
-                                # database url is shown here
-<b>heroku config:set TIMES=10</b>      # set TIMES env var to 10
+<b>heroku config</b>                       <em>( show config settings )</em>
+                                    <em>( database url is shown here )</em>
+<b>heroku config:set TIMES=10</b>          <em>( set TIMES env var to 10 )</em>
 </pre>
 
 ###Postgres on Heroku  
@@ -88,7 +88,7 @@ NOTE: <b>DATABASE_URL</b> and <b>DATABASE</b> are the <b>literal strings</b> not
 
 <b>heroku pg:reset DATABASE_URL</b>        # empties the database (DO NOT DELETE THE DATABASE, empty it using this)
 
-<b>heroku pg:credentials DATABASE</b>      # shows the database credentials (username, password)
+<b>heroku pg:credentials DATABASE</b>      <em>( shows the database credentials: username, password)</em>
 
 <b>git push heroku test:master</b>         # push 'test' branch to 'master' on heroku
 
