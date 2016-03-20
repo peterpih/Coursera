@@ -18,8 +18,10 @@ On OSX, use Homebrew:
 add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
 <b>heroku open</b>              <em>( open a link to the app website in local browser )</em>
-        <b>heroku ps</b>        <em>( dynos running on Heroku )</em>
-<b>heroku config</b>            <em>( show configuration vars and the database url )</em>
+<b>heroku ps</b>                <em>( dynos running on Heroku )</em>
+<b>heroku config</b>            
+<em>( show configuration vars and the database url )</em>
+
 <b>heroku addons</b>            <em>( show additional services )</em>
 
 <b>heroku pg:psql</b>           <em>( for <a href="#accessing-database-remotely">postgres on Heroku</a> )</em>
@@ -29,8 +31,11 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <b>heroku maintenance:off</b>
 
 <b>heroku logs --app</b> <em>APP</em>                      <em>show log file for Heroku APP</em>
-<b>heroku logs --app</b> <em>APP</em> <b>-n</b> <em>nlines</em>            <em>show nlines in log file for Heroku</em> <em>APP</em>
-<b>heroku logs --app</b> <em>APP</em> <b>--tail</b>               <em>tail the logs</em>
+<b>heroku logs --app</b> <em>APP</em> <b>-n</b> <em>nlines</em>  
+<em>show nlines in log file for Heroku</em> <em>APP</em>
+
+<b>heroku logs --app</b> <em>APP</em> <b>--tail</b> 
+<em>tail the logs</em>
 
 <b>heroku restart --app</b> <em>APP</em>
 
