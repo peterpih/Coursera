@@ -19,38 +19,44 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <pre>
 <b>heroku open</b>              <em>( open a link to the app website in local browser )</em>
 <b>heroku ps</b>                <em>( dynos running on Heroku )</em>
-<b>heroku config</b>            
+
 <em>( show configuration vars and the database url )</em>
+<b>heroku config</b>            
+
 
 <b>heroku addons</b>            <em>( show additional services )</em>
 
 <b>heroku pg:psql</b>           <em>( for <a href="#accessing-database-remotely">postgres on Heroku</a> )</em>
+
+<em>( dump one or more tables from a database )</em>
 <b>heroku pg:dump -t</b> <em>table-name [-t database-name] database-name</em>
 
-<b>heroku maintenance:on</b>    <em>( take site down for maintenance )</em>
+<em>( take site down / up for maintenance )</em>
+<b>heroku maintenance:on</b>    
 <b>heroku maintenance:off</b>
 
-<b>heroku logs --app</b> <em>APP</em> <em>( show log file for Heroku APP )</em>
+<em>( show log file for Heroku APP )</em>
+<b>heroku logs --app</b> <em>APP</em> 
 
-                                <em>show nlines in log file for Heroku</em> <em>APP</em>
+<em>( show nlines in log file for Heroku APP )</em>
 <b>heroku logs --app</b> <em>APP</em> <b>-n</b> <em>nlines</em>  
 
-
+<em>( tail the logs )</em>
 <b>heroku logs --app</b> <em>APP</em> <b>--tail</b> 
-<em>tail the logs</em>
 
+<em>( restart APP )</em>
 <b>heroku restart --app</b> <em>APP</em>
 
-<b>heroku run console</b>
-<b>heroku run bash --app</b> <em>APP</em>   <em>( remote Unix command line )</em>
+<em>( remote Unix command line )</em>
+<b>heroku run bash --app</b> <em>APP</em>  
 </pre>
   
-
 ###Example Heroku website
 <pre>
+<em>clone a local repo from heroku</em></em>
 <b>heroku git:clone -a</b> <em>heroku_app</em> <em>dest_dir</em>
 
-                                <em>get the example app</em>em>
+<em>get the example app</em>
 <b>git clone https://github.com/heroku/ruby-getting-started.git</b> 
 
 <b>heroku create</b>    link to Heroku
