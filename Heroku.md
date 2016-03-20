@@ -30,9 +30,11 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <b>heroku maintenance:on</b>    <em>( take site down for maintenance )</em>
 <b>heroku maintenance:off</b>
 
-<b>heroku logs --app</b> <em>APP</em>                      <em>show log file for Heroku APP</em>
+<b>heroku logs --app</b> <em>APP</em> <em>( show log file for Heroku APP )</em>
+
+                                <em>show nlines in log file for Heroku</em> <em>APP</em>
 <b>heroku logs --app</b> <em>APP</em> <b>-n</b> <em>nlines</em>  
-<em>show nlines in log file for Heroku</em> <em>APP</em>
+
 
 <b>heroku logs --app</b> <em>APP</em> <b>--tail</b> 
 <em>tail the logs</em>
@@ -40,14 +42,16 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <b>heroku restart --app</b> <em>APP</em>
 
 <b>heroku run console</b>
-<b>heroku run bash --app</b> <em>APP</em>   <em>remote Unix command line</em>
+<b>heroku run bash --app</b> <em>APP</em>   <em>( remote Unix command line )</em>
 </pre>
   
 
 ###Example Heroku website
 <pre>
 <b>heroku git:clone -a</b> <em>heroku_app</em> <em>dest_dir</em>
-<b>git clone https://github.com/heroku/ruby-getting-started.git</b> get the example app
+
+                                <em>get the example app</em>em>
+<b>git clone https://github.com/heroku/ruby-getting-started.git</b> 
 
 <b>heroku create</b>    link to Heroku
 
