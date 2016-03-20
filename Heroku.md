@@ -17,12 +17,12 @@ On OSX, use Homebrew:
 
 add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>  
 <pre>
-<b>heroku open</b>      <em>(open a link to the app website in local browser )</em>
-<b>heroku ps</b>        <em>(dynos running on Heroku )</em>
-<b>heroku config</b>    <em>(show configuration vars and the database url )</em>
+<b>heroku open</b>      <em>( open a link to the app website in local browser )</em>
+<b>heroku ps</b>        <em>( dynos running on Heroku )</em>
+<b>heroku config</b>    <em>( show configuration vars and the database url )</em>
 <b>heroku addons</b>    <em>( show additional services )</em>
 
-<b>heroku pg:psql</b>   <em>( for <a href='accessing-database-remotely'>postgres on Heroku</a> )</em>
+<b>heroku pg:psql</b>   <em>( for <a href="#accessing-database-remotely">postgres on Heroku</a> )</em>
 <b>heroku pg:dump -t</b> <em>table-name [-t database-name] database-name</em>
 
 <b>heroku maintenance:on</b>    <em>take site down for maintenance</em>
@@ -91,12 +91,12 @@ heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
 ###Accessing database remotely
 Need to be made a Collaborator on the database, then:  
 <pre>
-<b>heroku pg:psql --app</b> <em>\<appname\></em>  
-heroku pg:psql --app aqueous-spire-6633
+<b>heroku pg:psql --app</b> <em>APP</em>  
+<b>heroku pg:psql --app</b> <em>aqueous-spire-6633</em>
 </pre>
 **Records created since 1 month ago**  
 <pre>
-<b>SELECT * FROM</b> <em>table_name</em> <b>WHERE</b> <em>column_name</em> > <b>CURRENT_DATE - INTERVAL '1 month';</b>
+<b>SELECT * FROM</b> <em>table-name</em> <b>WHERE</b> <em>column-name</em> > <b>CURRENT_DATE - INTERVAL '1 month';</b>
 </pre>
 ###Production Check  
 On the **Heroku  Dashboard**, click on hamburger in upper right-hand corner, then click **Production Check**
