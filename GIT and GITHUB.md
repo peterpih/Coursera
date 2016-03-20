@@ -2,14 +2,14 @@
 Run `ssh -T git@github.com`, if it times out, need to connect using `http:` protocol.  
 
 ###Useful links
-http://gitref.org  
-https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository  
-https://git-scm.com/docs  
-http://longair.net/blog/2009/04/16/git-fetch-and-merge/  
-How to update a GitHub forked repository?:  
-http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository   
-
-###Some Thoughts:
+[gitref.org](http://gitref.org)  
+[Git Basics Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)  
+[git-scm.com docs](https://git-scm.com/docs)  
+[Git Fetch and Merge](http://longair.net/blog/2009/04/16/git-fetch-and-merge/)  
+[How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
+[Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)  
+[Git Guide](http://rogerdudler.github.io/git-guide/)  
+[Git Reference](http://gitref.org/remotes/)c
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
 #TOC
@@ -52,15 +52,15 @@ While on feature_branch, when ready to push to master branch, check for conflict
 <b>git merge</b> <em>branch</em>              # there will be no comflicts at this point
 </pre>
 
-pull request example: https://www.atlassian.com/git/tutorials/making-a-pull-request/example  
-We use the Fork Workflow 
+[making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example  
+We use the <b>Fork Workflow</b> method  
 
 <div id="file-section">
 ###File commands
 <pre>
 --- ADD --- <em>to staging</em>
 
-<b>git add</b> <em>filename</em>              # add a file to staging area
+<b>git add</b> <em>file-name</em>              # add a file to staging area
 <b>git add</b> <em>file1, file2, file3</em>   # add multiple files to staging area
 <b>git add .</b>                     # add <b>modified only</b> files to staging area
 <b>git add -A</b>                    # add <b>modified and untracked</b> files to staging area
@@ -68,7 +68,7 @@ We use the Fork Workflow
 --- RESET ---
 
 <b>git reset</b>                     # remove all files from staging area, before commit(ting)
-<b>git reset</b> <em>filename</em>            # remove filename from staging area
+<b>git reset</b> <em>file-name</em>            # remove filename from staging area
 <b>git reset</b> <em>revhash</em>             # roll back to revhash commit
 
 --- COMMIT ---
@@ -103,11 +103,11 @@ We use the Fork Workflow
 
 <b>git diff</b>
 <b>git diff --staged</b>
-<b>git diff</b> <em>filename</em>           # show difference between modified and staging area
+<b>git diff</b> <em>file-name</em>           # show difference between modified and staging area
 
 --- RENAME --- <em>a file</em>
 
-<b>git mv</b> <em>from_file  to_file</em>
+<b>git mv</b> <em>from-file  to-file</em>
 
 --- LOG --- <em>show changes between two different branches</em>
 
@@ -116,10 +116,11 @@ We use the Fork Workflow
 <b>git log -p -2</b>                 # last 2 lines
 <b>git log --one-line</b>            # show each commit on one line
 <b>git log --stat</b>
-<b>git log --pretty=oneline</b>
+<b>git log --pretty=oneline</b>       #single line summary
 <b>git log --pretty=format:"%h - %an, %ar : %s"</b>
 <b>git log --since=2.weeks</b>
 <b>git log -S</b><em>function_name</em>     # search logs for string <function name>
+<b>git log --graph --oneline --decorate --all</b>       # makes a graph of the branches
 </pre>
 
 <div id="repo-branch-section">
@@ -148,8 +149,8 @@ We use the Fork Workflow
 <b>git branch -D</b> <em>branch</em>        # forcefully delete <branch>
 <b>git branch -m</b> <em>current-name new-name</em>
 
-#---SHOW-BRANCH---     https://robots.thoughtbot.com/compare-commits-between-git-branches
-
+#---SHOW-BRANCH---     
+<a href="https://robots.thoughtbot.com/compare-commits-between-git-branches">compare commits between git branches</a>
 <b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
 #---REMOTE---
@@ -166,7 +167,7 @@ We use the Fork Workflow
 <b>git fetch</b> <em>fff</em>
 <b>git pull</b>
 
-#---CHECKOUT--- switch branches
+#---CHECKOUT--- <em>switch branches</em>
 
 <b>git checkout</b> <em>master</em>                 # switch branches
 <b>git checkout -b</b> <em>my-branch-name</em>      # do checkout and create new branch
@@ -179,7 +180,7 @@ We use the Fork Workflow
 <b>git reset --hard HEAD~2</b>         # resets last 2 commits
 <b>git reset --hard fff/master</b>
 
-#---[STASH](https://git-scm.com/book/en/v1/Git-Tools-Stashing)--- push a branch onto a saved stack
+#--- <a href="https://git-scm.com/book/en/v1/Git-Tools-Stashing"><b>STASH</b></a> --- <em>push a branch onto a saved stack</em>
 
 <b>git stash</b>                       # creates a stash  
 <b>git stash save</b>  
@@ -193,7 +194,17 @@ We use the Fork Workflow
 <b>git stash drop stash@{0}</b>        # delete first stash
 <b>git stash drop stash@{1}</b>        # delete second stash
 
+</pre>
+###[Updating local master from origin master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
+<pre>
+<b>cd</b> <em>local-repo</em>
+<b>git checkout master</b>
 
+<b>git fetch</b> <em>repo-name</em> <b>master</b>   <em>( repo-name usually origin or phran )</em>
+<b>git merge-base FETCH_HEAD master</b>
+<b>git merge-tree</b> <em>mergebase</em> <b>master FETCH_HEAD</b>
+      <em>( where mergebase is the hexcidecimal id merge-base printed in previous step )</em>
+      <em>( search for <b><<</b> or <b>>></b> for conflicts )*</em>
 </pre>
 
 ###Initializing Repository from PC
@@ -209,60 +220,62 @@ goto directory above where you want the project
 At this point, the \<project name\> repository needs to be created on GiutHub  
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
-```
-git status                    # have a look
-git add -A                    # add files
-git commit -m "first commit"
-git pull https://github.com/<username>/<project name>.git
+<pre>
+<b>git status</b>                    # have a look
+<b>git add -A</b>                    # add all files
+<b>git commit -m</b> <em>"first commit"</em>
+<b>git pull https://github.com/</b><em>username</em><b>/</b><em>project name</em><b>.git</b>
 git push --set-upstream https://github.com/<username>/<project name>.git master
-```
+</pre>
 <div id="where-is-current-origin-section">
 ###Change Origin Repository
 from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
 
 Where is the current **origin**  
-```
-  git remote -v
+<pre>
+  <b>git remote -v</b>
       origin	git@github.com:phran/forever-family-foundation.git (fetch)
       origin	git@github.com:phran/forever-family-foundation.git (push)
 
-  git remote rm origin
-  git remote -v
-  git remote add origin git@github.com:peterpih/forever-family-foundation
-  git remote -v
+  <b>git remote rm origin</b>
+  <b>git remote -v</b>
+  <b>git remote add origin git@github.com:peterpih/forever-family-foundation</b>
+  <b>git remote -v</b>
       origin	git@github.com:peterpih/forever-family-foundation (fetch)
       origin	git@github.com:peterpih/forever-family-foundation (push)
 
-  git config master.remote origin
-  git config master.merge refs/heads/master
-  git status
+  <b>git config master.remote origin</b>
+  <b>git config master.merge refs/heads/master</b>
+  <b>git status</b>
 
-  (then either)
-  git push --set-upstream origin master
+  <em>then either</em>
+  <b>git push --set-upstream origin master</b>
       -or-
-  git push --set-upstream origin master -force
-```
+  <b>git push --set-upstream origin master -force</b>
+</pre>
+
 <div id="rename-local-remote-branches-section">
 ###Rename local and remote branches  
 from: https://gist.github.com/lttlrck/9628955  
-```
+<pre>
 git branch -m old_branch new_branch         # Rename branch locally    
 git push origin :old_branch                 # Delete the old branch    
 git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
-```
+</pre>
 
 [gh-pages How To](#gh-pages-how-to)
 
-useful link: http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users  
+useful link: 
+[Basic Git Command Line Reference for Windows Users](http://www.codeproject.com/Articles/457305/Basic-Git-Command-Line-Reference-for-Windows-Users)  
 useful video: http://www.git-tower.com/learn/git/videos/installing-configuring-git?channel=cli#start  
 branching and merging:  
-https://help.github.com/articles/merging-a-pull-request/  
-https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches  
+[Merging A Pull Request](https://help.github.com/articles/merging-a-pull-request/)  
+[Create A New Branch And Merge Branches](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)  
 
 git and poshgit (has credentials link): https://gist.github.com/pcurylo/6575385  
-```
-git <parameter> --help
-```
+<pre>
+<b>git</b> <em>parameter</em> <b>--help</b>
+</pre>
 ###GitHub Flow
 Useful link: https://guides.github.com/introduction/flow/  
 
@@ -284,29 +297,29 @@ GitHub staging:
 
 ##Git Bash Commands &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[link to Git commands](#github-section)
 **Clone a local repository using Git on PC**
-```{R}
-# First create the repository in GitHub
-$ cd <directory you want the repository to be in>
-$ git clone https://github.com/peterpih/<repository name>
-```
+<pre>
+<em>First create the repository in GitHub</em>
+<b>cd</b> <em>directory_you_want_the_repository_to_be_in</em>
+<b>git clone https://github.com/peterpih/</b><em>repository name</em>
+</pre>
 alternatively you can do this on PC (these steps will aso create a README.md file):
-```{R}
-# cd <directory>
-echo "# 09_DevelopingDataProducts >> README.md"
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
-git push -u origin master
-```
+<pre>
+<b>cd</b> <em>directory</em>
+<b>echo</b> <em>"# 09_DevelopingDataProducts >> README.md"</em>
+<b>git init</b>
+<b>git add README.md</b>
+<b>git commit -m</b> <em>"first commit"</em>
+<b>git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git</b>
+<b>git push -u origin master</b>
+</pre>
 
 **Change the name of a directory(branch)**
-```{R}
-rm --ignore-fail-on-non-empty .git
-git init
-git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git
-git push -u origin master
-```
+<pre>
+<b>rm --ignore-fail-on-non-empty .git</b>
+<b>git init</b>
+<b>git remote add origin https://github.com/peterpih/09_DevelopingDataProducts.git</b>
+<b>git push -u origin master</b>
+</pre>
 
 **delete the **.git** file in the PC directory**
 
@@ -327,24 +340,24 @@ $ git push
 ```
 If the **push is rejected**, it is because there have been other updates to the branch on GitHub  
 You will need to **git pull** first so changes are merged, and the **git push**  
-```{R}
-$ git pull
-$ git status
-$ git push
-```
-```
-git diff <filename>
-git difftool <filename>
+<pre>
+$ <b>git pull</b>
+$ <b>git status</b>
+$ <b>git push</b>
+</pre>
+<pre>
+<b>git diff</b> <em>file-name</em>
+<b>git difftool</b> <em>file-name</em>
 
-git add <filename>               # add a new file to the repository to be tracked
-git rm <filename>                # delete a file
+<b>git add</b> <em>file-name</em>               # add a new file to the repository to be tracked
+<b>git rm</b> <em>file-name</em>                # delete a file
 
-git log                          # shows history
-git log --stat                   # show which files were changed
-git log --p                      # shows the changes
+<b>git log</b>                          # shows history
+<b>git log --stat</b>                   # show which files were changed
+<b>git log --p</b>                      # shows the changes
 
-.git/info/exclude                # ignore file for only local repository
-```
+<b>.git/info/exclude</b>                # ignore file for only local repository
+</pre>
 At any one time, only one branch is currently active, this is the **checked out** branch, or **HEAD** branch  
 Move from one branch to another using **checkout**  
 
@@ -404,30 +417,33 @@ Plus some "extras":
 3) A few other files you can provide to help people find things in your repo and github.io site.  
 4) Some notes on git, Github, and revision control.  
 
-***Another way using git**  
+***Another way using git***  
 Push html pages to master branch  
-```
-git push origin master
-```
-Now create a gh-pages branch (GitHub-pages)
-```
-git branch gh-pages
-git checkout gh-pages
-git push origin gh-pages
-```
+<pre>
+<b>git push</b> <em>origin</em> <b>master</b>
+</pre>
+
+###Now create a gh-pages branch (GitHub-pages)
+<pre>
+<b>git branch gh-pages</b>
+<b>git checkout gh-pages</b>
+<b>git push origin gh-pages</b>
+</pre>
+
 This will create a gh-pages branch on github  
 Also, create and push a .nojekyll file which avoids some of the fancy html in github
-```
-touch .nojekyll
-git add .nojekyll
-git commit -m "adding .nojekyll"
-git push origin gh-pages
-```
+<pre>
+<b>touch .nojekyll</b>
+<b>git add .nojekyll</b>
+<b>git commit -m</b> <em>"adding .nojekyll"</em>
+<b>git push origin gh-pages</b>
+</pre>
+
 **To view the webpage, the url is**:  
-http://\<github username\>.github.io/\<repo name\>/\<presentation name\>.html  
+<b>http://</b><em>github-username</em><b>.github.io/</b><em>repo-name</em><b>/</b><em>presentation-name</em><b>.html</b>  
 
 **To keep the master and gh-pages branches in sync**:  
-http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html  
+[Automating gh pages integration](http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html)  
 
 
 ###Authorization to see repo characterisitics (from quiz excercise)  

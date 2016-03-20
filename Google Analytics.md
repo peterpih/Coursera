@@ -1,0 +1,40 @@
+
+From analyticsacademywithgoogle.com
+
+useful URLs  
+http://trafficmotion.com/72-questions-you-need-to-know-for-the-google-analytics-iq-exam/  
+
+
+###Section 4.4 Setting up goals
+<pre>
+[Setting a goal value](https://analyticsacademy.withgoogle.com/course/1/unit/4/lesson/4
+    Goal description
+        Name
+    Goal details
+        Destination
+        
+    Additional Resources 
+        How to setup goals
+        How to setup funnels
+        How to setup ecomerce tracking
+</pre>
+###Section 4.5
+  [Collecting Campaign Data](https://analyticsacademy.withgoogle.com/course/1/unit/4/lesson/5)
+    Google analytics automtically captures <b>Source</b> and <b>Medium</b>
+    
+    Source is wbesite which referred to your site
+        Direct - when used comes directly to your site
+        
+    Medium
+        Organic - unpaud search
+        Referal - from another non-search engine site
+        None - directly to your site
+        
+    Campaign Link Tags
+        Source
+        Medium - email
+        Campaign - use to name marketing campaign
+        Term - paid
+        Content - differentiate between versions
+</pre>
+

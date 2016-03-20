@@ -1,13 +1,19 @@
-For **rake db:migrate** commands to **up** or **down** a database look [here](https://github.com/peterpih/Miscellaneous/blob/master/RubyOnRails%20Rake.md)
+For **rake db:migrate** commands to **up** or **down** a database look  
+[RubyOnRails Rake](https://github.com/peterpih/Miscellaneous/blob/master/RubyOnRails%20Rake.md)
 
-Useful graph of SQL joins:  
-http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  
+[PostgreSQL dcumentation](http://www.postgresql.org/docs/9.1/static/sql-altertable.html)
+
+Useful graph of SQL joins: [difference between join and inner join](http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join  )
 #PSQL commands
-**Show databases***
+**Show databases**
 <pre>
-<b>\l</b>                  # list databases letter el
-<b>\c</b> <em>database</em>         # connect to a database
-<b>\d+</b> <em>table</em>           # list columns of a table
+<b>\l</b>                        # list databases letter el
+
+<b>\c</b> <em>database</em>               # connect to a database
+<b>\c</b> fff_development
+
+<b>\d</b>                        # list tables
+<b>\d+</b> <em>table-name</em>            # list columns of a table
 </pre>
 
 ###SQL commands
@@ -20,4 +26,14 @@ http://stackoverflow.com/questions/565620/difference-between-join-and-inner-join
 
 <b>SELECT</b> * <b>FROM</b> <em>users</em> <b>WHERE</b> <em>email</em> <b>LIKE</b> <em>'ppih@panix%'</em><b>;</b>     # '%' is the wildcard
 <b>SELECT</b> * <b>FROM</b> <em>users</em> <b>WHERE</b> <em>email='ppih@panix%'</em><b>;</b>  
+
+<b>ALTER TABLE</b> <em>table-name</em> <b>RENAME TO</b> <em>new-table-name</em>;  <em>( rename a table )</em>
+<b>ALTER TABLE</b> <em>table-name</em> <b>RENAME</b> <em>column-name</em> <b>TO</b> <em>new-column-name</em>;
+</pre>
+
+###Dump a database
+<pre>
+<em>creates dump file of table-name to output-file</em>
+<b>pg_dump -t</b> <em>table-name</em> <b>-f</b> <em>output-file  database-name</em>
+    
 </pre>
