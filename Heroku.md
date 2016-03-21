@@ -44,19 +44,18 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 <em>( tail the logs )</em>
 <b>heroku logs --app</b> <em>APP</em> <b>--tail</b> 
 
-<em>( restart APP )</em>
-<b>heroku restart --app</b> <em>APP</em>
 
-<em>( remote Unix command line )</em>
-<b>heroku run bash --app</b> <em>APP</em>  
+<b>heroku restart --app</b> <em>APP</em>             <em>( restart APP )</em>
+
+<b>heroku run bash --app</b> <em>APP</em>            <em>( remote Unix command line )</em>
 </pre>
   
 ###Example Heroku website
 <pre>
-<em>clone a local repo from heroku</em></em>
+<em>( clone a local repo from heroku )</em>
 <b>heroku git:clone -a</b> <em>heroku_app</em> <em>dest_dir</em>
 
-<em>get the example app</em>
+<em>( get the example app )</em>
 <b>git clone https://github.com/heroku/ruby-getting-started.git</b> 
 
 <b>heroku create</b>                       <em>( link to Heroku )</em>
@@ -84,16 +83,17 @@ add <b>--app <em>APP</em></b> to specify non default Heroku <em>APP</em>
 ###Postgres on Heroku  
 NOTE: <b>DATABASE_URL</b> and <b>DATABASE</b> are the <b>literal strings</b> not env variables  
 <pre>
-<b>heroku pg:info</b>                      # show some info about the database
+<b>heroku pg:info</b>                      <em>( show some info about the database )</em>
 
-<b>heroku pg:reset DATABASE_URL</b>        # empties the database (DO NOT DELETE THE DATABASE, empty it using this)
+<b>heroku pg:reset DATABASE_URL</b>        <em>( empties the database <b>DO NOT DELETE THE DATABASE</b></em>
+                                    <em>( empty it using this )</em>
 
 <b>heroku pg:credentials DATABASE</b>      <em>( shows the database credentials: username, password)</em>
 
-<b>git push heroku test:master</b>         # push 'test' branch to 'master' on heroku
+<b>git push heroku test:master</b>         <em>( push 'test' branch to 'master' on heroku )</em>
 
 <b>heroku pg:push</b> <em>mylocaldb</em> <b>DATABASE_URL</b>
-heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi
+<em>heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app sushi</em>
 </pre>
 
 ###To pull down a database:

@@ -13,22 +13,31 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
 
 #TOC
-[Typical Work Flow](#work-flow-section)  
-[File Commands](#file-section)  
-[Repo and Branch Commands](#repo-branch-section)  
-[Rename Local and Remote Branches](#rename=local-remote-branches-section)
-[Where Is Current Origin?](#where-is-current-origin-section)  
-[GitHub](#github-section)  
-[gh-pages](#gh-pages-how-to-section)  
+1) [Typical Git Command Flow](#typical-git-command-flow-section)  
+2) [File Commands](#file-commands-section)  
+3) [Repo and Branch Commands](#repo-branch-section)   
+4) [Merging Branches](#merging-branches-section)   
+5) [Find Where Code Broke - git bisect](#git-bisect-section)  
+6) [Rename Local and Remote Branches](#rename=local-remote-branches-section)  
+7) [Where Is Current Origin?](#where-is-current-origin-section)  
+8) [GitHub](#github-section)  
+9) [gh-pages](#gh-pages-how-to-section)  
 
-<div id="work-flow-section">
-###Typical git command flow
+<div id="typical-git-command-flow-section">
+###Typical Git Command Flow
 <pre>
-<b>git checkout</b> <em>feature_branch</em>        # change branch to feature_branch
+<b>mkdir</b> <em>new-directory</em>                <em>( create local repo directoy )</em>
+<b>cd</b> <em>new-directory</em>
+<b>git init</b>                           <em>( initialize )</em>
+
+<b>git checkout</b> <em>feature-branch</em>        <em>( change branch to feature_branch )</em>
 ...
-<b>git status</b>                         # shows status of branch
-<b>git add -A</b>                         # add modified and untracked files to staging area
-<b>git commit -m</b> <em>comment</em>              # make a commit, comment on one line
+<b>git status</b>                         <em>( shows status of branch )</em>
+<b>git add -A</b>                         <em>( add modified and untracked files to staging area )</em>
+<b>git commit -m</b> <em>comment</em>              <em>( make a commit, comment on one line )</em>
+
+<b>git push</b> <em>origin feature-branch</em>
+
 
 --- SHOW ---
 
@@ -36,7 +45,7 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 
 --- PUSHING ----
 
-<b>git push</b> <em>origin feature_branch</em>          # push the commits from feature_branch to remote origin
+<b>git push</b> <em>origin feature-branch</em>          # push the commits from feature_branch to remote origin
 <b>git push -f</b> <em>origin feature_branch</em>       # force push to origin
 
                                         #push directly to Heroku
@@ -55,7 +64,7 @@ While on feature_branch, when ready to push to master branch, check for conflict
 [making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example  
 We use the <b>Fork Workflow</b> method  
 
-<div id="file-section">
+<div id="file-commands-section">
 ###File commands
 <pre>
 --- ADD --- <em>to staging</em>
@@ -94,18 +103,18 @@ We use the <b>Fork Workflow</b> method
 
 <b>git checkout</b> <em>branch</em>          # switch to <em>branch</em>
 
---- SHOW ---
+--- <b>SHOW</b> ---
 
 <b>git show</b> <em>revhash</em>            # show changes in a particular hash (hash from git log)
 <b>git show</b> <em>revhash:filename</em>  
 
---- DIFFERENCE ---
+--- <b>DIFFERENCE</b> --- <em>between files</em>
 
 <b>git diff</b>
 <b>git diff --staged</b>
 <b>git diff</b> <em>file-name</em>           # show difference between modified and staging area
 
---- RENAME --- <em>a file</em>
+--- <b>RENAME</b> --- <em>a file</em>
 
 <b>git mv</b> <em>from-file  to-file</em>
 
@@ -137,23 +146,23 @@ We use the <b>Fork Workflow</b> method
 <b>git status</b>                    # tracked, untracked, modified, staged
 <b>git status -s</b>                 # short form: M-modified, A-staged(added), ??-untracked
 
---- CLONE ---
+--- <b>CLONE</b> ---
 
 <b>git clone</b> <em>remote-name</em> <em>local-directory</em>
 
-#---BRANCH---
+#--- <b>BRANCH</b> ---
 
 <b>git branch -l</b>               # show local branches
 <b>git branch -a</b>               # show all branches, local and remote
-<b>git branch -d</b> <em>branch</em>        # delete a <branch>
-<b>git branch -D</b> <em>branch</em>        # forcefully delete <branch>
+<b>git branch -d</b> <em>branch</em>        # delete a branch
+<b>git branch -D</b> <em>branch</em>        # forcefully delete branch
 <b>git branch -m</b> <em>current-name new-name</em>
 
-#---SHOW-BRANCH---     
+#--- <b>SHOW-BRANCH</b> ---     
 <a href="https://robots.thoughtbot.com/compare-commits-between-git-branches">compare commits between git branches</a>
 <b>git show-branch</b> <em>branch</em> <b>origin/master</b>
 
-#---REMOTE---
+#--- <b>REMOTE</b> ---
 
 <b>git remote -v</b>                 # list remote repos
 
@@ -167,13 +176,13 @@ We use the <b>Fork Workflow</b> method
 <b>git fetch</b> <em>fff</em>
 <b>git pull</b>
 
-#---CHECKOUT--- <em>switch branches</em>
+#--- <b>CHECKOUT</b> --- <em>switch branches</em>
 
 <b>git checkout</b> <em>master</em>                 # switch branches
 <b>git checkout -b</b> <em>my-branch-name</em>      # do checkout and create new branch
 <b>git checkout</b> <em>revhash file</em>           # restore a file from commit tag ####### (seven digits)
 
-#---RESET--- reset a branch
+#--- <b>RESET</b> --- <em>reset a branch</em>
 
 <b>git reset</b>                       # unstage any staged files
 <b>git reset --hard HEAD^</b>          # resets current branch to last commit and removes last commit from history
@@ -193,11 +202,13 @@ We use the <b>Fork Workflow</b> method
 
 <b>git stash drop stash@{0}</b>        # delete first stash
 <b>git stash drop stash@{1}</b>        # delete second stash
-
 </pre>
-###[Updating local master from origin master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
+
+<div id="merging-branches-section">
+###Merging Branches   
+[Updating local master from origin master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
 <pre>
-<b>cd</b> <em>local-repo</em>
+<b>cd</b> <em>repo-directory</em>
 <b>git checkout master</b>
 
 <b>git fetch</b> <em>repo-name</em> <b>master</b>   <em>( repo-name usually origin or phran )</em>
@@ -217,7 +228,7 @@ goto directory above where you want the project
 <b>git init</b>            # initialize
 </pre>
 
-At this point, the \<project name\> repository needs to be created on GiutHub  
+At this point, the \<project name\> repository needs to be created on GitHub  
 Set the upstream name
 Then **fetch** from the GitHub to get the README.md file
 <pre>
@@ -252,6 +263,22 @@ Where is the current **origin**
   <b>git push --set-upstream origin master</b>
       -or-
   <b>git push --set-upstream origin master -force</b>
+</pre>
+
+<div id='git-bisect-section'></div>
+###[Git Bisect](http://www.metaltoad.com/blog/beginners-guide-git-bisect-process-elimination) - <em>binary search</em>
+<pre>
+<b>git log</b>                <em>( find the last good-revhash )</em>
+                       <em>( figure out the bad-revhash, could be most recent commit )</em>
+
+<b>git bisect good</b> <em>good-revhash</em>
+<b>git bisect bad</b> <em>bad-revhash</em>
+...
+<em>( check if code is good or bad )</em>
+...
+<b>git bisect good</b> or <b>git bisect bad</b>
+...
+<em>( repeat )</em>
 </pre>
 
 <div id="rename-local-remote-branches-section">
