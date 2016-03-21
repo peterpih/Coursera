@@ -1,9 +1,9 @@
 
 From analyticsacademywithgoogle.com
 
-useful URLs  
-[72 questions you need to know for the google analytics iq exam](http://trafficmotion.com/72-questions-you-need-to-know-for-the-google-analytics-iq-exam/)   
-http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page-session-duration/  
+###Useful URLs  
+[72 Questions You Need To Know For The Google Analytics IQ exam](http://trafficmotion.com/72-questions-you-need-to-know-for-the-google-analytics-iq-exam/)   
+[Misunderstood Metrics Time On Page Session duration](http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page-session-duration/)   
 
 
 
