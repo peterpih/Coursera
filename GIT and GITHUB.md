@@ -61,7 +61,7 @@ While on feature_branch, when ready to push to master branch, check for conflict
 <b>git merge</b> <em>branch</em>              # there will be no comflicts at this point
 </pre>
 
-[making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request/example)  example  
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request/example">making a pull request</a> example  
 We use the <b>Fork Workflow</b> method  
 
 <div id="file-commands-section">
@@ -200,11 +200,12 @@ We use the <b>Fork Workflow</b> method
 
 <b>git stash list</b>                  # lists stashes  
 
-<b>git stash drop stash@{0}</b>        # delete first stash
+<b>git stash drop stash@{0}</b>        <em>( delete first stash
 <b>git stash drop stash@{1}</b>        # delete second stash
 </pre>
 
 <div id="merging-branches-section">
+
 ###Merging Branches   
 [Updating local master from origin master](http://stackoverflow.com/questions/501407/is-there-a-git-merge-dry-run-option)
 <pre>
@@ -343,7 +344,7 @@ alternatively you can do this on PC (these steps will aso create a README.md fil
 <b>git push -u origin master</b>
 </pre>
 
-**Change the name of a directory(branch)**
+<b>Change the name of a directory(branch)</b>
 <pre>
 <b>rm --ignore-fail-on-non-empty .git</b>
 <b>git init</b>
@@ -351,7 +352,7 @@ alternatively you can do this on PC (these steps will aso create a README.md fil
 <b>git push -u origin master</b>
 </pre>
 
-**delete the **.git** file in the PC directory**
+delete the <b>.git</b> file in the PC directory
 
 ### Push files back to repository
 - **git status**
@@ -360,16 +361,18 @@ alternatively you can do this on PC (these steps will aso create a README.md fil
 - **git commit**
   + **git pull** for updates if necessary first
 - **git push**
-```{R}
+<pre>
 $ git status (will tell you the status of the files: new, modified, deleted hilited in red
 $ git add <file name>  or git add -A (for everything)
 $ git status (will  hilite the added files in green which need to be committed)
 $ git commit -m <message for commiting>
 $ git status (message will say "use git push to commit your changes")
 $ git push
-```
-If the **push is rejected**, it is because there have been other updates to the branch on GitHub  
-You will need to **git pull** first so changes are merged, and the **git push**  
+</pre>
+
+If the <b>push is rejected</b> message appears, it is because there have been other updates to the branch on GitHub  
+You will need to <b>git pull</b> first so changes are merged, and the <b>git push</b>  
+
 <pre>
 $ <b>git pull</b>
 $ <b>git status</b>
@@ -469,15 +472,15 @@ Also, create and push a .nojekyll file which avoids some of the fancy html in gi
 <b>git push origin gh-pages</b>
 </pre>
 
-**To view the webpage, the url is**:  
+<b>To view the webpage, the url is</b>:  
 <b>http://</b><em>github-username</em><b>.github.io/</b><em>repo-name</em><b>/</b><em>presentation-name</em><b>.html</b>  
 
-**To keep the master and gh-pages branches in sync**:  
-[Automating gh pages integration](http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html)  
+<b>To keep the master and gh-pages branches in sync</b>:  
+<a href="http://concord-consortium.github.io/developer-notes/automating-gh-pages-integration.html">Automating gh pages integration</a>
 
 
 ###Authorization to see repo characterisitics (from quiz excercise)  
-```
+<pre>
 library(httr)
 oauth_endpoints("github")
 myapp <- oauth_app("github", "448a5d91fcf0aa2e656a")
@@ -491,4 +494,4 @@ json1[[5]]$created_at
 
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv", "ss06hid.csv")
 data <- read.csv("ss06hid.csv")
-```
+</pre>
