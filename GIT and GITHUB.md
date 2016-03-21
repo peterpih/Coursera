@@ -9,8 +9,9 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 [How to update a GitHub forked repository](http://stackoverflow.com/questions/7244321/how-to-update-a-github-forked-repository)   
 [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)  
 [Git Guide](http://rogerdudler.github.io/git-guide/)  
-[Git Reference](http://gitref.org/remotes/)c
-Think of **origin** not as where the code is now, but where it came from ie the **origin** of a river
+[Git Reference](http://gitref.org/remotes/)   
+
+Think of <b>origin<\b> not as where the code is now, but where it came from ie the <b>origin</b> of a river
 
 #TOC
 1) [Typical Git Command Flow](#typical-git-command-flow-section)  
@@ -25,6 +26,7 @@ Think of **origin** not as where the code is now, but where it came from ie the 
 
 <div id="typical-git-command-flow-section">
 ###Typical Git Command Flow
+
 <pre>
 <b>mkdir</b> <em>new-directory</em>                <em>( create local repo directoy )</em>
 <b>cd</b> <em>new-directory</em>
