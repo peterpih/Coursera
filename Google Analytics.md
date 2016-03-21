@@ -18,7 +18,7 @@ http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page
     Additional Resources 
         How to setup goals
         How to setup funnels
-        How to setup ecomerce tracking
+        How to setup eCommerce tracking
 </pre>
 ###Section 4.5
   [Collecting Campaign Data](https://analyticsacademy.withgoogle.com/course/1/unit/4/lesson/5)
