@@ -1,5 +1,5 @@
 ###If connection times out, may be due to firewall  
-Run `ssh -T git@github.com`, if it times out, need to connect using `http:` protocol.  
+Run <b>ssh -T git@github.com</b>, if it times out, need to connect using <b>http:</b> protocol.  
 
 ###Useful links
 [gitref.org](http://gitref.org)  
@@ -11,20 +11,23 @@ Run `ssh -T git@github.com`, if it times out, need to connect using `http:` prot
 [Git Guide](http://rogerdudler.github.io/git-guide/)  
 [Git Reference](http://gitref.org/remotes/)   
 
-Think of <b>origin<\b> not as where the code is now, but where it came from ie the <b>origin</b> of a river
+Think of <b>origin</b> not as where the code is now, but where it came from ie the <b>origin</b> of a river
 
-#TOC
+##TOC
 1) [Typical Git Command Flow](#typical-git-command-flow-section)  
 2) [File Commands](#file-commands-section)  
 3) [Repo and Branch Commands](#repo-branch-section)   
 4) [Merging Branches](#merging-branches-section)   
 5) [Find Where Code Broke - git bisect](#git-bisect-section)  
-6) [Rename Local and Remote Branches](#rename=local-remote-branches-section)  
+6) [Rename Local and Remote Branches](#rename-local-and-remote-branches-section)  
 7) [Where Is Current Origin?](#where-is-current-origin-section)  
 8) [GitHub](#github-section)  
-9) [gh-pages](#gh-pages-how-to-section)  
+9) [gh-pages](#gh-pages-how-to-section)    
 
-<div id="typical-git-command-flow-section">
+
+<div id="typical-git-command-flow-section">  
+
+
 ###Typical Git Command Flow
 
 <pre>
@@ -287,7 +290,7 @@ Where is the current **origin**
 <em>( repeat )</em>
 </pre>
 
-<div id="rename-local-remote-branches-section">
+<div id="rename-local-and-remote-branches-section">
 ###Rename local and remote branches  
 from: https://gist.github.com/lttlrck/9628955  
 <pre>
