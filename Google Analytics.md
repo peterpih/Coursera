@@ -22,7 +22,7 @@ From analyticsacademywithgoogle.com
 </pre>
 ###Section 4.5
   [Collecting Campaign Data](https://analyticsacademy.withgoogle.com/course/1/unit/4/lesson/5)
-    Google analytics automtically captures <b>Source</b> and <b>Medium</b>
+    Google analytics automatically captures <b>Source</b> and <b>Medium</b>
     
     Source is wbesite which referred to your site
         Direct - when used comes directly to your site
