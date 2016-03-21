@@ -236,10 +236,13 @@ Then **fetch** from the GitHub to get the README.md file
 <b>git add -A</b>                    # add all files
 <b>git commit -m</b> <em>"first commit"</em>
 <b>git pull https://github.com/</b><em>username</em><b>/</b><em>project name</em><b>.git</b>
-git push --set-upstream https://github.com/<username>/<project name>.git master
+<b>git push --set-upstream  https://github.com/</b><em>username</em><b>/</b><em>project-name</em><b>.git master</b>
 </pre>
+
 <div id="where-is-current-origin-section">
-###Change Origin Repository
+
+###Change Origin Repository   
+
 from: http://blog.aplikacja.info/2010/08/switch-origin-of-your-git-repository/  
 
 Where is the current **origin**  
