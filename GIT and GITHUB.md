@@ -25,7 +25,7 @@ Think of <b>origin</b> not as where the code is now, but where it came from ie t
 9) [gh-pages](#gh-pages-how-to-section)    
 
 
-<div id="typical-git-command-flow-section">  
+div id="typical-git-command-flow-section"  
 
 
 ###Typical Git Command Flow
@@ -67,6 +67,7 @@ While on feature_branch, when ready to push to master branch, check for conflict
 </pre>
 
 <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request/example">making a pull request</a> example  
+
 We use the <b>Fork Workflow</b> method  
 
 <div id="file-commands-section">
@@ -205,7 +206,7 @@ We use the <b>Fork Workflow</b> method
 
 <b>git stash list</b>                  # lists stashes  
 
-<b>git stash drop stash@{0}</b>        <em>( delete first stash
+<b>git stash drop stash@{0}</b>        <em>( delete first stash )</em>
 <b>git stash drop stash@{1}</b>        # delete second stash
 </pre>
 
