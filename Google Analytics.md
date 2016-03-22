@@ -5,6 +5,10 @@ From analyticsacademywithgoogle.com
 [72 Questions You Need To Know For The Google Analytics IQ exam](http://trafficmotion.com/72-questions-you-need-to-know-for-the-google-analytics-iq-exam/)   
 [Misunderstood Metrics Time On Page Session duration](http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page-session-duration/)   
 
+http://help.analyticsedge.com/googleanalytics/advanced-techniques-the-monthly-pdf-report/
+
+http://ganswered.com/google-analytics/?utm_source=bing&utm_medium=cpc&utm_campaign=ganswered.com&utm_term=google%20analytics%20academy&utm_content=google-analytics
+
 
 
 ###Section 4.4 Setting up goals
