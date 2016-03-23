@@ -10,7 +10,12 @@
 
 ####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
+####[Accelerated Mobile Pages Validation (AMP)](https://www.ampproject.org/docs/guides/validate.html)
+
+
 [How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
+
+[Responsive Web Design](http://alistapart.com/article/responsive-web-design)
 
 ##Robots.txt
 
