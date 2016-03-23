@@ -15,3 +15,5 @@
 [Robotstxt.org](http://www.robotstxt.org/db.html)
 
 [Test Robots.txt](
+
+[Viewport Configuration](https://developers.google.com/speed/docs/insights/ConfigureViewport#overview)
