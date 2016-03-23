@@ -10,6 +10,8 @@
 
 ####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
+[How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
+
 ##Robots.txt
 
 ####[Robotstxt.org](http://www.robotstxt.org/db.html)
