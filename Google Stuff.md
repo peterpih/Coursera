@@ -1,19 +1,19 @@
-###[Google Search Console](https://www.google.com/webmasters/tools/home?hl=en)
+####[Google Search Console](https://www.google.com/webmasters/tools/home?hl=en)
 
-###[Goolgebot](https://support.google.com/webmasters/answer/182072)
+####[Googlebot](https://support.google.com/webmasters/answer/182072)
 
-###Google Developers
+##Google Developers
 
-[Mobile Friendly Websites](https://developers.google.com/webmasters/mobile-sites/mobile-seo/#crawling_requirement)
+####[Mobile Friendly Websites](https://developers.google.com/webmasters/mobile-sites/)
 
-###[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
+####[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
 
-###[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
+#####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
-###Robots.txt
+##Robots.txt
 
-[Robotstxt.org](http://www.robotstxt.org/db.html)
+####[Robotstxt.org](http://www.robotstxt.org/db.html)
 
 [Test Robots.txt](
 
-[Viewport Configuration](https://developers.google.com/speed/docs/insights/ConfigureViewport#overview)
+####[Viewport Configuration](https://developers.google.com/speed/docs/insights/ConfigureViewport#overview)
