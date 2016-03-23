@@ -1,7 +1,9 @@
 
+##[Google Analytics Help](https://support.google.com/analytics/answer/4553001?hl=en)
+
 From analyticsacademywithgoogle.com
 
-###Useful URLs  
+##Useful URLs  
 [72 Questions You Need To Know For The Google Analytics IQ exam](http://trafficmotion.com/72-questions-you-need-to-know-for-the-google-analytics-iq-exam/)   
 [Misunderstood Metrics Time On Page Session duration](http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page-session-duration/)   
 
@@ -11,7 +13,7 @@ http://ganswered.com/google-analytics/?utm_source=bing&utm_medium=cpc&utm_campai
 
 
 
-###Section 4.4 Setting up goals
+##Section 4.4 Setting up goals
 <pre>
 <a href="https://analyticsacademy.withgoogle.com/course/1/unit/4/lesson/4">Setting A Goal Value</a>
     Goal description
