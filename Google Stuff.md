@@ -8,10 +8,13 @@
 
 ####[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
 
+
+
 ####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
 ####[Accelerated Mobile Pages Validation (AMP)](https://www.ampproject.org/docs/guides/validate.html)
 
+####Articles:
 
 [How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
 
