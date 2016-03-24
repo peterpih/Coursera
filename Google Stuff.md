@@ -6,6 +6,8 @@
 
 ##Google Developers
 
+####[Web Fundamentals](https://developers.google.com/web/fundamentals/)
+
 ####[Mobile Friendly Websites](https://developers.google.com/webmasters/mobile-sites/)
 
 ####[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
