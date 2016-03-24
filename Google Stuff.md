@@ -12,7 +12,10 @@
 
 ####[Mobile Friendly Websites](https://developers.google.com/webmasters/mobile-sites/)
 
-####[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
+- [Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
+
+  - [How to pass Mobile Friendly Test](http://shallowsky.com/blog/tech/web/google-mobile-friendly.html)
+
 
 ####PageSpeed
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
