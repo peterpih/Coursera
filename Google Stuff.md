@@ -8,6 +8,8 @@
 
 ####[Web Fundamentals](https://developers.google.com/web/fundamentals/)
 
+- [Media Queries](http://www.w3.org/TR/css3-mediaqueries/)
+
 ####[Mobile Friendly Websites](https://developers.google.com/webmasters/mobile-sites/)
 
 ####[Mobile Friendly Test](https://www.google.com/webmasters/tools/mobile-friendly/?url=www.foreverfamilyfoundation.org)
