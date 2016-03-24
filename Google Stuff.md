@@ -21,6 +21,10 @@
 ####PageSpeed
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
+####Responsive Web Design
+
+- [Scalable Background Images](http://www.sitepoint.com/video-scalable-backgrounds-css/)
+
 ####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
 ####[Accelerated Mobile Pages Validation (AMP)](https://www.ampproject.org/docs/guides/validate.html)
