@@ -35,16 +35,16 @@
 
 - [Scalable Background Images](http://www.sitepoint.com/video-scalable-backgrounds-css/)
 
-- [Responsive Web Design](http://alistapart.com/article/responsive-web-design)
+- [Responsive Web Design](http://alistapart.com/article/responsive-web-design)  
 
-- [Stop Using Viewport Tag Until You Know How To](http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho)
-- 
+- [Stop Using Viewport Tag Until You Know How To] (http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho)
+
 - [CSS3 Media Queries](http://webdesignerwall.com/tutorials/css3-media-queries)
 - [Responsive Design with CSS3](http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries)
 
 - [width vs device-width](http://www.sitepoint.com/media-queries-width-vs-device-width/)
 
-####Search Engine Optimization (SEO)
+####Search Engine Optimization (SEO)  
 
 - [How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
 
