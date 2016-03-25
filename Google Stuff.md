@@ -27,31 +27,33 @@
 ####PageSpeed
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
-####Responsive Web Design
-
-- [Scalable Background Images](http://www.sitepoint.com/video-scalable-backgrounds-css/)
-
 ####[Designing for Mobile Micromovements](https://www.thinkwithgoogle.com/topics/designing-for-mobile-micro-moments.html)
 
 ####[Accelerated Mobile Pages Validation (AMP)](https://www.ampproject.org/docs/guides/validate.html)
 
-####Articles:
+####Responsive Web Design
 
-- [How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
+- [Scalable Background Images](http://www.sitepoint.com/video-scalable-backgrounds-css/)
 
 - [Responsive Web Design](http://alistapart.com/article/responsive-web-design)
 
+- [Stop Using Viewport Tag Until You Know How To](http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho)
+- 
 - [CSS3 Media Queries](http://webdesignerwall.com/tutorials/css3-media-queries)
 - [Responsive Design with CSS3](http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries)
 
 - [width vs device-width](http://www.sitepoint.com/media-queries-width-vs-device-width/)
 
+####Search Engine Optimization (SEO)
+
+- [How I Mobile Optimized My Website](https://blog.hartleybrody.com/how-i-mobile-optimized-my-website-in-5-minutes/)
+
 ##Robots.txt
 
-####[Robotstxt.org](http://www.robotstxt.org/db.html)
+- [Robotstxt.org](http://www.robotstxt.org/db.html)
 
+- [Eliminate Bots from Google Analytics](http://www.lunametrics.com/blog/2015/04/01/eliminating-bot-traffic-from-google-analytics-once-and-for-all/)
 [Test Robots.txt](
 
 ####[Viewport Configuration](https://developers.google.com/speed/docs/insights/ConfigureViewport#overview)
 
-- [Stop Using Viewport Tag Until You Know How To](http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho)
