@@ -43,6 +43,10 @@
 - [Responsive Design with CSS3](http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries)
 
 - [width vs device-width](http://www.sitepoint.com/media-queries-width-vs-device-width/)
+ 
+- [Guide To Responsive Friendly CSS Columns](https://css-tricks.com/guide-responsive-friendly-css-columns/)
+ 
+- [Responsive Grid Layouts With BourBon Neat](http://www.creativebloq.com/css3/create-responsive-grid-layouts-bourbon-neat-31410907)
 
 ####Search Engine Optimization (SEO)  
 
