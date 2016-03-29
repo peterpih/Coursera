@@ -1,5 +1,10 @@
 http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better
 
+###Tutorials
+http://learn.shayhowe.com/html-css/
+http://learnlayout.com
+
+
 https://css-tricks.com/scale-svg/  
 **reference:** http://www.w3schools.com/css/default.asp  
 http://tutorials.jenkov.com/svg/image-element.html  
